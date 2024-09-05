@@ -496,14 +496,6 @@ public class Player : Unit
     }
 
     /// <summary>
-    /// Return the faction of the player (the 'Player' faction).
-    /// </summary>
-    public override Faction GetFaction ()
-    {
-        return Faction.Player;
-    }
-
-    /// <summary>
     /// Revive the player, reseting any temporary buffs and setting them back to maximum health.
     /// </summary>
     public void Revive ()

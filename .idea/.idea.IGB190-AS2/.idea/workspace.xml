@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Boss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Boss.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 2.prefab" afterDir="false" />
@@ -12,10 +13,13 @@
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 4.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 5.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Summon Army.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Summon Army.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Teleport.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Teleport.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AllyFighter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/AllyFighter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Monster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +105,8 @@
       <option name="presentableId" value="Default" />
       <updated>1725502794944</updated>
       <workItem from="1725502799319" duration="1197000" />
-      <workItem from="1725513052308" duration="698000" />
+      <workItem from="1725513052308" duration="1512000" />
+      <workItem from="1725515242547" duration="3648000" />
     </task>
     <servers />
   </component>

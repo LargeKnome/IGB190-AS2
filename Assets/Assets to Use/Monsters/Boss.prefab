@@ -115,6 +115,7 @@ MonoBehaviour:
   handPoint: {fileID: 8602773439654565985}
   onDeathFeedback: {fileID: 11400000, guid: 0256ddc6b3a273d418c5861d14162aa9, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  alliedFaction: 1
   isDead: 0
   spawnEffect: {fileID: -68291847361665647, guid: e4357c10759ce5742b540e7790443698, type: 3}
   goldModifier: 50

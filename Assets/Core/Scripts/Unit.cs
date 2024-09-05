@@ -42,7 +42,11 @@ public class Unit : Interactable
     public GameFeedback onDeathFeedback;
     public GameFeedback onHitFeedback;
 
-    // Cached Values for Targeting, Attacking and Casting
+    [Header(("Faction Info"))] 
+    public Faction alliedFaction;
+    [Header(("Unit Specific Vars"))] 
+    
+    // Cached Values for Targeting, Attacking and Casting   
     [NonSerialized] public Unit target;
     [NonSerialized] public Vector3 targetPosition;
     [NonSerialized] public Ability abilityBeingCast;
@@ -626,7 +630,7 @@ public class Unit : Interactable
     /// </summary>
     public virtual Faction GetFaction()
     {
-        return Faction.Enemy;
+        return alliedFaction;
     }
 
     /// <summary>

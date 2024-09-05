@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using MyUtilities;
 using UnityEngine;
 
 /// <summary>
@@ -132,14 +133,26 @@ public class Monster : Unit
     /// </summary>
     private void HandleMovement()
     {
-        if (CanMove() && !InRange(target.transform.position))
+        if (CanMove())
         {
-            agentNavigation.SetDestination(target.transform.position);
+            if (target != null)
+            {
+            }
+            
+            if (target != null && !InRange(target.transform.position))
+            {
+                Debug.Log("Setting target destination");
+                agentNavigation.SetDestination(target.transform.position);
+            }
+            
+            else if (target == null && !InRange(GameManager.player.transform.position))
+            { agentNavigation.SetDestination(GameManager.player.transform.position); }
+            
+            else 
+            { StopMoving(); }
         }
         else
-        {
-            StopMoving();
-        }
+        { StopMoving(); }
     }
 
     /// <summary>
@@ -350,8 +363,11 @@ public class Monster : Unit
     /// </summary>
     private void CalculateMonsterTargeting()
     {
-        target = GameManager.player;
-        targetPosition = target.transform.position;
+        target = Utilities.GetClosestEnemy(transform.position, 25f, this);
+        if (target != null)
+        {
+            targetPosition = target.transform.position;
+        }
     }
 
     /// <summary>
