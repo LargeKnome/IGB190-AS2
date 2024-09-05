@@ -13530,7 +13530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26643,7 +26643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26662,7 +26662,7 @@ MonoBehaviour:
   unitName: Ranger
   health: 500
   resource: 0
-  baseDamage: 20
+  baseDamage: 25
   baseAttacksPerSecond: 1.8
   baseMaxHealth: 200
   baseMaxResource: 100
@@ -26679,6 +26679,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
   - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
+  - {fileID: 11400000, guid: d9c28cab830c37648aed7259d52e3308, type: 2}
   lastAbilityCast: {fileID: 0}
   handPoint: {fileID: 1980838022}
   onDeathFeedback: {fileID: 0}
@@ -26693,15 +26694,15 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
   resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
-  bonusMovementSpeedPerLevel: 0
-  bonusResourcePerLevel: 0
+  bonusDamagePerLevel: 10
+  bonusHealthPerLevel: 5
+  bonusMovementSpeedPerLevel: 0.2
+  bonusResourcePerLevel: 20
   bonusArmorPerLevel: 0
-  bonusCriticalChancePerLevel: 0
-  bonusCriticalDamagePerLevel: 0
-  bonusHealthRegenPerLevel: 0
-  bonusResourceRegenPerLevel: 0
+  bonusCriticalChancePerLevel: 0.02
+  bonusCriticalDamagePerLevel: 0.1
+  bonusHealthRegenPerLevel: 0.5
+  bonusResourceRegenPerLevel: 0.5
 --- !u!195 &1806430105
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29262,8 +29263,8 @@ MonoBehaviour:
     empoweredMonsterLegendaryDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
-    startingXPPerLevel: 1000
-    additionalMaxXPPerLevel: 0
+    startingXPPerLevel: 150
+    additionalMaxXPPerLevel: 25
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
