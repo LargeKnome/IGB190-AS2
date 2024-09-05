@@ -1,0 +1,265 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
+  m_Name: Summon Companion
+  m_EditorClassIdentifier: 
+  engine:
+    rid: 4341925356823117824
+  abilityName: Summon Companion
+  abilityIcon: {fileID: 21300000, guid: cf17e35ce315cc345ab122241bc394c9, type: 3}
+  targetMode: 4
+  abilityDescription: Fire an arrow towards the target location, dealing 100% attack
+    damage to the enemy hit.
+  abilityAnimation: Bow Shoot
+  range: 8
+  castTime: 0.1
+  abilityCooldown: 0
+  abilityCost: 0
+  movementLock: 1
+  animationActivationPosition: 0.5
+  canMoveWhileCasting: 0
+  hasSpecificCastTime: 0
+  cooldownIsAtackSpeed: 1
+  abilityGeneratesResource: 0
+  requiresLineOfSight: 1
+  canUpdateTargetWhileCasting: 1
+  castAtClosestPointInRange: 1
+  castCompleteSound: {fileID: 8300000, guid: d431758d9381dd8448702a22c11f9c01, type: 3}
+  castCompleteSoundVolume: 0.3
+  needsReminderFlash: 0
+  isUnlocked: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 4341925356823117824
+      type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
+      data:
+        scripts:
+        - scriptName: Cast Completed
+          scriptUID: 1880839087
+          hasWait: 0
+          eventNodes:
+          - rid: 4341925356823117825
+          conditionNodes: []
+          actionNodes: []
+        - scriptName: Unit Collision
+          scriptUID: 1822505296
+          hasWait: 0
+          eventNodes:
+          - rid: 4341925356823117828
+          conditionNodes: []
+          actionNodes:
+          - rid: 4341925356823117829
+          - rid: 4341925356823117830
+        - scriptName: Terrain Collision
+          scriptUID: 646607100
+          hasWait: 0
+          eventNodes:
+          - rid: 4341925356823117831
+          conditionNodes: []
+          actionNodes:
+          - rid: 4341925356823117832
+    - rid: 4341925356823117825
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: WhenUnitFinishesCastingThisAbility
+        functionDescription: Ability/When a unit finishes casting this ability
+        functionDynamicDescription: 'When a unit finishes casting this ability (Presets:
+          <color=yellow>Casting Unit</color>, <color=yellow>Ability Target Location</color>,
+          <color=yellow>Target Unit</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Casting Unit
+        - Ability Target Location
+        - Target Unit
+    - rid: 4341925356823117828
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ProjectileMadeByThisCollidesWithUnit
+        functionDescription: Projectile/Projectile collides with an enemy
+        functionDynamicDescription: 'Projectile from this object collides with an
+          enemy (Presets: <color=yellow>Event Projectile</color>, <color=yellow>Casting
+          Unit</color>, <color=yellow>Colliding Unit</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Projectile
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Event Projectile
+        - Casting Unit
+        - Colliding Unit
+    - rid: 4341925356823117829
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: HaveUnitDamageUnit2
+        functionDescription: Unit/Deal Damage to Unit
+        functionDynamicDescription: Deal $ attack damage to $
+        functionEvaluators:
+        - rid: 4341925356823117837
+        - rid: 4341925356823117838
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4341925356823117830
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyProjectile
+        functionDescription: Projectile/Destroy Projectile
+        functionDynamicDescription: Destroy $
+        functionEvaluators:
+        - rid: 4341925356823117839
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Projectile
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4341925356823117831
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ProjectileCollidesWithTerrain
+        functionDescription: Projectile/Projectile collides with terrain
+        functionDynamicDescription: 'Projectile from this object collides with the
+          terrain (Presets: <color=yellow>Event Projectile</color>, <color=yellow>Casting
+          Unit</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Event Projectile
+        - Casting Unit
+    - rid: 4341925356823117832
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyProjectile
+        functionDescription: Projectile/Destroy Projectile
+        functionDynamicDescription: Destroy $
+        functionEvaluators:
+        - rid: 4341925356823117840
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Projectile
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4341925356823117837
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 4341925356823117838
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Colliding Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4341925356823117839
+      type: {class: ProjectileNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Event Projectile
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4341925356823117840
+      type: {class: ProjectileNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Event Projectile
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
