@@ -128,6 +128,7 @@ MonoBehaviour:
   uiHeight: 2
   spawnLevel: 1
   spawnLikelihood: 10
+  OutlineColor: {r: 0.5, g: 0, b: 0, a: 1}
 --- !u!54 &3687309128071325144
 Rigidbody:
   m_ObjectHideFlags: 0

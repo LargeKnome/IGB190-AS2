@@ -43,7 +43,7 @@ public class Monster : Unit
     private const float EmpoweredUIHeightModifier = 1.75f;
     private const float CriticalDamageNumberScaleMod = 1.5f;
 
-    private static readonly Color OutlineColor = new Color(0.5f, 0.0f, 0.0f);
+    [SerializeField] Color OutlineColor = new Color(0.0f, 0.8f, 0.0f);
     private static readonly Color HitDamageTextColor = new Color(1, 1, 0.5f);
     private static readonly Color CritDamageTextColor = Color.red;
 
@@ -141,7 +141,6 @@ public class Monster : Unit
             
             if (target != null && !InRange(target.transform.position))
             {
-                Debug.Log("Setting target destination");
                 agentNavigation.SetDestination(target.transform.position);
             }
             
