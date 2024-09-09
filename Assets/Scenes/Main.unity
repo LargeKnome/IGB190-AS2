@@ -11876,7 +11876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &840699974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11895,7 +11895,7 @@ MonoBehaviour:
   unitName: Rogue
   health: 500
   resource: 0
-  baseDamage: 25
+  baseDamage: 15
   baseAttacksPerSecond: 1.8
   baseMaxHealth: 200
   baseMaxResource: 100
@@ -11907,7 +11907,7 @@ MonoBehaviour:
   baseResourceRegen: 2
   baseAttackRange: 2.5
   abilities:
-  - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
+  - {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
   - {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
   - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
@@ -28195,7 +28195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -135,16 +135,12 @@ public class Monster : Unit
     {
         if (CanMove())
         {
-            if (target != null)
-            {
-            }
-            
             if (target != null && !InRange(target.transform.position))
             {
                 agentNavigation.SetDestination(target.transform.position);
             }
             
-            else if (target == null && !InRange(GameManager.player.transform.position))
+            else if (target == null && alliedFaction == Faction.Player &&!InRange(GameManager.player.transform.position))
             { agentNavigation.SetDestination(GameManager.player.transform.position); }
             
             else 
@@ -362,7 +358,7 @@ public class Monster : Unit
     /// </summary>
     private void CalculateMonsterTargeting()
     {
-        target = Utilities.GetClosestEnemy(transform.position, 25f, this);
+        target = Utilities.GetClosestEnemy(transform.position, 10f, this);
         if (target != null)
         {
             targetPosition = target.transform.position;

@@ -465,9 +465,25 @@ public class LogicEngineEditor
             UnitNode.Temp().NoValue()));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
+            "Unit/Deal Critical Damage to Unit",
+            "Deal $ critical attack damage to $",
+            "HaveUnitCriticalDamageUnit2",
+            unitIcon,
+            NumberNode.Value(100, "%"),
+            UnitNode.Temp().NoValue()));
+
+        allNodes.Add(GeneralNode.Func<ActionNode>(
             "Unit/Deal Damage to Unit Group",         
             "Deal $ attack damage to $", 
             "HaveUnitDamageUnits2",
+            unitIcon,
+            NumberNode.Value(100, "%"),
+            UnitGroupNode.Temp().NoValue()));
+
+        allNodes.Add(GeneralNode.Func<ActionNode>(
+            "Unit/Deal Critical Damage to Unit Group",         
+            "Deal $ critical attack damage to $", 
+            "HaveUnitCriticalDamageUnits2",
             unitIcon,
             NumberNode.Value(100, "%"),
             UnitGroupNode.Temp().NoValue()));
@@ -542,7 +558,7 @@ public class LogicEngineEditor
             "SpinUnit",
             unitIcon,
             UnitNode.Temp().NoValue(),
-            NumberNode.Value(360, "º/s"),
+            NumberNode.Value(360, "ï¿½/s"),
             NumberNode.Value(1, "s")));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
@@ -713,7 +729,7 @@ public class LogicEngineEditor
             "RotateProjectile",
             projectileIcon,
             lastCreatedProjectile,
-            NumberNode.Value(30, "º")));
+            NumberNode.Value(30, "ï¿½")));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
             "Projectile/Face Projectile Towards Point",
@@ -1132,6 +1148,12 @@ public class LogicEngineEditor
             "Unit/Unit Max Resource",
             "$ Max Resource",
             "UnitMaxResource",
+            UnitNode.Temp()));
+
+        allNodes.Add(GeneralNode.Func<NumberNode>(
+            "Unit/Unit Direction",
+            "$ Direction",
+            "UnitDirection",
             UnitNode.Temp()));
 
         allNodes.Add(GeneralNode.Func<NumberNode>(
@@ -1709,7 +1731,7 @@ public class LogicEngineEditor
             "Alls Enemies In Arc From Unit",
             "All enemies in $ arc from $ extending $",
             "AllEnemiesInArcFromUnit",
-            NumberNode.Value(90, "º"),
+            NumberNode.Value(90, "ï¿½"),
             UnitNode.Temp().NoValue(),
             NumberNode.Temp("m")));
 

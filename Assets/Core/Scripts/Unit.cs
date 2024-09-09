@@ -582,10 +582,10 @@ public class Unit : Interactable
     /// This method will handle the possibility of attacker modifiers, critical
     /// strike chance etc.
     /// </summary>
-    public void DamageOtherUnit (Unit unit, float weaponDamagePercent, IEngineHandler source)
+    public void DamageOtherUnit (Unit unit, float weaponDamagePercent, IEngineHandler source, bool automaticallyCrit = false)
     {
         float amount = Mathf.Round(stats.GetValue(Stat.Damage) * weaponDamagePercent);
-        if (CheckForCritical())
+        if (automaticallyCrit || CheckForCritical())
         {
             amount *= stats.GetValue(Stat.CriticalStrikeDamage);
             unit.TakeDamage(amount, true, this, source);
@@ -601,12 +601,12 @@ public class Unit : Interactable
     /// This method will handle the possibility of attacker modifiers, critical
     /// strike chance etc.
     /// </summary>
-    public void DamageOtherUnits (List<Unit> units, float weaponDamagePercent, IEngineHandler source)
+    public void DamageOtherUnits (List<Unit> units, float weaponDamagePercent, IEngineHandler source, bool automaticallyCrit = false)
     {
         float amount = Mathf.Round(stats.GetValue(Stat.Damage) * weaponDamagePercent);
         
         bool isCrit = false;
-        if (CheckForCritical())
+        if (automaticallyCrit || CheckForCritical())
         {
             amount *= stats.GetValue(Stat.CriticalStrikeDamage);
             isCrit = true;
