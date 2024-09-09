@@ -1860,6 +1860,13 @@ public class LogicScript
         {
             if (monster.monsterLabel == label) return monster;
         }
+
+        //add by Hailey - determine label for player Units
+        Player[] players = GameObject.FindObjectsOfType<Player>();
+        foreach (Player player in players)
+        {
+            if (player.unitName == label) return player;
+        }
         return null;
     }
 
