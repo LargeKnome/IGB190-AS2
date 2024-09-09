@@ -885,7 +885,37 @@ public class LogicScript
         IEngineHandler engine = LogicEngine.current.engineHandler;
         engine.GetOwner().DamageOtherUnit(damagedUnit, amount / 100.0f, engine);
     }
+    
+    
+    public void HaveUnitCriticalDamageUnit (Unit damagingUnit, float amount, Unit damagedUnit)
+    {
+        if (damagingUnit == null)
+        {
+            Error("The damaging unit was invalid.");
+            return;
+        }
+        if (damagedUnit == null)
+        {
+            Error("The damaging unit was invalid.");
+            return;
+        }
 
+        damagingUnit.DamageOtherUnit(damagedUnit, amount / 100.0f, LogicEngine.current.engineHandler, true);
+    }
+    
+    public void HaveUnitCriticalDamageUnit2(float amount, Unit damagedUnit)
+    {
+        Debug.Log("Critical damage triggered");
+        if (damagedUnit == null)
+        {
+            Error("The damaged unit was invalid.");
+            return;
+        }
+
+        IEngineHandler engine = LogicEngine.current.engineHandler;
+        engine.GetOwner().DamageOtherUnit(damagedUnit, amount / 100.0f, engine);
+    }
+    
     public void HaveUnitDamageUnits2(float amount, List<Unit> units)
     {
         if (units == null)
@@ -896,6 +926,18 @@ public class LogicScript
 
         IEngineHandler engine = LogicEngine.current.engineHandler;
         engine.GetOwner().DamageOtherUnits(units, amount / 100.0f, engine);
+    }
+    
+    public void HaveUnitCriticalDamageUnits2(float amount, List<Unit> units)
+    {
+        if (units == null)
+        {
+            Error("The damaged unit list was invalid.");
+            return;
+        }
+
+        IEngineHandler engine = LogicEngine.current.engineHandler;
+        engine.GetOwner().DamageOtherUnits(units, amount / 100.0f, engine, true);
     }
 
     public void PlayFeedbackAtPoint(GameFeedback feedback, Vector3 point)
