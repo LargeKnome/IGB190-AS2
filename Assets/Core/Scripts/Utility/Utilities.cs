@@ -46,23 +46,6 @@ namespace MyUtilities
             }
             return closest;
         }
-        
-        public static Unit GetClosestEnemy(Vector3 position, float maxDistance, Unit targetUnit)
-        {
-            Unit closest = null;
-            float closestDistance = maxDistance;
-            Unit[] objs = GameObject.FindObjectsOfType<Unit>();
-            foreach (Unit obj in objs)
-            {
-                float distance = Vector3.Distance(obj.transform.position, position);
-                if (distance < closestDistance && obj.IsEnemy(targetUnit))
-                {
-                    closest = obj;
-                    closestDistance = distance;
-                }
-            }
-            return closest;
-        }
 
         public static T GetFurthest<T>(Vector3 position, float maxDistance) where T : MonoBehaviour
         {

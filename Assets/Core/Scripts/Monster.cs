@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using MyUtilities;
 using UnityEngine;
 
 /// <summary>
@@ -43,7 +42,7 @@ public class Monster : Unit
     private const float EmpoweredUIHeightModifier = 1.75f;
     private const float CriticalDamageNumberScaleMod = 1.5f;
 
-    [SerializeField] Color OutlineColor = new Color(0.0f, 0.8f, 0.0f);
+    private static readonly Color OutlineColor = new Color(0.5f, 0.0f, 0.0f);
     private static readonly Color HitDamageTextColor = new Color(1, 1, 0.5f);
     private static readonly Color CritDamageTextColor = Color.red;
 
@@ -133,21 +132,14 @@ public class Monster : Unit
     /// </summary>
     private void HandleMovement()
     {
-        if (CanMove())
+        if (CanMove() && !InRange(target.transform.position))
         {
-            if (target != null && !InRange(target.transform.position))
-            {
-                agentNavigation.SetDestination(target.transform.position);
-            }
-            
-            else if (target == null && alliedFaction == Faction.Player &&!InRange(GameManager.player.transform.position))
-            { agentNavigation.SetDestination(GameManager.player.transform.position); }
-            
-            else 
-            { StopMoving(); }
+            agentNavigation.SetDestination(target.transform.position);
         }
         else
-        { StopMoving(); }
+        {
+            StopMoving();
+        }
     }
 
     /// <summary>
@@ -235,11 +227,11 @@ public class Monster : Unit
     /// <summary>
     /// Kills this unit, spawning gold, items, and giving experience to the player.
     /// </summary>
-    public override void Kill(Unit killingUnit, IEngineHandler killingSource)
+    public override void Kill(Unit killingUnit, IEngineHandler killingSource, bool isCritical)
     {
         if (isDead) return;
 
-        base.Kill(killingUnit, killingSource);
+        base.Kill(killingUnit, killingSource, isCritical);
         HandleKillCleanup();
 
         HandleMonsterDrops();
@@ -358,11 +350,8 @@ public class Monster : Unit
     /// </summary>
     private void CalculateMonsterTargeting()
     {
-        target = Utilities.GetClosestEnemy(transform.position, 10f, this);
-        if (target != null)
-        {
-            targetPosition = target.transform.position;
-        }
+        target = GameManager.player;
+        targetPosition = target.transform.position;
     }
 
     /// <summary>

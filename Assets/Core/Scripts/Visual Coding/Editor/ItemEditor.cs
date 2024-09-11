@@ -203,8 +203,7 @@ public class ItemEditor : EditorWindow
         posY += height;
         item.itemRarity = (Item.ItemRarity)EditorGUI.EnumPopup(new Rect(shortStart, posY, shortWidth, height = 20), item.itemRarity);
         posY += height;
-
-        // UI Control: Specify the class of the item. 
+        
         GUI.Label(new Rect(shortStart, posY, 100, height = 16), "Class", EditorStyles.boldLabel);
         posY += height;
         item.itemClass = (Item.ItemClass)EditorGUI.EnumPopup(new Rect(shortStart, posY, shortWidth, height = 20), item.itemClass);
@@ -385,6 +384,9 @@ public class ItemEditor : EditorWindow
             if (item == null) return;
             engineEditor = new LogicEngineEditor(this, item.engine, item);
         }
+
+        // Record the state before any changes
+        Undo.RecordObject(item, "Changed Item " + item.itemName);
 
         // Start a change check, so the item can be dirtied if the user makes a change.
         EditorGUI.BeginChangeCheck();

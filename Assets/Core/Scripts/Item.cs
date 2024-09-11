@@ -20,6 +20,7 @@ public class Item : ScriptableObject, IEngineHandler
     public ItemRarity itemRarity;
     public ItemClass itemClass;
     public LogicEngine engine = new LogicEngine();
+    public Item template;
 
     // Item stat options (used to 'roll' the final item stats)
     public List<StatBlock> guaranteedStats = new List<StatBlock>();
@@ -46,15 +47,6 @@ public class Item : ScriptableObject, IEngineHandler
         Legendary
     }
 
-    public enum ItemClass
-    {
-        All,
-        Barbarian,
-        Ranger,
-        Rogue,
-        Sorcerer
-    }
-
     /// <summary>
     /// List of all possible types that an item could have.
     /// </summary>
@@ -64,7 +56,17 @@ public class Item : ScriptableObject, IEngineHandler
         Amulet,
         Weapon,
         Armor,
-        Boots
+        Boots,
+        Other
+    }
+
+    public enum ItemClass
+    {
+        All, 
+        Barbarian,
+        Ranger,
+        Rogue,
+        Sorcerer
     }
 
     /// <summary>
