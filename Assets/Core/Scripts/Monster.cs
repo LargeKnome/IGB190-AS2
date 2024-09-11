@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MyUtilities;
 using UnityEngine;
+using UnityEngine.AI;
 
 /// <summary>
 /// Handles all logic for a Monster (a hostile unit to the player), including AI,
@@ -50,6 +51,16 @@ public class Monster : Unit
     // Cached components
     protected AudioSource source;
 
+
+    // Flee State Variables 
+    private float zigzagDistance = 5f;       // Distance between each zigzag point
+    private float zigzagOffset = 2f;         // Maximum lateral offset for zigzagging
+    private int zigzagPointsCount = 5;       // Number of zigzag points to generate
+    private Vector3[] zigzagPoints;
+    private int currentPointIndex = 0;
+
+
+
     /// <summary>
     /// Performs all initial monster setup.
     /// </summary>
@@ -76,6 +87,8 @@ public class Monster : Unit
 
         UpdateOutline();
         CalculateMonsterTargeting();
+
+
         HandleMovement();
     }
 
@@ -149,6 +162,72 @@ public class Monster : Unit
         else
         { StopMoving(); }
     }
+
+
+    private void HandleFleeMovement()
+    {
+        if (CanMove())
+        {
+            // Calculate the escape direction
+            Vector3 directionToPlayer = (transform.position - targetPosition).normalized;
+
+            // Generate zigzag points if NPC is not already moving
+            if (zigzagPoints == null || currentPointIndex >= zigzagPoints.Length)
+            {
+                GenerateZigzagPoints(directionToPlayer);
+            }
+
+            // Move the NPC to the current zigzag point
+            if (currentPointIndex < zigzagPoints.Length)
+            {
+                agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
+
+                // If the NPC reaches the current point, move to the next one
+                if (!agentNavigation.pathPending && agentNavigation.remainingDistance < 0.5f)
+                {
+                    currentPointIndex++;
+                }
+            }
+
+        }
+        else
+        { StopMoving(); }
+
+        // Generates an array of zigzag points based on the escape direction
+        void GenerateZigzagPoints(Vector3 escapeDirection)
+        {
+            zigzagPoints = new Vector3[zigzagPointsCount];
+            Vector3 startPoint = transform.position;
+
+            for (int i = 0; i < zigzagPointsCount; i++)
+            {
+                // Calculate the next point along the escape direction
+                Vector3 nextPoint = startPoint + escapeDirection * zigzagDistance;
+
+                // Apply random lateral offset for zigzagging
+                float offset = Random.Range(-zigzagOffset, zigzagOffset);
+                Vector3 lateralOffset = Vector3.Cross(Vector3.up, escapeDirection).normalized * offset;
+                nextPoint += lateralOffset;
+
+                // Ensure the point is on the NavMesh
+                if (NavMesh.SamplePosition(nextPoint, out NavMeshHit hit, 1f, NavMesh.AllAreas))
+                {
+                    zigzagPoints[i] = hit.position;
+                }
+                else
+                {
+                    zigzagPoints[i] = nextPoint; // Fall back if no NavMesh
+                }
+
+                // Move to the next point in the sequence
+                startPoint = zigzagPoints[i];
+            }
+
+            // Reset the current point index to start the new path
+            currentPointIndex = 0;
+        }
+    }
+
 
     /// <summary>
     /// Removes the outline from this unit.
@@ -384,4 +463,7 @@ public class Monster : Unit
         GameObject obj = Instantiate(GameManager.assets.empoweredEffect, transform);
         obj.transform.position += Vector3.up;
     }
+
+
+    
 }
