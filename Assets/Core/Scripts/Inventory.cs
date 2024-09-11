@@ -123,9 +123,4 @@ public class Inventory
     {
         return items.Length - GetFilledSlots();
     }
-
-    public int GetSlots ()
-    {
-        return items.Length;
-    }
 }

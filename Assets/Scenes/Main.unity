@@ -15297,7 +15297,7 @@ MonoBehaviour:
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
-  baseResourceRegen: 2.5
+  baseResourceRegen: 0
   baseAttackRange: 2.5
   abilities:
   - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
@@ -15328,7 +15328,7 @@ MonoBehaviour:
   bonusCriticalChancePerLevel: 0.02
   bonusCriticalDamagePerLevel: 0.1
   bonusHealthRegenPerLevel: 1
-  bonusResourceRegenPerLevel: 0.5
+  bonusResourceRegenPerLevel: 0.01
 --- !u!195 &1043651115
 NavMeshAgent:
   m_ObjectHideFlags: 0

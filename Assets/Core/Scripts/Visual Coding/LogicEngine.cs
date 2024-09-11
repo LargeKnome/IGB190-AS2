@@ -72,14 +72,12 @@ public class LogicEngine
     public const string PRESET_HEALTH_PICKED_UP = "Health Restored";
     public const string PRESET_RESOURCES_GAINED = "Resources Gained";
     public const string PRESET_RESOURCES_LOST = "Resources Lost";
-    public const string PRESET_DAMAGE_DEALT = "Damage Dealt";
     public static string[] NUMBER_PRESETS = new string[]
     {
         PRESET_GOLD_PICKED_UP,
         PRESET_HEALTH_PICKED_UP,
         PRESET_RESOURCES_GAINED,
-        PRESET_RESOURCES_LOST,
-        PRESET_DAMAGE_DEALT
+        PRESET_RESOURCES_LOST
     };
 
     // Projectile Presets
@@ -89,13 +87,6 @@ public class LogicEngine
     {
         //PRESET_LAST_CREATED_PROJECTILE,
         PRESET_EVENT_PROJECTILE
-    };
-
-    // Bool Presets
-    public const string PRESET_IS_CRITICAL = "Is Critical";
-    public static string[] BOOL_PRESETS = new string[] 
-    {
-        PRESET_IS_CRITICAL
     };
 
     // Dynamic Presets

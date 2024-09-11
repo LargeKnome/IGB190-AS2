@@ -295,5 +295,12 @@ public class GameManager : MonoBehaviour
         {
             ui.CharacterWindow.Show();
         }
+        if (Input.GetKeyDown(KeyCode.L))
+            player.Teleport(new Vector3(-110, -8, 177.5f));
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            player.AddExperience(10000);
+        }
     }
 }
