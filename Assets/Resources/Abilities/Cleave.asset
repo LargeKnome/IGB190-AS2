@@ -253,7 +253,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 90
+        value: 135
     - rid: 6666404075825004556
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -289,7 +289,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 2.5
     - rid: 8495770697921200135
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:

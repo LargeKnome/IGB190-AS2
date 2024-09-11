@@ -11876,7 +11876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &840699974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15081,7 +15081,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1043651113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15102,7 +15102,7 @@ MonoBehaviour:
   resource: 0
   baseDamage: 20
   baseAttacksPerSecond: 1.5
-  baseMaxHealth: 200
+  baseMaxHealth: 450
   baseMaxResource: 100
   baseMovementSpeed: 3
   baseArmor: 0

@@ -19,6 +19,7 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
   itemType: 4
   itemRarity: 0
+  itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
@@ -33,6 +34,13 @@ MonoBehaviour:
       hasWait: 0
       eventNodes:
       - rid: 248813236419559504
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Passive Effect
+      scriptUID: 1109684648
+      hasWait: 0
+      eventNodes:
+      - rid: 4341925492899184642
       conditionNodes: []
       actionNodes: []
   guaranteedStats:
@@ -102,6 +110,24 @@ MonoBehaviour:
         functionName: ScriptUnloaded
         functionDescription: Time/On script unloaded
         functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4341925492899184642
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: EveryFrame
+        functionDescription: Time/Do every frame
+        functionDynamicDescription: Do actions every frame
         functionEvaluators: []
         presetName: 
         variableName: 
