@@ -13,6 +13,14 @@ using Random = UnityEngine.Random;
 
 public class Unit : Interactable
 {
+    public enum EngagementState
+    {
+        Basic,
+        Flee
+    }
+
+
+
     public string unitName;
     [HideInInspector] public float health = 100;
     [HideInInspector] public float resource = 0;
@@ -56,6 +64,7 @@ public class Unit : Interactable
     [NonSerialized] public float canMoveAt;
     [NonSerialized] public float canCastAt;
     protected Vector3 attackDirection;
+    protected EngagementState engagementState = EngagementState.Basic;
 
     // Cache references to important components for easy access later.
     protected NavMeshAgent agentNavigation;
