@@ -204,6 +204,12 @@ public class ItemEditor : EditorWindow
         item.itemRarity = (Item.ItemRarity)EditorGUI.EnumPopup(new Rect(shortStart, posY, shortWidth, height = 20), item.itemRarity);
         posY += height;
 
+        // UI Control: Specify the class of the item. 
+        GUI.Label(new Rect(shortStart, posY, 100, height = 16), "Class", EditorStyles.boldLabel);
+        posY += height;
+        item.itemClass = (Item.ItemClass)EditorGUI.EnumPopup(new Rect(shortStart, posY, shortWidth, height = 20), item.itemClass);
+        posY += height;
+
         // UI Control: Specify the tooltip of the item.
         GUI.Label(new Rect(posX, posY, width, height = 20), "Item Tooltip", EditorStyles.boldLabel);
         posY += height;
@@ -290,7 +296,7 @@ public class ItemEditor : EditorWindow
 
         // Draw the delete button.
         Rect deleteRect = new Rect(rect.x + rect.width - 21, rect.y - 1, rect.height - 1, rect.height - 1);
-        if (GUI.Button(deleteRect, "×", LogicEngineEditor.windowStyle_AddButtonSmall))
+        if (GUI.Button(deleteRect, "ï¿½", LogicEngineEditor.windowStyle_AddButtonSmall))
             toDelete.Add(statBlock);
 
         // Draw the label.

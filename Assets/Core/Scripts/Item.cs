@@ -18,6 +18,7 @@ public class Item : ScriptableObject, IEngineHandler
     public Sprite itemIcon;
     public ItemType itemType;
     public ItemRarity itemRarity;
+    public ItemClass itemClass;
     public LogicEngine engine = new LogicEngine();
 
     // Item stat options (used to 'roll' the final item stats)
@@ -30,8 +31,8 @@ public class Item : ScriptableObject, IEngineHandler
 
     private static Dictionary<ItemRarity, List<Item>> itemLootTable;
     private static readonly Color commonItemColor = new Color(0.12f, 1.0f, 0.0f);
-    private static readonly Color rareItemColor = Color.yellow;
-    private static readonly Color legendaryItemColor = new Color(1.0f, 0.5f, 0.0f);
+    private static readonly Color rareItemColor = new Color(0.3f, 0.6f, 1.0f);
+    private static readonly Color legendaryItemColor = new Color(1.0f, 0.8f, 0.0f);
 
     private Unit owner;
 
@@ -43,6 +44,15 @@ public class Item : ScriptableObject, IEngineHandler
         Common,
         Rare,
         Legendary
+    }
+
+    public enum ItemClass
+    {
+        All,
+        Barbarian,
+        Ranger,
+        Rogue,
+        Sorcerer
     }
 
     /// <summary>
@@ -218,7 +228,36 @@ public class Item : ScriptableObject, IEngineHandler
     public static Item GetRandomItemOfRarity(ItemRarity rarity)
     {
         GenerateLootTable();
-        return itemLootTable[rarity].RandomItem();
+        bool isValidItem = false;
+        Item currentItem = itemLootTable[rarity].RandomItem();
+
+        List<ItemClass> validClasses = new List<ItemClass>() { ItemClass.All };
+
+        switch (FindObjectOfType<Player>().unitName)
+        {
+            case "Barbarian":
+                validClasses.Add(ItemClass.Barbarian);
+                break;
+            case "Sorcerer":
+                validClasses.Add(ItemClass.Sorcerer);
+                break;
+            case "Ranger":
+                validClasses.Add(ItemClass.Ranger);
+                break;
+            case "Rogue":
+                validClasses.Add(ItemClass.Rogue);
+                break;
+        }
+        
+        while (!isValidItem)
+        {
+            if (validClasses.Contains(currentItem.itemClass))
+            { isValidItem = true; }
+            else
+            { currentItem = itemLootTable[rarity].RandomItem(); }
+        }
+
+        return currentItem;
     }
 
     /// <summary>
