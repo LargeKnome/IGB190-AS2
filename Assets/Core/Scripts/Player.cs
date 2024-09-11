@@ -385,8 +385,12 @@ public class Player : Unit
             stats[Stat.Armor].ModifyBaseValue(bonusArmorPerLevel);
             stats[Stat.CriticalStrikeChance].ModifyBaseValue(bonusCriticalChancePerLevel);
             stats[Stat.CriticalStrikeDamage].ModifyBaseValue(bonusCriticalDamagePerLevel);
+            
             baseHealthRegen += bonusHealthRegenPerLevel;
-            baseResourceRegen += bonusResourcePerLevel;
+            
+            Debug.Log(baseResourceRegen + " Plus " + bonusResourceRegenPerLevel + " Equals: ");
+            baseResourceRegen += bonusResourceRegenPerLevel;
+            Debug.Log(baseResourceRegen);
         } 
     }
 

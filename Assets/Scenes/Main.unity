@@ -15259,10 +15259,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1043651117}
+  - component: {fileID: 1043651113}
   - component: {fileID: 1043651116}
   - component: {fileID: 1043651118}
   - component: {fileID: 1043651115}
-  - component: {fileID: 1043651113}
   m_Layer: 0
   m_Name: Player (Barbarian)
   m_TagString: Untagged
@@ -15293,7 +15293,7 @@ MonoBehaviour:
   baseMaxHealth: 450
   baseMaxResource: 100
   baseMovementSpeed: 3
-  baseArmor: 0
+  baseArmor: 100
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
@@ -15320,15 +15320,15 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Rage
   resourceMaterial: {fileID: 2100000, guid: b8286c3806406a74eaa1c5a1ac724e39, type: 2}
-  bonusDamagePerLevel: 0
-  bonusHealthPerLevel: 0
-  bonusMovementSpeedPerLevel: 0
-  bonusResourcePerLevel: 0
-  bonusArmorPerLevel: 0
-  bonusCriticalChancePerLevel: 0
-  bonusCriticalDamagePerLevel: 0
-  bonusHealthRegenPerLevel: 0
-  bonusResourceRegenPerLevel: 0
+  bonusDamagePerLevel: 3
+  bonusHealthPerLevel: 25
+  bonusMovementSpeedPerLevel: 0.2
+  bonusResourcePerLevel: 15
+  bonusArmorPerLevel: 20
+  bonusCriticalChancePerLevel: 0.02
+  bonusCriticalDamagePerLevel: 0.1
+  bonusHealthRegenPerLevel: 1
+  bonusResourceRegenPerLevel: 0.01
 --- !u!195 &1043651115
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -31130,8 +31130,8 @@ MonoBehaviour:
     empoweredMonsterLegendaryDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
-    startingXPPerLevel: 150
-    additionalMaxXPPerLevel: 25
+    startingXPPerLevel: -9900
+    additionalMaxXPPerLevel: 10000
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
