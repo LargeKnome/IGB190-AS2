@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
+  m_Name: Call Wolf
+  m_EditorClassIdentifier: 
+  engine:
+    rid: 4341925514501947397
+  abilityName: Call Wolf
+  abilityIcon: {fileID: 21300000, guid: fe8e6a489e2efde4fa02ee13706a2edf, type: 3}
+  targetMode: 4
+  abilityDescription: Cast a decoy
+  abilityAnimation: Magic Area Attack
+  range: 999
+  castTime: 0
+  abilityCooldown: 1
+  abilityCost: 0
+  movementLock: 1
+  animationActivationPosition: 0.5
+  canMoveWhileCasting: 1
+  hasSpecificCastTime: 1
+  cooldownIsAtackSpeed: 0
+  abilityGeneratesResource: 0
+  requiresLineOfSight: 1
+  canUpdateTargetWhileCasting: 1
+  castAtClosestPointInRange: 0
+  castCompleteSound: {fileID: 0}
+  castCompleteSoundVolume: 1
+  needsReminderFlash: 0
+  isUnlocked: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 4341925514501947397
+      type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
+      data:
+        scripts:
+        - scriptName: Cast Completed
+          scriptUID: 1895699176
+          hasWait: 0
+          eventNodes:
+          - rid: 4341925514501947398
+          conditionNodes: []
+          actionNodes:
+          - rid: 4341925514501947399
+    - rid: 4341925514501947398
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: WhenUnitFinishesCastingThisAbility
+        functionDescription: Ability/When a unit finishes casting this ability
+        functionDynamicDescription: 'When a unit finishes casting this ability (Presets:
+          <color=yellow>Casting Unit</color>, <color=yellow>Ability Target Location</color>,
+          <color=yellow>Target Unit</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Casting Unit
+        - Ability Target Location
+        - Target Unit
+    - rid: 4341925514501947399
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnUnit
+        functionDescription: Unit/Spawn Monster
+        functionDynamicDescription: Spawn $ at $
+        functionEvaluators:
+        - rid: 4341925514501947400
+        - rid: 4341925514501947401
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4341925514501947400
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 653644432633013759, guid: 3f14c5780a0ae894eb4e7328a9989197, type: 3}
+    - rid: 4341925514501947401
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Location
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Ability Target Location
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}

@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Boss.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Boss.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Monster 5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Spawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/Spawner.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +102,7 @@
       <workItem from="1726028967217" duration="1397000" />
       <workItem from="1726054616920" duration="753000" />
       <workItem from="1726096798489" duration="38000" />
-      <workItem from="1726106968420" duration="343000" />
+      <workItem from="1726106968420" duration="1502000" />
     </task>
     <servers />
   </component>

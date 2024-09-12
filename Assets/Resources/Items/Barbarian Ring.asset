@@ -38,8 +38,8 @@ MonoBehaviour:
       actionNodes: []
   guaranteedStats:
   - stat: 0
-    minimum: 4
-    maximum: 6
+    minimum: 5
+    maximum: 5
     isPercent: 0
   randomisableStats: []
   references:
