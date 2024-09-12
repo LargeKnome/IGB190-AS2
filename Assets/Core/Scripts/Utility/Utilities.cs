@@ -54,7 +54,7 @@ namespace MyUtilities
             Unit[] objs = GameObject.FindObjectsOfType<Unit>();
             foreach (Unit obj in objs)
             {
-                float distance = Vector3.Distance(obj.transform.position, position);
+                float distance = Vector3.Distance(obj.transform.position, position) / (obj.threatRating+0.0001f);
                 if (distance < closestDistance && obj.IsEnemy(targetUnit))
                 {
                     closest = obj;

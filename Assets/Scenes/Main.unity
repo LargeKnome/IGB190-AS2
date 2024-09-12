@@ -9674,6 +9674,7 @@ MonoBehaviour:
   handPoint: {fileID: 507320395}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 1
   alliedFaction: 0
   isDead: 0
   currentGold: 0
@@ -12103,6 +12104,7 @@ MonoBehaviour:
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 1
   alliedFaction: 0
   isDead: 0
   currentGold: 0
@@ -15309,6 +15311,7 @@ MonoBehaviour:
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 1
   alliedFaction: 0
   isDead: 0
   currentGold: 0
@@ -28549,6 +28552,7 @@ MonoBehaviour:
   handPoint: {fileID: 1980838022}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 1
   alliedFaction: 0
   isDead: 0
   currentGold: 0
@@ -31130,8 +31134,8 @@ MonoBehaviour:
     empoweredMonsterLegendaryDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
-    startingXPPerLevel: -9900
-    additionalMaxXPPerLevel: 10000
+    startingXPPerLevel: 350
+    additionalMaxXPPerLevel: 125
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
@@ -36428,6 +36432,7 @@ MonoBehaviour:
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 0.5
   alliedFaction: 0
   isDead: 0
   spawnEffect: {fileID: 4062287519753572544, guid: 332ddaa5f7738b142ac986212c018770, type: 3}

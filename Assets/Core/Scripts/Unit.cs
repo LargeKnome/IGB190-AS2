@@ -50,7 +50,8 @@ public class Unit : Interactable
     public GameFeedback onDeathFeedback;
     public GameFeedback onHitFeedback;
 
-    [Header(("Faction Info"))] 
+    [Header(("AI Targeting Info"))] 
+    public float threatRating = 1f;
     public Faction alliedFaction;
     [Header(("Unit Specific Vars"))] 
     
