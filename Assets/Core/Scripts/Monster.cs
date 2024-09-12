@@ -88,8 +88,10 @@ public class Monster : Unit
         UpdateOutline();
         CalculateMonsterTargeting();
 
-
-        HandleMovement();
+        if (engagementState == EngagementState.Basic)
+            HandleMovement();
+        else
+            HandleFleeMovement();
     }
 
     /// <summary>
@@ -164,43 +166,58 @@ public class Monster : Unit
     }
 
 
+    private void OnDrawGizmos() {
+        if (zigzagPoints == null || zigzagPoints.Length == 0) return;
+
+        // Set the color of the gizmos (debug spheres)
+        Gizmos.color = Color.red;
+
+        // Loop through each point in the array
+        foreach (Vector3 point in zigzagPoints) {
+            // Draw a sphere at each point
+            Gizmos.DrawSphere(point, 0.5f);
+        }
+    }
+
     private void HandleFleeMovement()
     {
-        if (CanMove())
-        {
+
+            agentNavigation.SetDestination(new Vector3(0, 0, 15));
+
+
+        if (CanMove()) {
             // Calculate the escape direction
             Vector3 directionToPlayer = (transform.position - targetPosition).normalized;
 
             // Generate zigzag points if NPC is not already moving
-            if (zigzagPoints == null || currentPointIndex >= zigzagPoints.Length)
-            {
+            if (zigzagPoints == null || currentPointIndex >= zigzagPoints.Length) {
                 GenerateZigzagPoints(directionToPlayer);
             }
 
-            // Move the NPC to the current zigzag point
-            if (currentPointIndex < zigzagPoints.Length)
-            {
+            //Move the NPC to the current zigzag point
+            if (currentPointIndex < zigzagPoints.Length) {
                 agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
-
+                //agentNavigation.SetDestination(new Vector3(0, 0, 15));
                 // If the NPC reaches the current point, move to the next one
-                if (!agentNavigation.pathPending && agentNavigation.remainingDistance < 0.5f)
-                {
-                    currentPointIndex++;
-                }
-            }
 
+                //!agentNavigation.pathPending &&
+                //if (agentNavigation.remainingDistance < 0.8f) {
+                //    currentPointIndex++;
+                //}
+
+
+                //if(Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < 0.1f)
+                //    currentPointIndex++;
+            }
         }
-        else
-        { StopMoving(); }
+        else { StopMoving(); }
 
         // Generates an array of zigzag points based on the escape direction
-        void GenerateZigzagPoints(Vector3 escapeDirection)
-        {
+        void GenerateZigzagPoints(Vector3 escapeDirection) {
             zigzagPoints = new Vector3[zigzagPointsCount];
             Vector3 startPoint = transform.position;
 
-            for (int i = 0; i < zigzagPointsCount; i++)
-            {
+            for (int i = 0; i < zigzagPointsCount; i++) {
                 // Calculate the next point along the escape direction
                 Vector3 nextPoint = startPoint + escapeDirection * zigzagDistance;
 
@@ -210,12 +227,10 @@ public class Monster : Unit
                 nextPoint += lateralOffset;
 
                 // Ensure the point is on the NavMesh
-                if (NavMesh.SamplePosition(nextPoint, out NavMeshHit hit, 1f, NavMesh.AllAreas))
-                {
+                if (NavMesh.SamplePosition(nextPoint, out NavMeshHit hit, 1f, NavMesh.AllAreas)) {
                     zigzagPoints[i] = hit.position;
                 }
-                else
-                {
+                else {
                     zigzagPoints[i] = nextPoint; // Fall back if no NavMesh
                 }
 
