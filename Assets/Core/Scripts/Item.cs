@@ -19,7 +19,8 @@ public class Item : ScriptableObject, IEngineHandler
     public ItemType itemType;
     public ItemRarity itemRarity;
     public ItemClass itemClass;
-    public LogicEngine engine = new LogicEngine();
+    public LogicEngine engine = new LogicEngine();    
+    public Item template;
 
     // Item stat options (used to 'roll' the final item stats)
     public List<StatBlock> guaranteedStats = new List<StatBlock>();
@@ -64,7 +65,8 @@ public class Item : ScriptableObject, IEngineHandler
         Amulet,
         Weapon,
         Armor,
-        Boots
+        Boots,
+        Other
     }
 
     /// <summary>
@@ -230,6 +232,8 @@ public class Item : ScriptableObject, IEngineHandler
         GenerateLootTable();
         bool isValidItem = false;
         Item currentItem = itemLootTable[rarity].RandomItem();
+        
+        if (!itemLootTable.ContainsKey(rarity) || itemLootTable[rarity].Count == 0) return null;
 
         List<ItemClass> validClasses = new List<ItemClass>() { ItemClass.All };
 

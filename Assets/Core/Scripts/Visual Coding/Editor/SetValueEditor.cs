@@ -174,7 +174,8 @@ public class SetValueEditor : EditorWindow
                 (node is ProjectileNode && LogicEngine.PROJECTILE_PRESETS.Contains(preset)) ||
                 (node is ItemNode && LogicEngine.ITEM_PRESETS.Contains(preset)) ||
                 (node is AbilityNode && LogicEngine.ABILITY_PRESETS.Contains(preset)) ||
-                (node is VectorNode && LogicEngine.VECTOR_PRESETS.Contains(preset)))
+                (node is VectorNode && LogicEngine.VECTOR_PRESETS.Contains(preset)) ||
+                (node is BoolNode && LogicEngine.BOOL_PRESETS.Contains(preset)))
             {
                 presetNodeStringsList.Add(preset);
             }

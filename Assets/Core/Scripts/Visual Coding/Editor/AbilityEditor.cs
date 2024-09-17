@@ -342,6 +342,8 @@ public class AbilityEditor : EditorWindow
             if (ability == null) return;
             engineEditor = new LogicEngineEditor(this, ability.engine, ability);
         }
+        
+        Undo.RecordObject(ability, "Changed Ability " + ability.abilityName);
 
         float spacer = 4;
         float posX = spacer;

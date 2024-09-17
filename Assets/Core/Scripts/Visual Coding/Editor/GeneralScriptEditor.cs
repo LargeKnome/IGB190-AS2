@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.Playables;
 using UnityEngine;
 
 public class GeneralScriptEditor : EditorWindow
@@ -180,6 +181,8 @@ public class GeneralScriptEditor : EditorWindow
             selectedLogicBlock = Resources.LoadAll<LogicContainer>(resourceFolder)[0];
             engineEditor = new LogicEngineEditor(this, selectedLogicBlock.GetEngine(), selectedLogicBlock);
         } 
+        
+        Undo.RecordObject(selectedLogicBlock, "Changed Ability Block " + selectedLogicBlock.name);
 
         // If no script is found - return.
         if (engineEditor == null) return;

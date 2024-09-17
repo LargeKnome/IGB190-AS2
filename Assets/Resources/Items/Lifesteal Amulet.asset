@@ -1,0 +1,303 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
+  m_Name: Lifesteal Amulet
+  m_EditorClassIdentifier: 
+  itemName: Lifesteal Amulet
+  itemDescription: 
+  randomStatCount: 1
+  itemCost: 1
+  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemType: 1
+  itemRarity: 2
+  itemClass: 0
+  engine:
+    scripts:
+    - scriptName: Item Equipped
+      scriptUID: 701729019
+      hasWait: 0
+      eventNodes:
+      - rid: 6666404263564148736
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Item Unequipped
+      scriptUID: 1860032256
+      hasWait: 0
+      eventNodes:
+      - rid: 6666404263564148737
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: On Unit Attack
+      scriptUID: 740231367
+      hasWait: 0
+      eventNodes:
+      - rid: 6666404263564148758
+      conditionNodes:
+      - rid: 6666404263564148929
+      actionNodes:
+      - rid: 6666404263564148755
+  template: {fileID: 0}
+  guaranteedStats:
+  - stat: 8
+    minimum: 0.2
+    maximum: 0.2
+    isPercent: 1
+  randomisableStats:
+  - stat: 0
+    minimum: 5
+    maximum: 5
+    isPercent: 0
+  - stat: 0
+    minimum: 0.1
+    maximum: 0.1
+    isPercent: 1
+  - stat: 3
+    minimum: 0.15
+    maximum: 0.15
+    isPercent: 1
+  - stat: 11
+    minimum: 0.3
+    maximum: 0.3
+    isPercent: 0
+  - stat: 9
+    minimum: 0.2
+    maximum: 0.2
+    isPercent: 1
+  - stat: 4
+    minimum: 50
+    maximum: 50
+    isPercent: 0
+  - stat: 1
+    minimum: 100
+    maximum: 100
+    isPercent: 0
+  - stat: 6
+    minimum: 0.15
+    maximum: 0.15
+    isPercent: 1
+  - stat: 10
+    minimum: 0.1
+    maximum: 0.1
+    isPercent: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6666404263564148736
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptLoaded
+        functionDescription: Time/On script loaded
+        functionDynamicDescription: On script loaded
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 6666404263564148737
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ScriptUnloaded
+        functionDescription: Time/On script unloaded
+        functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 6666404263564148755
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddHealth
+        functionDescription: Unit/Add Health
+        functionDynamicDescription: Add $ health to $
+        functionEvaluators:
+        - rid: 6666404263564148756
+        - rid: 6666404263564148757
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6666404263564148756
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Division
+        functionDescription: Math/Division
+        functionDynamicDescription: $ / $
+        functionEvaluators:
+        - rid: 6666404263564148927
+        - rid: 6666404263564148928
+        presetName: Damage Dealt
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 6666404263564148757
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 6666404263564148758
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnUnitDamaged
+        functionDescription: Unit/Unit is damaged
+        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
+          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
+          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Damaged Unit
+        - Damaging Unit
+        - Damaging Ability
+        - Damage Dealt
+        - Is Critical
+    - rid: 6666404263564148927
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Number
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Damage Dealt
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 6666404263564148928
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 2
+    - rid: 6666404263564148929
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: UnitTypeMatch
+        functionDescription: Unit/Unit Matches Template
+        functionDynamicDescription: $ type matches $
+        functionEvaluators:
+        - rid: 6666404263564148930
+        - rid: 6666404263564148931
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 6666404263564148930
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Damaging Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+    - rid: 6666404263564148931
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}

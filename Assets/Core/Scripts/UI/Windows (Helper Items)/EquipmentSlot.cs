@@ -22,7 +22,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private bool applyFilter = true;
     [SerializeField] private Item.ItemType allowedItemTypes;
 
-    private const float DRAG_THRESHOLD = 60.0f;
+    private const float DRAG_THRESHOLD = 30.0f;
 
     /// <summary>
     /// Sets up the equipment slot with the specified inventory and slot ID.
@@ -118,8 +118,16 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
         EquipmentSlot closestSlot = FindClosestValidSlot();
         if (closestSlot != null)
+        {            
+            if ((closestSlot.allowedItemTypes == attachedItem.itemType || !closestSlot.applyFilter) && (closestSlot.attachedItem == null || allowedItemTypes == closestSlot.attachedItem.itemType || !applyFilter))
+            {
+                SwapItemsWith(closestSlot);
+                Debug.Log("Error 1");
+            }
+        }
+        else
         {
-            SwapItemsWith(closestSlot);
+            Debug.Log("Error 2");
         }
 
         ResetDraggingState();
@@ -153,7 +161,9 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private void SwapItemsWith(EquipmentSlot otherSlot)
     {
         Item itemInOtherSlot = otherSlot.inventory.GetItemAtID(otherSlot.inventorySlotID);
-        otherSlot.inventory.AddItemAtID(attachedItem, otherSlot.inventorySlotID);
+        Item inThisSlot = inventory.GetItemAtID(inventorySlotID);
+        // Add the items to their new slots
+        otherSlot.inventory.AddItemAtID(inThisSlot, otherSlot.inventorySlotID);
         inventory.AddItemAtID(itemInOtherSlot, inventorySlotID);
 
         otherSlot.Redraw();

@@ -40,11 +40,10 @@ MonoBehaviour:
       scriptUID: 652879744
       hasWait: 0
       eventNodes:
-      - rid: 6666404257574944770
-      conditionNodes:
-      - rid: 6666404257574944771
-      actionNodes:
-      - rid: 6666404257574944772
+      - rid: 6666404263564148748
+      conditionNodes: []
+      actionNodes: []
+  template: {fileID: 0}
   guaranteedStats:
   - stat: 8
     minimum: 0.2
@@ -126,7 +125,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6666404257574944770
+    - rid: 6666404263564148748
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -135,7 +134,7 @@ MonoBehaviour:
         functionDescription: Unit/Unit is damaged
         functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
           Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
-          Ability</color>)'
+          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
         functionEvaluators: []
         presetName: 
         variableName: 
@@ -149,171 +148,5 @@ MonoBehaviour:
         - Damaged Unit
         - Damaging Unit
         - Damaging Ability
-    - rid: 6666404257574944771
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitTypeMatch
-        functionDescription: Unit/Unit Matches Template
-        functionDynamicDescription: $ type matches $
-        functionEvaluators:
-        - rid: 6666404257574944773
-        - rid: 6666404257574944774
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 6666404257574944772
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddHealth
-        functionDescription: Unit/Add Health
-        functionDynamicDescription: Add $ health to $
-        functionEvaluators:
-        - rid: 6666404257574944775
-        - rid: 6666404257574944776
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 6666404257574944773
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Damaging Unit
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
-    - rid: 6666404257574944774
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
-    - rid: 6666404257574944775
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Division
-        functionDescription: Math/Division
-        functionDynamicDescription: $ / $
-        functionEvaluators:
-        - rid: 6666404257574944777
-        - rid: 6666404257574944778
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 100
-    - rid: 6666404257574944776
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Damaged Unit
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 6666404257574944777
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Number
-        functionName: UnitMaxHealth
-        functionDescription: Unit/Unit Max Health
-        functionDynamicDescription: $ Max Health
-        functionEvaluators:
-        - rid: 6666404257574944779
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 6666404257574944778
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 20
-    - rid: 6666404257574944779
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+        - Damage Dealt
+        - Is Critical

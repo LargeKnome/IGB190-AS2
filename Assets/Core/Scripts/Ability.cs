@@ -19,6 +19,16 @@ public class Ability : ScriptableObject, IEngineHandler
     public Sprite abilityIcon;
     public TargetMode targetMode = TargetMode.PointAtRanged;
     [TextArea(2, 6)] public string abilityDescription;
+    
+    private Ability _template;
+    public Ability template { 
+        get
+        {
+            if (_template == null) 
+                _template = this;
+            return _template;
+        }
+    }
 
     // Ability values.
     public string abilityAnimation = "None";
@@ -121,7 +131,7 @@ public class Ability : ScriptableObject, IEngineHandler
         if (cooldownIsAtackSpeed)
             return 1.0f / caster.stats.GetValue(Stat.AttacksPerSecond);
         else
-            return abilityCooldown * Mathf.Max(0.1f, 1 - (caster.stats.GetValue(Stat.CooldownReduction) - 1));
+            return abilityCooldown * Mathf.Max(0.1f, 1 - (caster.stats.GetValue(Stat.CooldownReduction) - 1) * caster.GetAbilityCooldownModifier(this));
     }
 
     /// <summary>
@@ -150,7 +160,7 @@ public class Ability : ScriptableObject, IEngineHandler
     /// </summary>
     private float GetCostModifier (Unit caster)
     {
-        return (1.0f - caster.stats.GetValue(Stat.ResourceCostReduction));
+        return (1.0f - caster.stats.GetValue(Stat.ResourceCostReduction)) * caster.GetAbilityCooldownModifier(this);
     }
 
     /// <summary>
@@ -418,6 +428,7 @@ public class Ability : ScriptableObject, IEngineHandler
     {
         Ability ability = Instantiate(this);
         ability.engine = engine.ShallowCopy(ability);
+        ability._template = template;
         return ability;
     }
 
