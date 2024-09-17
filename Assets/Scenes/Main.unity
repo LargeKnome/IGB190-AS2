@@ -8224,11 +8224,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 35711275af7bab445a6a72edb86baf44, type: 2}
   - {fileID: 11400000, guid: 3c20bc3718e7e7a408ecb6c5106105c9, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 507320395}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   threatRating: 1
   alliedFaction: 0
+  engagementState: 0
   isDead: 0
   currentGold: 0
   currentLevel: 1
@@ -10654,11 +10659,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   threatRating: 1
   alliedFaction: 0
+  engagementState: 0
   isDead: 0
   currentGold: 0
   currentLevel: 1
@@ -13861,11 +13871,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2c0d2df3b515c4d47aa500f8d2a596b8, type: 2}
   - {fileID: 11400000, guid: 5180f7ad42a7a934282a62699a87c731, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   threatRating: 1
   alliedFaction: 0
+  engagementState: 0
   isDead: 0
   currentGold: 0
   currentLevel: 1
@@ -27091,7 +27106,7 @@ MonoBehaviour:
   baseArmor: 0
   baseCriticalStrikeChance: 0.1
   baseCriticalStrikeDamage: 1.5
-  baseHealthRegen: 20
+  baseHealthRegen: 0
   baseResourceRegen: 2
   baseAttackRange: 2
   abilities:
@@ -27102,11 +27117,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
   - {fileID: 11400000, guid: 19a27e70dbc57e04a9bf0be91041213f, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 1980838022}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   threatRating: 1
   alliedFaction: 0
+  engagementState: 0
   isDead: 0
   currentGold: 0
   currentLevel: 1
@@ -27124,7 +27144,7 @@ MonoBehaviour:
   bonusArmorPerLevel: 0
   bonusCriticalChancePerLevel: 0.02
   bonusCriticalDamagePerLevel: 0.1
-  bonusHealthRegenPerLevel: 0.5
+  bonusHealthRegenPerLevel: 0
   bonusResourceRegenPerLevel: 0.5
 --- !u!195 &1806430105
 NavMeshAgent:

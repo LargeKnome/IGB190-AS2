@@ -130,7 +130,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: M
+        value: H
         options: []
     - rid: 790164306828722185
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -149,7 +149,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 10
+        value: 999999
     - rid: 790164306828722186
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
