@@ -17,7 +17,8 @@ public enum Stat
     ResourceGeneration,
     CriticalStrikeChance,
     CriticalStrikeDamage,
-    PoisonDamage
+    PoisonDamage,
+    StealthRating
 }
 
 public static class StatExtensions
@@ -35,6 +36,7 @@ public static class StatExtensions
     private const string DamageTakenLabel = "Damage Taken";
     private const string ResourceGenerationLabel = "Resource Generation";
     private const string PoisonDamageLabel = "Poison Damage";
+    private const string StealthRatingLabel = "Stealth Rating";
     private const string StatNotFoundLabel = "Stat not found.";
 
     /// <summary>
@@ -55,6 +57,7 @@ public static class StatExtensions
             CooldownReductionLabel => Stat.CooldownReduction,
             AbilityCostReductionLabel => Stat.ResourceCostReduction,
             PoisonDamageLabel => Stat.PoisonDamage,
+            StealthRatingLabel => Stat.StealthRating,
             ResourceGenerationLabel => Stat.ResourceGeneration,
             _ => (Stat)Enum.Parse(typeof(Stat), label)
         };
@@ -80,6 +83,7 @@ public static class StatExtensions
             Stat.DamageTaken => DamageTakenLabel,
             Stat.ResourceGeneration => ResourceGenerationLabel,
             Stat.PoisonDamage => PoisonDamageLabel,
+            Stat.StealthRating => StealthRatingLabel,
             _ => StatNotFoundLabel
         };
     }

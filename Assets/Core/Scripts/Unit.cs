@@ -184,6 +184,7 @@ public class Unit : Interactable
         stats.TrackStat(Stat.CriticalStrikeDamage, "Critical Strike Damage", baseCriticalStrikeDamage);
         stats.TrackStat(Stat.ResourceGeneration, "Resource Generation", 1);
         stats.TrackStat(Stat.DamageTaken, "Damage Taken Modifier", 1);
+        stats.TrackStat(Stat.StealthRating, "Stealth Rating", threatRating);
         health = stats.GetValue(Stat.MaxHealth);
     }
 

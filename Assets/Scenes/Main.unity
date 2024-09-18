@@ -10622,7 +10622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &840699974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10656,7 +10656,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
   - {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
   - {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
-  - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
+  - {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
@@ -10678,7 +10678,7 @@ MonoBehaviour:
   rightClickAlsoMoves: 0
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
-  resourceMaterial: {fileID: 2100000, guid: 53e6d10c83e73f74a984d384a27c13d4, type: 2}
+  resourceMaterial: {fileID: 2100000, guid: dd6dc55119cde6f4ab2a8561e505a971, type: 2}
   bonusDamagePerLevel: 10
   bonusHealthPerLevel: 5
   bonusMovementSpeedPerLevel: 0.2
@@ -27079,7 +27079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1806430104
 MonoBehaviour:
   m_ObjectHideFlags: 0
