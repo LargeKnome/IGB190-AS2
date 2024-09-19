@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/UI/Windows (Helper Items)/EquipmentSlot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/UI/Windows (Helper Items)/EquipmentSlot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Armoured Greaves.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Armoured Greaves.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Jackbox.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Jackbox.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Leather Armour.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Leather Armour.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Lifesteal Amulet.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Lifesteal Amulet.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Templates/Amulet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Templates/Amulet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Templates/Ring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Templates/Ring.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +115,7 @@
       <workItem from="1726539859744" duration="54000" />
       <workItem from="1726559304526" duration="3747000" />
       <workItem from="1726700018078" duration="6367000" />
-      <workItem from="1726717313841" duration="1094000" />
+      <workItem from="1726717313841" duration="3752000" />
     </task>
     <servers />
   </component>

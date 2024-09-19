@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet
+  m_Name: Amulet of Power
   m_EditorClassIdentifier: 
-  itemName: Amulet
+  itemName: Amulet of Power
   itemDescription: 
   randomStatCount: 1
   itemCost: 700
@@ -23,28 +23,32 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1057175407
+      scriptUID: 671613781
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559491
+      - rid: 4341925673911190205
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 378403594
+      scriptUID: 907369724
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559492
+      - rid: 4341925673911190206
       conditionNodes: []
       actionNodes: []
     - scriptName: On Unit Attack
-      scriptUID: 652879744
+      scriptUID: 1504867831
       hasWait: 0
       eventNodes:
-      - rid: 6666404263564148748
+      - rid: 4341925673911190207
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 4
+    minimum: 0.2
+    maximum: 0.25
+    isPercent: 1
   randomisableStats:
   - stat: 0
     minimum: 3
@@ -105,7 +109,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 248813236419559491
+    - rid: 4341925673911190205
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -123,7 +127,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559492
+    - rid: 4341925673911190206
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -141,7 +145,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6666404263564148748
+    - rid: 4341925673911190207
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

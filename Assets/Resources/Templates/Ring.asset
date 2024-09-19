@@ -36,6 +36,12 @@ MonoBehaviour:
       - rid: 248813236419559490
       conditionNodes: []
       actionNodes: []
+    - scriptName: Passive
+      scriptUID: 1990010341
+      hasWait: 0
+      eventNodes: []
+      conditionNodes: []
+      actionNodes: []
   template: {fileID: 0}
   guaranteedStats: []
   randomisableStats:

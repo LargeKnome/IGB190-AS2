@@ -588,7 +588,7 @@ public class LogicEngineEditor
             AbilityNode.Temp().NoFunction().NoPreset(),
             UnitNode.Temp().NoValue()));
 
-                allNodes.Add(GeneralNode.Func<ActionNode>(
+        allNodes.Add(GeneralNode.Func<ActionNode>(
             "Unit/Ability/Reduce Current Ability Cooldown",
             "Reduce current cooldown of $ on $ by $",
             "ReduceAbilityCooldown",
@@ -597,6 +597,13 @@ public class LogicEngineEditor
             UnitNode.Temp().NoValue(),
             NumberNode.Value(1, "s")));
 
+        allNodes.Add(GeneralNode.Func<ActionNode>(
+            "Unit/Ability/Reduce All Ability Cooldowns",
+            "Reduce ability cooldowns on $ by $",
+            "ReduceAllAbilityCooldowns",
+            unitIcon,
+            UnitNode.Temp().NoValue(),
+            NumberNode.Value(1, "s")));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
             "Unit/Ability/Add Ability",

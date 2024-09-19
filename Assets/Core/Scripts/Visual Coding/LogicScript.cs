@@ -1563,7 +1563,7 @@ public class LogicScript
         }
     }
     
-        public void ReduceAbilityCooldown (Ability ability, Unit unit, float amount)
+    public void ReduceAbilityCooldown (Ability ability, Unit unit, float amount)
     {
         if (ability == null)
         {
@@ -1575,7 +1575,22 @@ public class LogicScript
             Error("The specified unit is invalid.");
             return;
         }
+        
         unit.ReduceAbilityCooldown(ability, amount);
+    }
+    
+    public void ReduceAllAbilityCooldowns ( Unit unit, float amount)
+    {
+        if (unit == null)
+        {
+            Error("The specified unit is invalid.");
+            return;
+        }
+
+        foreach (Ability ability in unit.abilities)
+        {
+            unit.ReduceAbilityCooldown(ability, amount);
+        }
     }
 
     public void AddAbilityToUnit(Ability ability, Unit unit)
@@ -1914,7 +1929,8 @@ public class LogicScript
 
     public float RandomNumberBetween (float num1, float num2)
     {
-        return Random.Range(num1, num2);
+        float num = Random.Range(num1, num2);
+        return num;
     }
 
     public float UnitHealth (Unit unit)

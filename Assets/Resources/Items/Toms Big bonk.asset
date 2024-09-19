@@ -10,57 +10,58 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet
+  m_Name: Toms Big bonk
   m_EditorClassIdentifier: 
-  itemName: Amulet
-  itemDescription: 
+  itemName: Toms Big bonk
+  itemDescription: Dev Item
   randomStatCount: 1
-  itemCost: 700
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
-  itemType: 1
-  itemRarity: 0
+  itemCost: 1
+  itemIcon: {fileID: 21300000, guid: 9154282eca33d764096b484f95f485eb, type: 3}
+  itemType: 3
+  itemRarity: 2
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1057175407
+      scriptUID: 217835012
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559491
+      - rid: 4341925673911190197
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 378403594
+      scriptUID: 17538593
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559492
-      conditionNodes: []
-      actionNodes: []
-    - scriptName: On Unit Attack
-      scriptUID: 652879744
-      hasWait: 0
-      eventNodes:
-      - rid: 6666404263564148748
+      - rid: 4341925673911190198
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 1
+    minimum: 440
+    maximum: 560
+    isPercent: 0
+  - stat: 0
+    minimum: 440
+    maximum: 560
+    isPercent: 0
   randomisableStats:
   - stat: 0
     minimum: 3
     maximum: 5
     isPercent: 0
   - stat: 1
-    minimum: 6
-    maximum: 8
+    minimum: 8
+    maximum: 12
     isPercent: 0
   - stat: 4
-    minimum: 20
-    maximum: 25
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 5
-    minimum: 20
-    maximum: 25
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -105,7 +106,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 248813236419559491
+    - rid: 4341925673911190197
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -123,7 +124,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559492
+    - rid: 4341925673911190198
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -141,28 +142,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6666404263564148748
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: OnUnitDamaged
-        functionDescription: Unit/Unit is damaged
-        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
-          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
-          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Event
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets:
-        - Damaged Unit
-        - Damaging Unit
-        - Damaging Ability
-        - Damage Dealt
-        - Is Critical
