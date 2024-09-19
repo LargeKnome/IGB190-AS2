@@ -53,9 +53,9 @@ public class Monster : Unit
 
 
     // Flee State Variables 
-    private float zigzagDistance = 5f;       // Distance between each zigzag point
-    private float zigzagOffset = 2f;         // Maximum lateral offset for zigzagging
-    private int zigzagPointsCount = 5;       // Number of zigzag points to generate
+    private float zigzagDistance = 10f;       // Distance between each zigzag point
+    private float zigzagOffset = 5f;         // Maximum lateral offset for zigzagging
+    private int zigzagPointsCount = 3;       // Number of zigzag points to generate
     private Vector3[] zigzagPoints;
     private int currentPointIndex = 0;
 
@@ -196,8 +196,8 @@ public class Monster : Unit
 
             //Move the NPC to the current zigzag point
             if (currentPointIndex < zigzagPoints.Length) {
-                agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
-                //agentNavigation.SetDestination(new Vector3(0, 0, 15));
+                //agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
+                agentNavigation.SetDestination(new Vector3(0, 0, 3));
                 // If the NPC reaches the current point, move to the next one
 
                 //!agentNavigation.pathPending &&
@@ -205,9 +205,8 @@ public class Monster : Unit
                 //    currentPointIndex++;
                 //}
 
-
-                //if(Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < 0.1f)
-                //    currentPointIndex++;
+                if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < 0.1f)
+                    currentPointIndex++;
             }
         }
         else { StopMoving(); }

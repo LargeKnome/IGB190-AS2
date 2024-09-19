@@ -9671,6 +9671,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 35711275af7bab445a6a72edb86baf44, type: 2}
   - {fileID: 11400000, guid: 3c20bc3718e7e7a408ecb6c5106105c9, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 507320395}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
@@ -12102,6 +12106,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cfa4a233bb5bddd42839e9b9afd30006, type: 2}
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
@@ -13065,6 +13073,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 26728453, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+      propertyPath: ShapeModule.m_SkinnedMeshRenderer
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1113393009475316218, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
       propertyPath: engagementState
       value: 1
@@ -13118,10 +13130,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8337647643432039587, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6079015316810904102, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 1673192423}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+--- !u!4 &913268657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6079015316810904102, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+  m_PrefabInstance: {fileID: 913268656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &914469360
 GameObject:
   m_ObjectHideFlags: 0
@@ -15375,6 +15396,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2c0d2df3b515c4d47aa500f8d2a596b8, type: 2}
   - {fileID: 11400000, guid: 5180f7ad42a7a934282a62699a87c731, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
@@ -27311,6 +27336,68 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 960cb0df2d01e2f4893389bc4cebdddb, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1001 &1673192422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 913268657}
+    m_Modifications:
+    - target: {fileID: 100002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_Name
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+--- !u!4 &1673192423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: 73b3e650b26458644b0371571d21e156, type: 3}
+  m_PrefabInstance: {fileID: 1673192422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1687761267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28617,6 +28704,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
   - {fileID: 11400000, guid: d9c28cab830c37648aed7259d52e3308, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 1980838022}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
@@ -36498,6 +36589,10 @@ MonoBehaviour:
   abilities:
   - {fileID: 11400000, guid: 5fc34b273c9f80348adb06b3b74c1669, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
