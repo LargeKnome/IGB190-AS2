@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Lifesteal Amulet
   m_EditorClassIdentifier: 
   itemName: Lifesteal Amulet
-  itemDescription: 
-  randomStatCount: 1
+  itemDescription: Regain 50% attack damage as HP when you hit an enemy.
+  randomStatCount: 2
   itemCost: 1
   itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
   itemType: 1

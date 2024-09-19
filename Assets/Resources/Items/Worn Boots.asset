@@ -10,38 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Weapon
+  m_Name: Worn Boots
   m_EditorClassIdentifier: 
-  itemName: Weapon
+  itemName: Worn Boots
   itemDescription: 
   randomStatCount: 1
-  itemCost: 1000
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 2
+  itemCost: 500
+  itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
+  itemType: 4
   itemRarity: 0
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 670969356
+      scriptUID: 1166994538
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559495
+      - rid: 4341925671386480692
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 845581728
+      scriptUID: 2121291920
       hasWait: 0
       eventNodes:
-      - rid: 248813236419559496
+      - rid: 4341925671386480693
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Passive Effect
+      scriptUID: 778112147
+      hasWait: 0
+      eventNodes:
+      - rid: 4341925671386480694
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 6
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
   randomisableStats:
   - stat: 0
-    minimum: 4
-    maximum: 6
+    minimum: 3
+    maximum: 5
     isPercent: 0
   - stat: 1
     minimum: 6
@@ -60,8 +71,8 @@ MonoBehaviour:
     maximum: 0.08
     isPercent: 1
   - stat: 6
-    minimum: 0.06
-    maximum: 0.08
+    minimum: 0.08
+    maximum: 0.12
     isPercent: 1
   - stat: 7
     minimum: 0.06
@@ -75,6 +86,14 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
+  - stat: 4
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 5
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
   - stat: 3
     minimum: 0.06
     maximum: 0.08
@@ -87,18 +106,10 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 0
-  - stat: 4
-    minimum: 0.08
-    maximum: 0.12
-    isPercent: 1
-  - stat: 5
-    minimum: 0.08
-    maximum: 0.12
-    isPercent: 1
   references:
     version: 2
     RefIds:
-    - rid: 248813236419559495
+    - rid: 4341925671386480692
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -116,7 +127,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 248813236419559496
+    - rid: 4341925671386480693
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -124,6 +135,24 @@ MonoBehaviour:
         functionName: ScriptUnloaded
         functionDescription: Time/On script unloaded
         functionDynamicDescription: On script unloaded
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4341925671386480694
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: EveryFrame
+        functionDescription: Time/Do every frame
+        functionDynamicDescription: Do actions every frame
         functionEvaluators: []
         presetName: 
         variableName: 

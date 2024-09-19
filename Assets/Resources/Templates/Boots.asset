@@ -43,44 +43,65 @@ MonoBehaviour:
       - rid: 4341925492899184642
       conditionNodes: []
       actionNodes: []
-  guaranteedStats:
-  - stat: 6
-    minimum: 0.2
-    maximum: 0.2
-    isPercent: 1
+  template: {fileID: 0}
+  guaranteedStats: []
   randomisableStats:
-  - stat: 4
-    minimum: 20
-    maximum: 20
+  - stat: 0
+    minimum: 3
+    maximum: 5
     isPercent: 0
-  - stat: 5
-    minimum: 0.2
-    maximum: 0.2
-    isPercent: 1
   - stat: 1
-    minimum: 100
-    maximum: 100
+    minimum: 6
+    maximum: 8
     isPercent: 0
-  - stat: 10
-    minimum: 0.1
-    maximum: 0.1
-    isPercent: 0
-  - stat: 11
-    minimum: 0.3
-    maximum: 0.3
-    isPercent: 0
-  - stat: 5
-    minimum: 20
+  - stat: 4
+    minimum: 15
     maximum: 20
     isPercent: 0
-  - stat: 9
-    minimum: 0.2
-    maximum: 0.2
+  - stat: 5
+    minimum: 15
+    maximum: 20
+    isPercent: 0
+  - stat: 0
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 6
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
   - stat: 8
-    minimum: 0.2
-    maximum: 0.2
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
+  - stat: 1
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 4
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 5
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 3
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 10
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 0
+  - stat: 11
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 0
   references:
     version: 2
     RefIds:

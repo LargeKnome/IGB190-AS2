@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Ranger Ring
   itemDescription: 
-  randomStatCount: 0
+  randomStatCount: 1
   itemCost: 700
   itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
   itemType: 0
@@ -23,29 +23,30 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 608368509
+      scriptUID: 1124427701
       hasWait: 0
       eventNodes:
-      - rid: 4341925492090732548
+      - rid: 4341925671386480678
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 314360079
+      scriptUID: 479471109
       hasWait: 0
       eventNodes:
-      - rid: 4341925492090732549
+      - rid: 4341925671386480679
       conditionNodes: []
       actionNodes: []
+  template: {fileID: 0}
   guaranteedStats:
   - stat: 6
-    minimum: 0.08
-    maximum: 0.12
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
   randomisableStats: []
   references:
     version: 2
     RefIds:
-    - rid: 4341925492090732548
+    - rid: 4341925671386480678
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -63,7 +64,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925492090732549
+    - rid: 4341925671386480679
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

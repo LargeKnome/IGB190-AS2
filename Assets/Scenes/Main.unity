@@ -15926,7 +15926,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8494155983429597622, guid: 45b6008e21ee9c54bbcc5b9c77397ae4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8494155983429597622, guid: 45b6008e21ee9c54bbcc5b9c77397ae4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16630,6 +16630,22 @@ PrefabInstance:
     - target: {fileID: 2530420025797128780, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: empoweredMonsters
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: empoweredMonsters
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4124517350831407445, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
@@ -30612,6 +30628,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: empoweredMonsters
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: empoweredMonsters
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4124517350831407445, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31603,6 +31635,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniMap_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4691041845750339737, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -200
+      objectReference: {fileID: 0}
     - target: {fileID: 6276693996590833081, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -31682,6 +31738,14 @@ PrefabInstance:
     - target: {fileID: 6276693996590833081, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886294151200056341, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886294151200056341, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 2000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -32676,6 +32740,14 @@ PrefabInstance:
     - target: {fileID: 1883707019183669310, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: spawnDensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723096954045919853, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
+      propertyPath: empoweredMonsters
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2723096954302082401, guid: 3660627c257c107448bbab1f879c40e8, type: 3}
       propertyPath: spawnDensity

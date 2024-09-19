@@ -151,7 +151,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
+        value: 3
     - rid: 4341925670055051546
       type: {class: NestingActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -226,7 +226,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 60
+        value: 45
     - rid: 4341925670055051765
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -434,7 +434,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 60
+        value: 45
     - rid: 4341925670055051901
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -508,6 +508,42 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
+    - rid: 4341925671386480690
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ShakeScreen
+        functionDescription: Feedback/Shake Screen
+        functionDynamicDescription: Shake the screen with a strength of $
+        functionEvaluators:
+        - rid: 4341925671386480691
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 2
+        nodeIcon: Effect
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4341925671386480691
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
     - rid: 6666404065506230272
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -522,6 +558,7 @@ MonoBehaviour:
           - rid: 4341925670055051359
           - rid: 4341925670055051546
           - rid: 4341925670055051766
+          - rid: 4341925671386480690
           - rid: 4341925670055051769
           - rid: 4341925670055051905
     - rid: 6666404065506230273

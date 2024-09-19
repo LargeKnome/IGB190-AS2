@@ -6,17 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Effects/Swirls/Yellow Swirls.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Effects/Swirls/Yellow Swirls.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Models/Character Models/Rogue/Materials/Kachujin_diffuse.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Models/Character Models/Rogue/Materials/Kachujin_diffuse.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Models/Character Models/Rogue/Materials/Kachujin_diffuse_body.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Models/Character Models/Rogue/Materials/Kachujin_diffuse_body.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Decoy.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Decoy.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Knife Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Knife Slash.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Dart.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Dart.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Smoke Bomb.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Smoke Bomb.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Act 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Act 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Tutorial.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Barbarian Ring.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Barbarian Ring.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Common Ring.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Common Ring.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Lifesteal Amulet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Lifesteal Amulet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Ranger Ring.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Ranger Ring.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Rogue Ring.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Rogue Ring.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sorcerer Ring.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Sorcerer Ring.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Templates/Armor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Templates/Armor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Templates/Weapon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Templates/Weapon.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +124,7 @@
       <workItem from="1726106968420" duration="1502000" />
       <workItem from="1726539859744" duration="54000" />
       <workItem from="1726559304526" duration="3747000" />
-      <workItem from="1726700018078" duration="4801000" />
+      <workItem from="1726700018078" duration="6367000" />
     </task>
     <servers />
   </component>
