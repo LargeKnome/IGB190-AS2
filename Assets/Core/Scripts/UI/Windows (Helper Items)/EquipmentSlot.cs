@@ -22,7 +22,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private bool applyFilter = true;
     [SerializeField] private Item.ItemType allowedItemTypes;
 
-    private const float DRAG_THRESHOLD = 30.0f;
+    private const float DRAG_THRESHOLD = 60.0f;
 
     /// <summary>
     /// Sets up the equipment slot with the specified inventory and slot ID.
@@ -122,12 +122,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             if ((closestSlot.allowedItemTypes == attachedItem.itemType || !closestSlot.applyFilter) && (closestSlot.attachedItem == null || allowedItemTypes == closestSlot.attachedItem.itemType || !applyFilter))
             {
                 SwapItemsWith(closestSlot);
-                Debug.Log("Error 1");
             }
-        }
-        else
-        {
-            Debug.Log("Error 2");
         }
 
         ResetDraggingState();

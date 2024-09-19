@@ -813,6 +813,14 @@ public class LogicEngineEditor
             NumberNode.Value(1)));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
+            "Unit/Remove Buff",
+            "Remove buff named $ from $",
+            "RemoveBuff",
+            unitIcon,
+            StringNode.Temp().NoFunction().NoPreset(),
+            UnitNode.Temp().NoValue()));
+        
+        allNodes.Add(GeneralNode.Func<ActionNode>(
             "Pickups/Spawn Item Pickup",
             "Spawn an item pickup at $ containing $",
             "SpawnItemDrop",

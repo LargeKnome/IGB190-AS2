@@ -129,8 +129,11 @@ public class GeneralNode
     {
         LogicEngine.current = engine;
         LogicEngine.currentScript = script;
-        LogicEngine.currentNode = this;
-        LogicEngine.currentLine = (int)presets["CurrentLineID"];
+        LogicEngine.currentNode = this;        
+        if (presets == null || !presets.ContainsKey("CurrentLineID"))
+            LogicEngine.currentLine = 0;
+        else
+            LogicEngine.currentLine = (int)presets["CurrentLineID"];
         LogicEngine.currentPresets = presets;
 
         if (returnType == ReturnType.Value)
