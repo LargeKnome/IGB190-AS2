@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Player : Unit
 {
@@ -119,6 +120,36 @@ public class Player : Unit
     public override void TakeDamage(float amount, bool isCritical, Unit damagingUnit, IEngineHandler damageSource)
     {
         base.TakeDamage(amount, isCritical, damagingUnit, damageSource);
+    }
+    
+    protected override float ApplyDamageFormula(float amount, bool isCritical,
+        Unit damagingUnit, IEngineHandler damageSource, bool armored = true)
+    {
+        if (constant <= 0 || scalingFactor < 0)
+        {
+            new Exception("value out of bounds for constant or scaling factor");
+        }
+
+        float instanceArmor = stats[Stat.Armor].GetValue();
+        // Apply damage modifiers (e.g. a -50% damage taken buff).
+        amount *= GetBaseDamageTakenModifier();
+
+        // Armor variances
+        if (armored)
+        {
+            amount = amount * (1.0f / 1.0f + Mathf.Pow(instanceArmor / constant, scalingFactor));
+        }
+
+        //Randomness
+        float randomFactor = Random.Range(-(amount * 0.05f), (amount * 0.05f));
+        amount += randomFactor;
+
+        //Stealth help
+        float healthPerc = health / stats[Stat.MaxHealth].GetValue();
+        amount *= Mathf.Max(Mathf.Pow(healthPerc, helpModifier), 1.0f - maxDamageReduction);
+        
+        // Return the modified amount.
+        return amount;
     }
 
     /// <summary>

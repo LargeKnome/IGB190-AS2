@@ -2465,6 +2465,20 @@ public class LogicScript
         return false;
     }
 
+    public bool CompareUnitAngle(Unit unit1, float num1, Unit unit2)
+    {
+        if (unit1 == null || unit2 == null)
+        {
+            Error("A specified unit is invalid.");
+            return false;
+        }
+
+        float angleDifference = unit1.transform.eulerAngles.y - unit2.transform.eulerAngles.y;
+        bool angleIsWithinRange = angleDifference < num1 && angleDifference > -num1;
+        
+        return angleIsWithinRange;
+    }
+
     public bool QuestIsActive (string label)
     {
         if (label.Length == 0)

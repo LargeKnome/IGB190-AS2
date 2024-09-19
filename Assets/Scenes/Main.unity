@@ -10655,9 +10655,10 @@ MonoBehaviour:
   abilities:
   - {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
   - {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
-  - {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
+  - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
   - {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
-  - {fileID: 11400000, guid: 54784098e1191e041a2023a5a61f123b, type: 2}
+  - {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
+  - {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1

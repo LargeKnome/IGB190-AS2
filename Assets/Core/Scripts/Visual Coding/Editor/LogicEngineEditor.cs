@@ -1634,6 +1634,15 @@ public class LogicEngineEditor
             "UnitIsEmpowered",
             conditionIcon,
             UnitNode.Temp().NoValue()));
+        
+        allNodes.Add(GeneralNode.Func<BoolNode>(
+            "Unit/Compare Unit angle",
+            "$ is within $ degrees of $",
+            "CompareUnitAngle",
+            conditionIcon,
+            UnitNode.Temp().NoValue(),
+            NumberNode.Temp(),
+            UnitNode.Temp().NoValue()));
 
         allNodes.Add(GeneralNode.Func<BoolNode>(
             "Unit Group/Unit is in Unit Group",
