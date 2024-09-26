@@ -28,7 +28,8 @@ MonoBehaviour:
       eventNodes:
       - rid: 248813236419559495
       conditionNodes: []
-      actionNodes: []
+      actionNodes:
+      - rid: 6666404398805286920
     - scriptName: Item Unequipped
       scriptUID: 845581728
       hasWait: 0
@@ -134,3 +135,77 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 6666404398805286920
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: ReplaceAbilityOnUnit
+        functionDescription: Unit/Ability/Replace Ability
+        functionDynamicDescription: Replace $ with $ on $
+        functionEvaluators:
+        - rid: 6666404398805286921
+        - rid: 6666404398805286922
+        - rid: 6666404398805286923
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6666404398805286921
+      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Ability
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 0
+        value: {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
+    - rid: 6666404398805286922
+      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Ability
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 0
+        value: {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
+    - rid: 6666404398805286923
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Item Owner
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}

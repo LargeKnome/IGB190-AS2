@@ -19,7 +19,7 @@ MonoBehaviour:
   targetMode: 4
   abilityDescription: Shoot a poison dart which deals a small amount of damage and
     inflicts poison for 5 seconds.
-  abilityAnimation: Bow Shoot
+  abilityAnimation: One Hand Slash
   range: 8
   castTime: 0.25
   abilityCooldown: 0.25

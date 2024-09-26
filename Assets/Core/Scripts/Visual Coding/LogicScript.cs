@@ -943,7 +943,6 @@ public class LogicScript
     
     public void HaveUnitCriticalDamageUnit2(float amount, Unit damagedUnit)
     {
-        Debug.Log("Critical damage triggered");
         if (damagedUnit == null)
         {
             Error("The damaged unit was invalid.");
@@ -951,7 +950,7 @@ public class LogicScript
         }
 
         IEngineHandler engine = LogicEngine.current.engineHandler;
-        engine.GetOwner().DamageOtherUnit(damagedUnit, amount / 100.0f, engine);
+        engine.GetOwner().DamageOtherUnit(damagedUnit, amount / 100.0f, engine, true);
     }
     
     public void HaveUnitDamageUnits2(float amount, List<Unit> units)

@@ -56,16 +56,7 @@ MonoBehaviour:
           - rid: 4341925668057251844
           - rid: 4341925668057251845
           - rid: 4341925668057251865
-        - scriptName: Invis Cancel
-          scriptUID: 135739267
-          hasWait: 0
-          eventNodes:
-          - rid: 4341925673293840391
-          conditionNodes:
-          - rid: 4341925673293840385
-          - rid: 4341925673293840392
-          actionNodes:
-          - rid: 4341925673293840388
+          - rid: 6666404398805286912
     - rid: 4341925668057251841
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -577,7 +568,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: -8195080831661823167, guid: 446383bc4333b1041bb1cc082b8b7102, type: 3}
+        value: {fileID: 1421580895277686589, guid: 190bd6c53975fa346b2ecbeb6279a001, type: 3}
     - rid: 4341925670055051910
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -614,7 +605,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
+        value: 5
     - rid: 4341925670055051912
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -651,87 +642,33 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 4341925673293840385
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitHasBuff
-        functionDescription: Unit/Unit Has Buff
-        functionDynamicDescription: $ has buff labelled $
-        functionEvaluators:
-        - rid: 4341925673293840386
-        - rid: 4341925673293840387
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 4341925673293840386
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 4341925673293840387
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Label
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Invisible
-        options: []
-    - rid: 4341925673293840388
+    - rid: 6666404398805286912
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: RemoveBuff
-        functionDescription: Unit/Remove Buff
-        functionDynamicDescription: Remove buff named $ from $
+        functionName: SpawnEffectOnUnit
+        functionDescription: Feedback/Play Effect on Unit
+        functionDynamicDescription: $ $ effect on $ for $ at $ scale
         functionEvaluators:
-        - rid: 4341925673293840389
-        - rid: 4341925673293840390
+        - rid: 6666404398805286913
+        - rid: 6666404398805286914
+        - rid: 6666404398805286915
+        - rid: 6666404398805286916
+        - rid: 6666404398805286917
         presetName: 
         variableName: 
         stringSuffix: 
         indent: 0
-        nodeIcon: Unit
+        nodeIcon: Effect
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 4341925673293840389
+    - rid: 6666404398805286913
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
-        tempName: Text
+        tempName: 
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
@@ -742,11 +679,32 @@ MonoBehaviour:
         indent: 0
         nodeIcon: 
         allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: Invisible
-        options: []
-    - rid: 4341925673293840390
+        allowPreset: 1
+        allowFunction: 1
+        value: Play
+        options:
+        - Play
+        - Stop
+        - Play or Refresh
+    - rid: 6666404398805286914
+      type: {class: EffectNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Effect
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 2694427343593205388, guid: fe502c7057dc7ef44a570bbd95cfb387, type: 3}
+    - rid: 6666404398805286915
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -755,7 +713,7 @@ MonoBehaviour:
         functionDescription: 
         functionDynamicDescription: 
         functionEvaluators: []
-        presetName: Player
+        presetName: Casting Unit
         variableName: 
         stringSuffix: 
         indent: 0
@@ -764,72 +722,8 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 4341925673293840391
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: OnUnitDamaged
-        functionDescription: Unit/Unit is damaged
-        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
-          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
-          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Event
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets:
-        - Damaged Unit
-        - Damaging Unit
-        - Damaging Ability
-        - Damage Dealt
-        - Is Critical
-    - rid: 4341925673293840392
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitComparison
-        functionDescription: Comparisons/Unit Comparison
-        functionDynamicDescription: $ $ $
-        functionEvaluators:
-        - rid: 4341925673293840393
-        - rid: 4341925673293840394
-        - rid: 4341925673293840395
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 4341925673293840393
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Damaging Unit
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
-    - rid: 4341925673293840394
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+    - rid: 6666404398805286916
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
         tempName: 
@@ -839,31 +733,28 @@ MonoBehaviour:
         functionEvaluators: []
         presetName: 
         variableName: 
-        stringSuffix: 
+        stringSuffix: s
         indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Equal To
-        options:
-        - Equal To
-        - Not Equal To
-    - rid: 4341925673293840395
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+        value: 4
+    - rid: 6666404398805286917
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 4
-        tempName: Unit
+        returnType: 0
+        tempName: 
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
         functionEvaluators: []
-        presetName: Player
+        presetName: 
         variableName: 
-        stringSuffix: 
+        stringSuffix: x
         indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+        value: 1
