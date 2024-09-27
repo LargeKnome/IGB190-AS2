@@ -1984,6 +1984,11 @@ public class LogicScript
         return unit.stats.GetValue(Stat.MaxResource);
     }
 
+    public float GetPoisonDamage(Unit unit)
+    {
+        return unit.stats.GetValue(Stat.PoisonDamage);
+    }
+
     public float DistanceBetweenPoints (Vector3 vec1, Vector3 vec2)
     {
         return Vector3.Distance(vec1, vec2);

@@ -1316,6 +1316,12 @@ public class LogicEngineEditor
             UnitNode.Temp()));
 
         allNodes.Add(GeneralNode.Func<NumberNode>(
+            "Unit/Unit Poison Damage",
+            "$ Poison Damage",
+            "UnitPoisonDamage",
+            UnitNode.Temp()));
+
+        allNodes.Add(GeneralNode.Func<NumberNode>(
             "Player/Player Level",
             "Player Level",
             "GetPlayerLevel"));

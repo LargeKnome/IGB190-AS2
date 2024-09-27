@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: Poison Dart
+  m_Name: aPoison Dart
   m_EditorClassIdentifier: 
   engine:
     rid: 6666404008700674066
-  abilityName: Poison Dart
+  abilityName: aPoison Dart
   abilityIcon: {fileID: 21300000, guid: bce4d42e2f3405745a83d09807e11042, type: 3}
   targetMode: 4
   abilityDescription: Shoot a poison dart which deals a small amount of damage and
@@ -63,10 +63,7 @@ MonoBehaviour:
           - rid: 6666404008700674074
           conditionNodes: []
           actionNodes:
-          - rid: 6666404008700674075
-          - rid: 6666404058924580864
-          - rid: 6666404058924580867
-          - rid: 6666404058924580870
+          - rid: 6666404483034513408
     - rid: 6666404008700674067
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -207,25 +204,6 @@ MonoBehaviour:
         - Event Projectile
         - Casting Unit
         - Colliding Unit
-    - rid: 6666404008700674075
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: HaveUnitDamageUnit2
-        functionDescription: Unit/Deal Damage to Unit
-        functionDynamicDescription: Deal $ attack damage to $
-        functionEvaluators:
-        - rid: 6666404008700674086
-        - rid: 6666404008700674087
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
     - rid: 6666404008700674077
       type: {class: ProjectileNode, ns: , asm: Assembly-CSharp}
       data:
@@ -389,42 +367,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 40
-    - rid: 6666404008700674086
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: '%'
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 10
-    - rid: 6666404008700674087
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Colliding Unit
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
     - rid: 6666404008700674088
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -443,45 +385,31 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 6666404058924580864
-      type: {class: NestingActionNode, ns: , asm: Assembly-CSharp}
+    - rid: 6666404483034513408
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: DoActionsXTimesStoringVariable
-        functionDescription: Flow/For Loop
-        functionDynamicDescription: 'Do actions $ times (Variable Storing Current
-          Iteration: $)'
+        functionName: IncreaseStatValue
+        functionDescription: Unit/Increase Stat/Increase Stat on Unit by Value
+        functionDynamicDescription: 'Increase $ of $ by $ for $ (Buff Name: $ | Max
+          Stacks: $)'
         functionEvaluators:
-        - rid: 6666404058924580865
-        - rid: 6666404058924580866
+        - rid: 6666404483034513409
+        - rid: 6666404483034513410
+        - rid: 6666404483034513411
+        - rid: 6666404483034513412
+        - rid: 6666404483034513413
+        - rid: 6666404483034513414
         presetName: 
         variableName: 
         stringSuffix: 
         indent: 0
-        nodeIcon: Loop
+        nodeIcon: Unit
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 6666404058924580865
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 20
-    - rid: 6666404058924580866
+    - rid: 6666404483034513409
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -496,48 +424,26 @@ MonoBehaviour:
         indent: 0
         nodeIcon: 
         allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Loop ID
-        options: []
-    - rid: 6666404058924580867
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: HaveUnitDamageUnit2
-        functionDescription: Unit/Deal Damage to Unit
-        functionDynamicDescription: Deal $ attack damage to $
-        functionEvaluators:
-        - rid: 6666404058924580868
-        - rid: 6666404058924580869
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 1
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 6666404058924580868
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: '%'
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 5
-    - rid: 6666404058924580869
+        allowPreset: 0
+        allowFunction: 0
+        value: Poison Applied
+        options:
+        - Damage
+        - Armor
+        - Damage Taken
+        - Attack Speed
+        - Max Health
+        - Max Resource
+        - Movement Speed
+        - Cooldown Reduction
+        - Ability Cost Reduction
+        - Resource Generation
+        - Critical Chance
+        - Critical Damage
+        - Poison Damage
+        - Poison Applied
+        - Stealth Rating
+    - rid: 6666404483034513410
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -555,29 +461,48 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 6666404058924580870
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Wait
-        functionDescription: Flow/Wait
-        functionDynamicDescription: Wait for $ seconds
-        functionEvaluators:
-        - rid: 6666404058924580871
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 1
-        nodeIcon: Timer
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 6666404058924580871
+    - rid: 6666404483034513411
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
         tempName: Number
+        functionName: GetPoisonDamage
+        functionDescription: Unit/Unit Poison Damage
+        functionDynamicDescription: $ Poison Damage
+        functionEvaluators:
+        - rid: 6666404483034513430
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 50
+    - rid: 6666404483034513412
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 6666404483034513413
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
@@ -590,4 +515,41 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0.05
+        value: Poison
+        options: []
+    - rid: 6666404483034513414
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 6666404483034513430
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}

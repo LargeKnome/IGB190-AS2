@@ -16,8 +16,6 @@ public class Unit : Interactable
         Flee
     }
 
-
-
     public string unitName;
     [HideInInspector] public float health = 100;
     [HideInInspector] public float resource = 0;
@@ -33,8 +31,12 @@ public class Unit : Interactable
     [SerializeField] protected float baseCriticalStrikeDamage = 2.0f;
     [SerializeField] protected float baseHealthRegen = 0.0f;
     [SerializeField] protected float baseResourceRegen = 0.0f;
+    [SerializeField] protected float basePoisonDamage = 10.0f;
     public float baseAttackRange = 2.0f;
     
+    //Internal Stats
+    //Unit stats, which aren't necessarily changed in the editor. used for tracking buffs and debuffs.
+    public float appliedPoison = 0f;
     
     // Controls all of the unit stats. Use this to request the current value of a stat
     // or apply a modifier.
@@ -67,6 +69,7 @@ public class Unit : Interactable
     [Header(("AI Targeting Info"))] 
     public float threatRating = 1f;
     public Faction alliedFaction;
+    
     [Header(("Unit Specific Vars"))] 
     
     // Cached Values for Targeting, Attacking and Casting   
@@ -158,6 +161,7 @@ public class Unit : Interactable
         FaceTowardsAttackTarget();
         ApplyHealthRegeneration(Time.deltaTime);
         ApplyResourceRegeneration(Time.deltaTime);
+        ApplyPoisonDamage(Time.deltaTime);
     }
 
     /// <summary>
@@ -178,6 +182,8 @@ public class Unit : Interactable
         stats.TrackStat(Stat.ResourceGeneration, "Resource Generation", 1);
         stats.TrackStat(Stat.DamageTaken, "Damage Taken Modifier", 1);
         stats.TrackStat(Stat.StealthRating, "Stealth Rating", threatRating);
+        stats.TrackStat(Stat.PoisonDamage, "Poison Damage", basePoisonDamage);
+        stats.TrackStat(Stat.AppliedPoison, "Poison Applied", appliedPoison);
         health = stats.GetValue(Stat.MaxHealth);
     }
 
@@ -328,6 +334,11 @@ public class Unit : Interactable
     private void ApplyResourceRegeneration(float duration)
     {
         if (baseResourceRegen != 0) AddResource(baseResourceRegen * duration);
+    }
+
+    private void ApplyPoisonDamage(float duration)
+    {
+        if (stats.GetValue(Stat.AppliedPoison) != 0) RemoveHealth(stats.GetValue(Stat.AppliedPoison) * duration);
     }
 
     /// <summary>

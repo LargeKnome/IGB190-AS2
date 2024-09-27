@@ -8216,6 +8216,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 8
+  basePoisonDamage: 0
   baseAttackRange: 2
   abilities:
   - {fileID: 11400000, guid: 63a782021e0dcd343a62943c5471ba6c, type: 2}
@@ -10651,6 +10652,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 2
+  basePoisonDamage: 100
   baseAttackRange: 1.5
   abilities:
   - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
@@ -13864,6 +13866,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 0
+  basePoisonDamage: 0
   baseAttackRange: 2.5
   abilities:
   - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
@@ -27266,6 +27269,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 0
   baseResourceRegen: 2
+  basePoisonDamage: 0
   baseAttackRange: 2
   abilities:
   - {fileID: 11400000, guid: 8d6cb31825c2de4448e88dbc2385d12f, type: 2}

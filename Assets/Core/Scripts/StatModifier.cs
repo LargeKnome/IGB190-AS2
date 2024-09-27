@@ -95,6 +95,8 @@ public class StatModifier
     private void AddModifier(float value, float duration, bool isPercentage, string buff, int maxStacks, List<Modifier> modifierList)
     {
         RemoveExpiredModifiers();
+        
+        Debug.Log("Applying buff: " + buff + " with value: " + value);
 
         Modifier existingModifier = GetModifierWithLabel(buff, modifierList);
         if (existingModifier != null)
