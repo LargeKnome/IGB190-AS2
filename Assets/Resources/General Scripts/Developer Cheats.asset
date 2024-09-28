@@ -75,6 +75,14 @@ MonoBehaviour:
       - rid: 790164306828722220
       - rid: 790164306828722221
       - rid: 790164306828722222
+    - scriptName: Give Level
+      scriptUID: 2092591065
+      hasWait: 0
+      eventNodes:
+      - rid: 8049626418391548305
+      conditionNodes: []
+      actionNodes:
+      - rid: 8049626418391548307
   references:
     version: 2
     RefIds:
@@ -1158,3 +1166,77 @@ MonoBehaviour:
         allowFunction: 1
         value: LeftControl
         options: []
+    - rid: 8049626418391548305
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnKeyDown
+        functionDescription: Input/On Key Down
+        functionDynamicDescription: When the $ key is pressed down
+        functionEvaluators:
+        - rid: 8049626418391548306
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Keyboard
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 8049626418391548306
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Key
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+        options: []
+    - rid: 8049626418391548307
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddLevels
+        functionDescription: Player/Add Levels
+        functionDynamicDescription: Add $ level(s) to the player.
+        functionEvaluators:
+        - rid: 8049626418391548308
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 8049626418391548308
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
