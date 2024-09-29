@@ -11030,10 +11030,10 @@ MonoBehaviour:
   baseHealthRegen: 20
   baseResourceRegen: 2
   basePoisonDamage: 100
-  baseAttackRange: 1.5
+  baseAttackRange: 3
   appliedPoison: 0
   abilities:
-  - {fileID: 11400000, guid: cbbf2357a81cf204b8dadb4602904de0, type: 2}
+  - {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
   - {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
   - {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
@@ -13027,13 +13027,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.8433915, z: -0.53729963, w: 0}
-  m_LocalPosition: {x: 51.61, y: 9.07, z: 19.1}
+  m_LocalRotation: {x: 0, y: 0.8660254, z: -0.5, w: 0}
+  m_LocalPosition: {x: 51.61, y: 9.07, z: 21.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 65, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: 180, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17231,15 +17231,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616312271381652418, guid: ec1eba0c64db17247b7b82a7618def45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 99.1
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 7616312271381652418, guid: ec1eba0c64db17247b7b82a7618def45, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7616312271381652418, guid: ec1eba0c64db17247b7b82a7618def45, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.8
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7616312271381652418, guid: ec1eba0c64db17247b7b82a7618def45, type: 3}
       propertyPath: m_LocalRotation.w

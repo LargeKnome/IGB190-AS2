@@ -15,7 +15,7 @@ MonoBehaviour:
   engine:
     rid: 6666404065506230272
   abilityName: Knife Slash
-  abilityIcon: {fileID: 21300000, guid: 730425ab47b72a5489ce9e04d28f545f, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 8486a42015ddfdc4086ae45ed3865de2, type: 3}
   targetMode: 3
   abilityDescription: Slash towards the target unit, dealing 100% attack damage.
   abilityAnimation: One Hand Slash
@@ -115,7 +115,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 90
+        value: 135
     - rid: 4341925670055051407
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -226,7 +226,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 135
+        value: 60
     - rid: 4341925670055051765
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -434,7 +434,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 135
+        value: 60
     - rid: 4341925670055051901
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
