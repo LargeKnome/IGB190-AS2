@@ -54,7 +54,7 @@ public class Monster : Unit
 
     // Flee State Variables 
     private float zigzagDistance = 10f;       // Distance between each zigzag point
-    private float zigzagOffset = 5f;         // Maximum lateral offset for zigzagging
+    private float zigzagOffset = 7.5f;         // Maximum lateral offset for zigzagging
     private int zigzagPointsCount = 3;       // Number of zigzag points to generate
     private Vector3[] zigzagPoints;
     private int currentPointIndex = 0;
@@ -181,33 +181,34 @@ public class Monster : Unit
 
     private void HandleFleeMovement()
     {
-
-            agentNavigation.SetDestination(new Vector3(0, 0, 15));
-
-
         if (CanMove()) {
-            // Calculate the escape direction
-            Vector3 directionToPlayer = (transform.position - targetPosition).normalized;
-
-            // Generate zigzag points if NPC is not already moving
+            
+            // Generate zigzag flee points if non present
             if (zigzagPoints == null || currentPointIndex >= zigzagPoints.Length) {
+                // Calculate the escape direction
+                Vector3 directionToPlayer = (transform.position - targetPosition).normalized;
                 GenerateZigzagPoints(directionToPlayer);
             }
 
-            //Move the NPC to the current zigzag point
+            // Move to the current zigzag point
             if (currentPointIndex < zigzagPoints.Length) {
-                //agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
-                agentNavigation.SetDestination(new Vector3(0, 0, 3));
+                agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
+
                 // If the NPC reaches the current point, move to the next one
-
-                //!agentNavigation.pathPending &&
-                //if (agentNavigation.remainingDistance < 0.8f) {
-                //    currentPointIndex++;
-                //}
-
-                if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < 0.1f)
+                if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < agentNavigation.stoppingDistance + 2f)
                     currentPointIndex++;
             }
+
+            // Check to see if still running from the player
+            float distanceFromPlayerToPoint = Vector3.Distance(zigzagPoints[currentPointIndex], targetPosition);
+            float distanceFromThisMonsterToPoint = Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]);
+            if(distanceFromPlayerToPoint < distanceFromThisMonsterToPoint)
+            {
+                // If player closer regenerate new escape list 
+                Vector3 directionToPlayer = (transform.position - targetPosition).normalized;
+                GenerateZigzagPoints(directionToPlayer);
+            }
+
         }
         else { StopMoving(); }
 
