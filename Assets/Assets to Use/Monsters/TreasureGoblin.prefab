@@ -116,6 +116,9 @@ MonoBehaviour:
   spawnLevel: 1
   spawnLikelihood: 1
   OutlineColor: {r: 0.8, g: 0.7698378, b: 0, a: 1}
+  _FleeFromTargetTriggerDistance: 5
+  _goldSpawning_ValueMAX: 8
+  _goldSpawning_RateScecond: 2.5
 --- !u!195 &5530130249161545229
 NavMeshAgent:
   m_ObjectHideFlags: 0

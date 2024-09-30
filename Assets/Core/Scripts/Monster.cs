@@ -94,6 +94,24 @@ public class Monster : Unit
             HandleFleeMovement();
     }
 
+    private void OnDrawGizmos()
+    {
+        #region Movment - Fleeing
+        if (zigzagPoints == null || zigzagPoints.Length == 0) return;
+
+        // Set the color of the gizmos (debug spheres)
+        Gizmos.color = Color.red;
+
+        // Loop through each point in the array
+        foreach (Vector3 point in zigzagPoints)
+        {
+            // Draw a sphere at each point
+            Gizmos.DrawSphere(point, 0.5f);
+        }
+        #endregion
+    }
+
+
     /// <summary>
     /// Caches references to all required components.
     /// </summary>
@@ -165,20 +183,6 @@ public class Monster : Unit
         { StopMoving(); }
     }
 
-
-    private void OnDrawGizmos() {
-        if (zigzagPoints == null || zigzagPoints.Length == 0) return;
-
-        // Set the color of the gizmos (debug spheres)
-        Gizmos.color = Color.red;
-
-        // Loop through each point in the array
-        foreach (Vector3 point in zigzagPoints) {
-            // Draw a sphere at each point
-            Gizmos.DrawSphere(point, 0.5f);
-        }
-    }
-
     private void HandleFleeMovement()
     {
         if (CanMove()) {
@@ -195,7 +199,9 @@ public class Monster : Unit
                 agentNavigation.SetDestination(zigzagPoints[currentPointIndex]);
 
                 // If the NPC reaches the current point, move to the next one
-                if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < agentNavigation.stoppingDistance + 2f)
+                // NOTE: Redirect to next point should be greater then navAgent stoping distance to avoid slowing down & stopping befor chosing next point
+
+                if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < agentNavigation.stoppingDistance + 2.5f)
                     currentPointIndex++;
             }
 
