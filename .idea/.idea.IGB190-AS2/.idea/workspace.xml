@@ -6,28 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Textures/MiniMap/Minimap_RenderTexture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Textures/MiniMap/Minimap_RenderTexture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Act 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Act 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Act 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Act 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Tutorial.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Barbarian Tutorial.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Boss.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Boss.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Ranger Act 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Ranger Act 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Ranger Tutorial.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Ranger Tutorial.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Sorcerer Act 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Sorcerer Act 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Sorcerer Tutorial.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Sorcerer Tutorial.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Effects/Explosions/Big/Poison Cloud.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Effects/Explosions/Big/Poison Cloud.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/TreasureGoblin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets to Use/Monsters/TreasureGoblin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Imported/Effects/Materials/Magical2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Imported/Effects/Materials/Magical2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Cloud.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Cloud.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-Navigation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-Navigation.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-Navigation.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-Navigation.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,9 +45,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\gumtr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\gumtr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\gumtr\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\Tom\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Tom\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Tom\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -132,6 +116,7 @@
       <workItem from="1727079212626" duration="1078000" />
       <workItem from="1727398767111" duration="2279000" />
       <workItem from="1727491968646" duration="974000" />
+      <workItem from="1727790784247" duration="1224000" />
     </task>
     <servers />
   </component>
