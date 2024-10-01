@@ -11124,6 +11124,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8494155983429597622, guid: 45b6008e21ee9c54bbcc5b9c77397ae4, type: 3}
   m_PrefabInstance: {fileID: 762212897}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &767773187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.028888702
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_Name
+      value: TreasureGoblin (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
 --- !u!1 &780689075
 GameObject:
   m_ObjectHideFlags: 0
@@ -15191,6 +15252,67 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 131024783179209751, guid: e531c8128ec034e4e941fb1cf5bf7d46, type: 3}
   m_PrefabInstance: {fileID: 1022118195}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1032757884
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.028888702
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_Name
+      value: TreasureGoblin (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
 --- !u!1 &1040609216
 GameObject:
   m_ObjectHideFlags: 0
@@ -24751,6 +24873,67 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1420991741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.028888702
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_Name
+      value: TreasureGoblin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
 --- !u!1 &1430358064
 GameObject:
   m_ObjectHideFlags: 0
@@ -26314,21 +26497,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 118113344650218589, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
-      propertyPath: OutlineColor.b
-      value: 0.0020024967
-      objectReference: {fileID: 0}
-    - target: {fileID: 118113344650218589, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
-      propertyPath: OutlineColor.g
-      value: 0.40795866
-      objectReference: {fileID: 0}
-    - target: {fileID: 118113344650218589, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
-      propertyPath: OutlineColor.r
-      value: 0.4245283
-      objectReference: {fileID: 0}
     - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.47
+      value: -6.61
       objectReference: {fileID: 0}
     - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26336,7 +26507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.47
+      value: -4.25
       objectReference: {fileID: 0}
     - target: {fileID: 1845076989530560826, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26369,6 +26540,10 @@ PrefabInstance:
     - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
       propertyPath: m_Name
       value: TreasureGoblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648246521409247266, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -37034,3 +37209,6 @@ SceneRoots:
   - {fileID: 307008563214094724}
   - {fileID: 1734074377}
   - {fileID: 1528588975}
+  - {fileID: 1420991741}
+  - {fileID: 767773187}
+  - {fileID: 1032757884}

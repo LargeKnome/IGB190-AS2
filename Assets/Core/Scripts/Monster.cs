@@ -366,7 +366,7 @@ public class Monster : Unit
     /// <summary>
     /// Handles drops for empowered monsters.
     /// </summary>
-    private void HandleEmpoweredDrops(float random)
+    virtual protected void HandleEmpoweredDrops(float random)
     {
         if (random < GameManager.empoweredMonsterValues.empoweredMonsterLegendaryDropChance)
         {
@@ -387,7 +387,7 @@ public class Monster : Unit
     /// <summary>
     /// Handles drops for unempowered monsters.
     /// </summary>
-    private void HandleUnempoweredDrops(float random)
+    virtual protected void HandleUnempoweredDrops(float random)
     {
         if (random < GameManager.monsterValues.unempoweredMonsterLegendaryDropChance)
         {

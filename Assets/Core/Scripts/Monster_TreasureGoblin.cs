@@ -1,7 +1,7 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static Unit;
+using Random = UnityEngine.Random;
 
 public class Monster_TreasureGoblin : Monster
 {   
@@ -13,6 +13,11 @@ public class Monster_TreasureGoblin : Monster
     [SerializeField] private float _goldSpawning_RateScecond = 2f;
     private bool _isGoldSpawning_TimerTrigger = false;
     private bool _isGoldSpawning_Movement = false;
+    [Header("On Death Item Spawn Chance")]
+    [Tooltip("Use Values between(0 & 1), larger values increases spawn chance)")]
+    [SerializeField] private float _itemSpawnThresholdReduction = 0.5f; //
+    [Header("On Death Gold Spawn Chance")]
+    private float _onDeathGoldRange = 2.5f;
 
     protected override void Start()
     {
@@ -24,7 +29,6 @@ public class Monster_TreasureGoblin : Monster
             _goldSpawning_ValueMAX = 1;
 
         engagementState = EngagementState.Basic;
-
     }
 
     protected override void Update()
@@ -73,5 +77,91 @@ public class Monster_TreasureGoblin : Monster
             }
         }
     }
-    
+
+    #region Drops
+    protected override void HandleEmpoweredDrops(float random)
+    {
+        random -= _itemSpawnThresholdReduction;
+        //NOTE: Override Base
+        if (random < GameManager.empoweredMonsterValues.empoweredMonsterLegendaryDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
+        }
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterRareDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
+        }
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterCommonDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
+        }
+        SpawnGoldOnDeath(12); 
+    }
+
+
+    protected override void HandleUnempoweredDrops(float random)
+    {
+        random -= _itemSpawnThresholdReduction;
+        //NOTE: Override Base
+        if (random < GameManager.monsterValues.unempoweredMonsterLegendaryDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
+        }
+        else if (random < GameManager.monsterValues.unempoweredMonsterRareDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
+        }
+        else if (random < GameManager.monsterValues.unempoweredMonsterCommonDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
+        }
+        SpawnGoldOnDeath(6);
+    }
+    void SpawnGoldOnDeath(int numberOfPiles)
+    {
+        float delayBetween = 0.075f;
+        for (int i = 0; i < numberOfPiles; i++)
+        {
+            SpawnGoldAroundUnit();
+            //StartCoroutine(SpawnGoldOnDeath(i * delayBetween));
+        }
+    }
+
+    // NOTE: ISSUE: I dont think this is working because the game object is being destroyed and its endeding all the related coroutines? 
+    //IEnumerator SpawnGoldAroundUnit(float delay)
+    //{
+    //    float spawnRangeMultiplier = 2.5f;
+
+    //    float randX;
+    //    float randZ;
+    //    Vector3 spawnPoint;
+
+    //    // Random Spawn Point
+    //    randX = Random.Range(-1f, 1f);
+    //    randZ = Random.Range(-1f, 1f);
+
+    //    spawnPoint = transform.position
+    //        + Vector3.forward * randX * spawnRangeMultiplier
+    //        + Vector3.left * randZ * spawnRangeMultiplier;
+
+    //    // Spawn the item, after delay         
+    //    yield return new WaitForSeconds(delay);
+    //    GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(1f, _goldSpawning_ValueMAX) * goldModifier));       
+    //}
+
+    void SpawnGoldAroundUnit()
+    {
+        // Random Spawn Point
+        float randX = Random.Range(-1f, 1f);
+        float randZ = Random.Range(-1f, 1f);
+
+        Vector3 spawnPoint = transform.position
+            + Vector3.forward * randX * _onDeathGoldRange
+            + Vector3.left * randZ * _onDeathGoldRange;
+
+        GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(1f, _goldSpawning_ValueMAX) * goldModifier));
+    }
+
+
+    #endregion
 }
