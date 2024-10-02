@@ -119,7 +119,9 @@ MonoBehaviour:
   _FleeFromTargetTriggerDistance: 5
   _goldSpawning_ValueMAX: 8
   _goldSpawning_RateScecond: 2.5
-  _itemSpawnThresholdReduction: 0.25
+  _itemDropChance_Legendary: 0.15
+  _itemDropChance_Rare: 0.5
+  _empoweredDropChanceMultiplier: 2
 --- !u!195 &5530130249161545229
 NavMeshAgent:
   m_ObjectHideFlags: 0

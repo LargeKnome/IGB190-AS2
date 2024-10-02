@@ -13,11 +13,13 @@ public class Monster_TreasureGoblin : Monster
     [SerializeField] private float _goldSpawning_RateScecond = 2f;
     private bool _isGoldSpawning_TimerTrigger = false;
     private bool _isGoldSpawning_Movement = false;
-    [Header("On Death Item Spawn Chance")]
-    [Tooltip("Use Values between(0 & 1), larger values increases spawn chance)")]
-    [SerializeField] private float _itemSpawnThresholdReduction = 0.5f; //
     [Header("On Death Gold Spawn Chance")]
     private float _onDeathGoldRange = 2.5f;
+    [Header("On Death Item Spawn Chance")]
+    [SerializeField] private float _itemDropChance_Legendary = 0.15f;
+    [SerializeField] private float _itemDropChance_Rare = 0.50f;
+    [SerializeField] private float _empoweredDropChanceMultiplier = 2f;
+
 
     protected override void Start()
     {
@@ -28,7 +30,7 @@ public class Monster_TreasureGoblin : Monster
         if (_goldSpawning_ValueMAX < 1)
             _goldSpawning_ValueMAX = 1;
 
-        engagementState = EngagementState.Basic;
+        engagementState = EngagementState.MoveTowards;
     }
 
     protected override void Update()
@@ -81,17 +83,16 @@ public class Monster_TreasureGoblin : Monster
     #region Drops
     protected override void HandleEmpoweredDrops(float random)
     {
-        random -= _itemSpawnThresholdReduction;
         //NOTE: Override Base
-        if (random < GameManager.empoweredMonsterValues.empoweredMonsterLegendaryDropChance)
+        if (random < _itemDropChance_Legendary * _empoweredDropChanceMultiplier)
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
         }
-        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterRareDropChance)
+        else if (random < _itemDropChance_Rare * _empoweredDropChanceMultiplier)
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
         }
-        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterCommonDropChance)
+        else 
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
         }
@@ -101,17 +102,16 @@ public class Monster_TreasureGoblin : Monster
 
     protected override void HandleUnempoweredDrops(float random)
     {
-        random -= _itemSpawnThresholdReduction;
         //NOTE: Override Base
-        if (random < GameManager.monsterValues.unempoweredMonsterLegendaryDropChance)
+        if (random < _itemDropChance_Legendary)
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
         }
-        else if (random < GameManager.monsterValues.unempoweredMonsterRareDropChance)
+        else if (random < _itemDropChance_Rare)
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
         }
-        else if (random < GameManager.monsterValues.unempoweredMonsterCommonDropChance)
+        else
         {
             ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
         }
@@ -119,36 +119,11 @@ public class Monster_TreasureGoblin : Monster
     }
     void SpawnGoldOnDeath(int numberOfPiles)
     {
-        float delayBetween = 0.075f;
         for (int i = 0; i < numberOfPiles; i++)
         {
             SpawnGoldAroundUnit();
-            //StartCoroutine(SpawnGoldOnDeath(i * delayBetween));
         }
     }
-
-    // NOTE: ISSUE: I dont think this is working because the game object is being destroyed and its endeding all the related coroutines? 
-    //IEnumerator SpawnGoldAroundUnit(float delay)
-    //{
-    //    float spawnRangeMultiplier = 2.5f;
-
-    //    float randX;
-    //    float randZ;
-    //    Vector3 spawnPoint;
-
-    //    // Random Spawn Point
-    //    randX = Random.Range(-1f, 1f);
-    //    randZ = Random.Range(-1f, 1f);
-
-    //    spawnPoint = transform.position
-    //        + Vector3.forward * randX * spawnRangeMultiplier
-    //        + Vector3.left * randZ * spawnRangeMultiplier;
-
-    //    // Spawn the item, after delay         
-    //    yield return new WaitForSeconds(delay);
-    //    GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(1f, _goldSpawning_ValueMAX) * goldModifier));       
-    //}
-
     void SpawnGoldAroundUnit()
     {
         // Random Spawn Point
@@ -159,7 +134,9 @@ public class Monster_TreasureGoblin : Monster
             + Vector3.forward * randX * _onDeathGoldRange
             + Vector3.left * randZ * _onDeathGoldRange;
 
-        GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(1f, _goldSpawning_ValueMAX) * goldModifier));
+        //GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(1f, _goldSpawning_ValueMAX) * goldModifier));
+        GoldPickup.Spawn(spawnPoint, Mathf.RoundToInt(Random.Range(GameManager.monsterValues.baseGoldDropAmountMinimum,
+                GameManager.monsterValues.baseGoldDropAmountMaximum) * goldModifier));
     }
 
 

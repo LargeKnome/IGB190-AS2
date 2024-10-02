@@ -12,8 +12,9 @@ public class Unit : Interactable
 {
     public enum EngagementState
     {
-        Basic,
-        Flee
+        MoveTowards,
+        Flee,
+        StandStill,
     }
 
     public string unitName;
@@ -80,7 +81,7 @@ public class Unit : Interactable
     [NonSerialized] public float canMoveAt;
     [NonSerialized] public float canCastAt;
     protected Vector3 attackDirection;
-    [SerializeField] protected EngagementState engagementState = EngagementState.Basic;
+    [SerializeField] protected EngagementState engagementState = EngagementState.MoveTowards;
 
     // Cache references to important components for easy access later.
     protected NavMeshAgent agentNavigation;

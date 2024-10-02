@@ -53,8 +53,8 @@ public class Monster : Unit
 
 
     // Flee State Variables 
-    private float zigzagDistance = 10f;       // Distance between each zigzag point
-    private float zigzagOffset = 7.5f;         // Maximum lateral offset for zigzagging
+    private float zigzagDistance = 5f;       // Distance between each zigzag point
+    private float zigzagOffset = 2.5f;         // Maximum lateral offset for zigzagging
     private int zigzagPointsCount = 3;       // Number of zigzag points to generate
     private Vector3[] zigzagPoints;
     private int currentPointIndex = 0;
@@ -88,7 +88,7 @@ public class Monster : Unit
         UpdateOutline();
         CalculateMonsterTargeting();
 
-        if (engagementState == EngagementState.Basic)
+        if (engagementState == EngagementState.MoveTowards)
             HandleMovement();
         else
             HandleFleeMovement();
@@ -204,6 +204,10 @@ public class Monster : Unit
                 if (Vector3.Distance(this.transform.position, zigzagPoints[currentPointIndex]) < agentNavigation.stoppingDistance + 2.5f)
                     currentPointIndex++;
             }
+
+            // Stops Player out of range error
+            if (targetPosition == null)
+                return;
 
             // Check to see if still running from the player
             float distanceFromPlayerToPoint = Vector3.Distance(zigzagPoints[currentPointIndex], targetPosition);
