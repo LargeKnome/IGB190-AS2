@@ -114,7 +114,7 @@ MonoBehaviour:
   uiSize: 1
   uiHeight: 2
   spawnLevel: 1
-  spawnLikelihood: 1
+  spawnLikelihood: 10
   OutlineColor: {r: 0.8, g: 0.7698378, b: 0, a: 1}
   _FleeFromTargetTriggerDistance: 5
   _goldSpawning_ValueMAX: 8
