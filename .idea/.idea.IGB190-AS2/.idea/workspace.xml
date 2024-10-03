@@ -6,18 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Stat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Stat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/Editor/LogicEngineEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Cloud.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Cloud.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Blizzard.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Blizzard.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Knife Slash.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Knife Slash.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Dart.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Abilities/Poison Dart.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Backstab Knife.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Backstab Knife.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Amulet of Lifesteal.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Amulet of Lifesteal.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Introvert Boots.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Introvert Boots.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Introvert Boots.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Introvert Boots.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Jackbox.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Jackbox.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Items/Plate Armour.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Items/Plate Armour.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Templates/Weapon.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Templates/Weapon.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prologue.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prologue.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/VideoIntroHandler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Core/Scripts/VideoController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -38,28 +37,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\tom\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\tom\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\tom\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\tom\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\tom\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\tom\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$USER_HOME$/Documents/IGB190Builds/Week 10 Build 1\Echoes of Valor.exe" />
@@ -135,6 +134,7 @@
       <workItem from="1727491968646" duration="974000" />
       <workItem from="1727790784247" duration="1224000" />
       <workItem from="1727917093008" duration="3442000" />
+      <workItem from="1727927583578" duration="2324000" />
     </task>
     <servers />
   </component>

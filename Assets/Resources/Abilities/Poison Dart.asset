@@ -21,14 +21,14 @@ MonoBehaviour:
     inflicts poison for 5 seconds.
   abilityAnimation: One Hand Slash
   range: 8
-  castTime: 0.25
-  abilityCooldown: 0.25
+  castTime: 0.5
+  abilityCooldown: 0.5
   abilityCost: 6
   movementLock: 1
   animationActivationPosition: 0.5
-  canMoveWhileCasting: 0
+  canMoveWhileCasting: 1
   hasSpecificCastTime: 1
-  cooldownIsAtackSpeed: 0
+  cooldownIsAtackSpeed: 1
   abilityGeneratesResource: 0
   requiresLineOfSight: 1
   canUpdateTargetWhileCasting: 0

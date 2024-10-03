@@ -37,6 +37,13 @@ MonoBehaviour:
       - rid: 248813236419559496
       conditionNodes: []
       actionNodes: []
+    - scriptName: On Hit Effect
+      scriptUID: 2056689644
+      hasWait: 0
+      eventNodes:
+      - rid: 4861970120214315023
+      conditionNodes: []
+      actionNodes: []
   template: {fileID: 0}
   guaranteedStats: []
   randomisableStats:
@@ -135,6 +142,31 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 4861970120214315023
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnUnitDamaged
+        functionDescription: Unit/Unit is damaged
+        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
+          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
+          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Damaged Unit
+        - Damaging Unit
+        - Damaging Ability
+        - Damage Dealt
+        - Is Critical
     - rid: 6666404398805286920
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
