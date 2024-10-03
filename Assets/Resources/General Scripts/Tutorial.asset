@@ -58,7 +58,6 @@ MonoBehaviour:
       - rid: 4516049468624208175
       - rid: 4516049468624208166
       - rid: 4516049468624208168
-      - rid: 4516049468624208172
       - rid: 4516049468624208182
       - rid: 4516049468624208165
   references:
@@ -1294,62 +1293,6 @@ MonoBehaviour:
         allowFunction: 1
         value: Level 1.2
         options: []
-    - rid: 4516049468624208172
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ShowTutorialMessage
-        functionDescription: UI/Show Tutorial Message
-        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
-        functionEvaluators:
-        - rid: 4516049468624208173
-        - rid: 4516049468624208174
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: UI
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 4516049468624208173
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Look behind you 0.0
-        options: []
-    - rid: 4516049468624208174
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 5
     - rid: 4516049468624208175
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
