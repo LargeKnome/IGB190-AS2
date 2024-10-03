@@ -18,6 +18,7 @@ public enum Stat
     CriticalStrikeChance,
     CriticalStrikeDamage,
     PoisonDamage,
+    MaxPoison,
     AppliedPoison,
     StealthRating
 }
@@ -37,6 +38,7 @@ public static class StatExtensions
     private const string DamageTakenLabel = "Damage Taken";
     private const string ResourceGenerationLabel = "Resource Generation";
     private const string PoisonDamageLabel = "Poison Damage";
+    private const string MaxPoisonLabel = "Max Poison Stacks";
     private const string AppliedPoisonLabel = "Poison Applied";
     
     private const string StealthRatingLabel = "Stealth Rating";
@@ -60,6 +62,7 @@ public static class StatExtensions
             CooldownReductionLabel => Stat.CooldownReduction,
             AbilityCostReductionLabel => Stat.ResourceCostReduction,
             PoisonDamageLabel => Stat.PoisonDamage,
+            MaxPoisonLabel => Stat.MaxPoison,
             AppliedPoisonLabel => Stat.AppliedPoison,
             StealthRatingLabel => Stat.StealthRating,
             ResourceGenerationLabel => Stat.ResourceGeneration,
@@ -87,6 +90,7 @@ public static class StatExtensions
             Stat.DamageTaken => DamageTakenLabel,
             Stat.ResourceGeneration => ResourceGenerationLabel,
             Stat.PoisonDamage => PoisonDamageLabel,
+            Stat.MaxPoison => MaxPoisonLabel,
             Stat.AppliedPoison => AppliedPoisonLabel,
             Stat.StealthRating => StealthRatingLabel,
             _ => StatNotFoundLabel

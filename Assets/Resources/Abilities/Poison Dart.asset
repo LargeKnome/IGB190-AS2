@@ -40,6 +40,213 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4861970116940660736
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnEffectOnUnit
+        functionDescription: Feedback/Play Effect on Unit
+        functionDynamicDescription: $ $ effect on $ for $ at $ scale
+        functionEvaluators:
+        - rid: 4861970116940660737
+        - rid: 4861970116940660738
+        - rid: 4861970116940660739
+        - rid: 4861970116940660740
+        - rid: 4861970116940660741
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Effect
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970116940660737
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Play
+        options:
+        - Play
+        - Stop
+        - Play or Refresh
+    - rid: 4861970116940660738
+      type: {class: EffectNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Effect
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4955539980828404, guid: 09e503beee249f3419b39fe81e4f3c66, type: 3}
+    - rid: 4861970116940660739
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Colliding Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4861970116940660740
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 5
+    - rid: 4861970116940660741
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: x
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 4861970118988267520
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: HaveUnitDamageUnit2
+        functionDescription: Unit/Deal Damage to Unit
+        functionDynamicDescription: Deal $ attack damage to $
+        functionEvaluators:
+        - rid: 4861970118988267521
+        - rid: 4861970118988267522
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970118988267521
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 4861970118988267522
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Colliding Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4861970119823196171
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+    - rid: 4861970119823196178
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
     - rid: 6666404008700674066
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -63,7 +270,9 @@ MonoBehaviour:
           - rid: 6666404008700674074
           conditionNodes: []
           actionNodes:
+          - rid: 4861970118988267520
           - rid: 6666404483034513408
+          - rid: 4861970116940660736
     - rid: 6666404008700674067
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -464,13 +673,13 @@ MonoBehaviour:
     - rid: 6666404483034513411
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 0
+        returnType: 2
         tempName: Number
-        functionName: GetPoisonDamage
+        functionName: UnitPoisonDamage
         functionDescription: Unit/Unit Poison Damage
         functionDynamicDescription: $ Poison Damage
         functionEvaluators:
-        - rid: 6666404483034513430
+        - rid: 4861970119823196178
         presetName: 
         variableName: 
         stringSuffix: 
@@ -520,12 +729,13 @@ MonoBehaviour:
     - rid: 6666404483034513414
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 0
+        returnType: 2
         tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
+        functionName: UnitPoisonStacks
+        functionDescription: Unit/Unit Max Poison Stacks
+        functionDynamicDescription: $ Max Stacks
+        functionEvaluators:
+        - rid: 4861970119823196171
         presetName: 
         variableName: 
         stringSuffix: 
@@ -535,21 +745,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 6666404483034513430
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Casting Unit
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}

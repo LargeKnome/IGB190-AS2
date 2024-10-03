@@ -33,6 +33,7 @@ public class Unit : Interactable
     [SerializeField] protected float baseHealthRegen = 0.0f;
     [SerializeField] protected float baseResourceRegen = 0.0f;
     [SerializeField] protected float basePoisonDamage = 10.0f;
+    [SerializeField] protected float baseMaxPoisonStacks = 1f;
     public float baseAttackRange = 2.0f;
     
     //Internal Stats
@@ -184,6 +185,7 @@ public class Unit : Interactable
         stats.TrackStat(Stat.DamageTaken, "Damage Taken Modifier", 1);
         stats.TrackStat(Stat.StealthRating, "Stealth Rating", threatRating);
         stats.TrackStat(Stat.PoisonDamage, "Poison Damage", basePoisonDamage);
+        stats.TrackStat(Stat.MaxPoison, "Max Poison Stacks", baseMaxPoisonStacks);
         stats.TrackStat(Stat.AppliedPoison, "Poison Applied", appliedPoison);
         health = stats.GetValue(Stat.MaxHealth);
     }

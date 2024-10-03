@@ -1322,6 +1322,12 @@ public class LogicEngineEditor
             UnitNode.Temp()));
 
         allNodes.Add(GeneralNode.Func<NumberNode>(
+            "Unit/Unit Max Poison Stacks",
+            "$ Max Stacks",
+            "UnitPoisonStacks",
+            UnitNode.Temp()));
+
+        allNodes.Add(GeneralNode.Func<NumberNode>(
             "Player/Player Level",
             "Player Level",
             "GetPlayerLevel"));

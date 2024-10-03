@@ -8793,6 +8793,7 @@ MonoBehaviour:
   baseHealthRegen: 20
   baseResourceRegen: 8
   basePoisonDamage: 0
+  baseMaxPoisonStacks: 1
   baseAttackRange: 2
   appliedPoison: 0
   abilities:
@@ -11239,7 +11240,8 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 2
-  basePoisonDamage: 100
+  basePoisonDamage: 25
+  baseMaxPoisonStacks: 1
   baseAttackRange: 3
   appliedPoison: 0
   abilities:
@@ -11270,11 +11272,11 @@ MonoBehaviour:
   levelUpFeedback: {fileID: 11400000, guid: 9cdaa1d98fc0cc4428a905e670a76812, type: 2}
   resourceName: Energy
   resourceMaterial: {fileID: 2100000, guid: dd6dc55119cde6f4ab2a8561e505a971, type: 2}
-  bonusDamagePerLevel: 10
+  bonusDamagePerLevel: 3
   bonusHealthPerLevel: 5
-  bonusMovementSpeedPerLevel: 0.2
-  bonusResourcePerLevel: 20
-  bonusArmorPerLevel: 0
+  bonusMovementSpeedPerLevel: 0.1
+  bonusResourcePerLevel: 5
+  bonusArmorPerLevel: 2
   bonusCriticalChancePerLevel: 0.02
   bonusCriticalDamagePerLevel: 0.1
   bonusHealthRegenPerLevel: 0.5
@@ -14838,6 +14840,7 @@ MonoBehaviour:
   baseHealthRegen: 20
   baseResourceRegen: 0
   basePoisonDamage: 0
+  baseMaxPoisonStacks: 1
   baseAttackRange: 2.5
   appliedPoison: 0
   abilities:
@@ -25958,8 +25961,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.1397059, g: 0.53722113, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Color: {r: 0.2799039, g: 0.2994548, b: 0.6981132, a: 1}
+  m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -29581,6 +29584,7 @@ MonoBehaviour:
   baseHealthRegen: 0
   baseResourceRegen: 2
   basePoisonDamage: 0
+  baseMaxPoisonStacks: 1
   baseAttackRange: 2
   appliedPoison: 0
   abilities:
@@ -32689,8 +32693,8 @@ MonoBehaviour:
     empoweredMonsterLegendaryDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
-    startingXPPerLevel: 350
-    additionalMaxXPPerLevel: 125
+    startingXPPerLevel: 500
+    additionalMaxXPPerLevel: 174
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25

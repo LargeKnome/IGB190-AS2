@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Diagnostics;
+using UnityEngine.UI;
 using static UnityEngine.UI.CanvasScaler;
 using Random = UnityEngine.Random;
 
@@ -1984,9 +1985,14 @@ public class LogicScript
         return unit.stats.GetValue(Stat.MaxResource);
     }
 
-    public float GetPoisonDamage(Unit unit)
+    public float UnitPoisonDamage(Unit unit)
     {
         return unit.stats.GetValue(Stat.PoisonDamage);
+    }
+
+    public float UnitPoisonStacks(Unit unit)
+    {
+        return unit.stats.GetValue(Stat.MaxPoison);
     }
 
     public float DistanceBetweenPoints (Vector3 vec1, Vector3 vec2)
