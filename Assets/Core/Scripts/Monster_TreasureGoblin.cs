@@ -43,7 +43,21 @@ public class Monster_TreasureGoblin : Monster
     {
         #region Flee Trigger
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(this.transform.position, _FleeFromTargetTriggerDistance);      
+        Gizmos.DrawWireSphere(this.transform.position, _FleeFromTargetTriggerDistance);
+        #endregion
+
+        #region Movment - Fleeing
+        if (zigzagPoints == null || zigzagPoints.Length == 0) return;
+
+        // Set the color of the gizmos (debug spheres)
+        Gizmos.color = Color.red;
+
+        // Loop through each point in the array
+        foreach (Vector3 point in zigzagPoints)
+        {
+            // Draw a sphere at each point
+            Gizmos.DrawSphere(point, 0.5f);
+        }
         #endregion
     }
 
