@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/Utilities.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial 3.asset" afterDir="false" />
-    </list>
+    <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +122,7 @@
       <workItem from="1727790784247" duration="1224000" />
       <workItem from="1727917093008" duration="3442000" />
       <workItem from="1727927583578" duration="2324000" />
-      <workItem from="1728178589220" duration="687000" />
+      <workItem from="1728178589220" duration="1075000" />
     </task>
     <servers />
   </component>
