@@ -54,10 +54,10 @@ namespace MyUtilities
             Unit[] objs = GameObject.FindObjectsOfType<Unit>();
             foreach (Unit obj in objs)
             {
-                Debug.Log(obj);
-                Debug.Log("position"+ obj.transform.position + " stealth value" + obj.stats[Stat.StealthRating].GetValue());
+                if (!obj.stats.HasStat(Stat.StealthRating))
+                { break; }
+                
                 float distance = Vector3.Distance(obj.transform.position, position) / (obj.stats[Stat.StealthRating].GetValue() + 0.001f);
-                Debug.Log(obj);
                 if (distance < closestDistance && obj.IsEnemy(targetUnit))
                 {
                     closest = obj;

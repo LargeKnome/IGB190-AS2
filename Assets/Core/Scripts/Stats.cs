@@ -19,6 +19,11 @@ public class Stats
         }
     }
 
+    public bool HasStat(Stat stat)
+    {
+        return stats.ContainsKey(stat);
+    }
+
     /// <summary>
     /// Provides indexed access to the StatModifier associated with a stat.
     /// </summary>
