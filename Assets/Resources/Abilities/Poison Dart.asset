@@ -229,7 +229,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
-    - rid: 4861970119823196178
+    - rid: 4861970120214315518
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -679,7 +679,7 @@ MonoBehaviour:
         functionDescription: Unit/Unit Poison Damage
         functionDynamicDescription: $ Poison Damage
         functionEvaluators:
-        - rid: 4861970119823196178
+        - rid: 4861970120214315518
         presetName: 
         variableName: 
         stringSuffix: 
