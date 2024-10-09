@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: Lose HP over time, but regain HP when you damage enemies.
   randomStatCount: 2
   itemCost: 700
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
+  itemIcon: {fileID: 21300000, guid: 26326872d54191a4cad83dadabef5ec8, type: 3}
   itemType: 2
   itemRarity: 2
   itemClass: 0

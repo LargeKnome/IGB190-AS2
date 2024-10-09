@@ -10,30 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Greathammer
+  m_Name: Holy Blade
   m_EditorClassIdentifier: 
-  itemName: Greathammer
+  itemName: Holy Blade
   itemDescription: 
-  randomStatCount: 2
+  randomStatCount: 3
   itemCost: 1000
-  itemIcon: {fileID: 21300000, guid: 0f5b3d04a5f8cc7429dcee0332eef1b0, type: 3}
+  itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
   itemType: 2
-  itemRarity: 1
+  itemRarity: 2
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1542196408
+      scriptUID: 1758288334
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480656
+      - rid: 4861970275134603264
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 715823368
+      scriptUID: 1427199080
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480657
+      - rid: 4861970275134603266
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: On Hit Effect
+      scriptUID: 858006224
+      hasWait: 0
+      eventNodes:
+      - rid: 4861970275134603267
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
@@ -42,10 +49,6 @@ MonoBehaviour:
     minimum: 10
     maximum: 14
     isPercent: 0
-  - stat: 3
-    minimum: -0.12
-    maximum: -0.16
-    isPercent: 1
   randomisableStats:
   - stat: 0
     minimum: 4
@@ -56,12 +59,12 @@ MonoBehaviour:
     maximum: 8
     isPercent: 0
   - stat: 4
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 5
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -95,10 +98,18 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 0
+  - stat: 4
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 5
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
   references:
     version: 2
     RefIds:
-    - rid: 4341925671386480656
+    - rid: 4861970275134603264
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -116,7 +127,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925671386480657
+    - rid: 4861970275134603266
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -134,3 +145,28 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 4861970275134603267
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnUnitDamaged
+        functionDescription: Unit/Unit is damaged
+        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
+          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
+          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Damaged Unit
+        - Damaging Unit
+        - Damaging Ability
+        - Damage Dealt
+        - Is Critical

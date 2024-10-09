@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Toms Big bonk
   itemDescription: Dev Item
   randomStatCount: 1
-  itemCost: 1
+  itemCost: 9999
   itemIcon: {fileID: 21300000, guid: 9154282eca33d764096b484f95f485eb, type: 3}
   itemType: 3
   itemRarity: 2

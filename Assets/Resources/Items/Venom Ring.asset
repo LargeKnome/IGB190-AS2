@@ -10,58 +10,64 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Greathammer
+  m_Name: Venom Ring
   m_EditorClassIdentifier: 
-  itemName: Greathammer
+  itemName: Venom Ring
   itemDescription: 
   randomStatCount: 2
-  itemCost: 1000
-  itemIcon: {fileID: 21300000, guid: 0f5b3d04a5f8cc7429dcee0332eef1b0, type: 3}
-  itemType: 2
-  itemRarity: 1
+  itemCost: 700
+  itemIcon: {fileID: 21300000, guid: e7eab74a3fb073e47b8ff5f06f8037e9, type: 3}
+  itemType: 0
+  itemRarity: 2
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1542196408
+      scriptUID: 498391358
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480656
+      - rid: 4861970275134603274
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 715823368
+      scriptUID: 184286957
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480657
+      - rid: 4861970275134603275
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: Passive
+      scriptUID: 381366031
+      hasWait: 0
+      eventNodes: []
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 0
-    minimum: 10
-    maximum: 14
+  - stat: 13
+    minimum: 1
+    maximum: 1
     isPercent: 0
-  - stat: 3
-    minimum: -0.12
-    maximum: -0.16
-    isPercent: 1
-  randomisableStats:
-  - stat: 0
+  - stat: 12
     minimum: 4
     maximum: 6
+    isPercent: 0
+  randomisableStats:
+  - stat: 0
+    minimum: 3
+    maximum: 5
     isPercent: 0
   - stat: 1
     minimum: 6
     maximum: 8
     isPercent: 0
   - stat: 4
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 5
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -83,6 +89,14 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
+  - stat: 4
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 5
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
   - stat: 3
     minimum: 0.06
     maximum: 0.08
@@ -98,7 +112,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4341925671386480656
+    - rid: 4861970275134603274
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -116,7 +130,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925671386480657
+    - rid: 4861970275134603275
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
