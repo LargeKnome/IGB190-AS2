@@ -1316,6 +1316,24 @@ public class LogicScript
         }
     }
 
+    public void OpenGates(string gateName, bool isOpen)
+    {
+        if (gateName.Length == 0)
+        {
+            Error("The gate name cannot be empty.");
+            return;
+        }
+
+        Gate[] gates = GameObject.FindObjectsOfType<Gate>();
+        foreach (Gate gate in gates)
+        {
+            if (gate.gateName == gateName)
+            {
+                gate.SetOpen(isOpen);
+            }
+        }
+    }
+
     public void CreateQuest2(string questName)
     {
         if (questName.Length == 0)
