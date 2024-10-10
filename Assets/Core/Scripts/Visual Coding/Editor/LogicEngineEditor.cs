@@ -1042,6 +1042,14 @@ public class LogicEngineEditor
             StringNode.Temp("Region Name")));
 
         allNodes.Add(GeneralNode.Func<ActionNode>(
+            "Gate/Open Gate",
+            "Set gates named $ to &",
+            "OpenGates",
+            regionIcon,             
+            StringNode.Temp("Gate Name"),
+            BoolNode.Temp("Is Open")));
+
+        allNodes.Add(GeneralNode.Func<ActionNode>(
             "UI/Show Tutorial Message",
             "Show a tutorial message printing $ for $ seconds",
             "ShowTutorialMessage",

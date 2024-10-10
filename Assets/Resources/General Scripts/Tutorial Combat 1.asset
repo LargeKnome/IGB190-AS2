@@ -29,6 +29,7 @@ MonoBehaviour:
       - rid: 4516049468624208375
       - rid: 5554732861290708992
       - rid: 5554732861290708994
+      - rid: 4861970277102780466
   references:
     version: 2
     RefIds:
@@ -502,6 +503,62 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
+    - rid: 4861970277102780466
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OpenGates
+        functionDescription: Gate/Open Gate
+        functionDynamicDescription: Open gates named $
+        functionEvaluators:
+        - rid: 4861970277102780467
+        - rid: 4861970277102780468
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970277102780467
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Gate Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 
+        options: []
+    - rid: 4861970277102780468
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Is Open
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
     - rid: 5554732861290708992
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:

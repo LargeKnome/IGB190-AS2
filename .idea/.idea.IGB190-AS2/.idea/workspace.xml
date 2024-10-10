@@ -6,10 +6,53 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials/Mat_CratesAndBarrelsVol1_01.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials/Mat_CratesAndBarrelsVol1_01.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigBarrel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigBarrel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigCrate.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigCrate.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallBarrel.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallBarrel.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate01.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate01.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate02.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate02.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigBarrel_color01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigBarrel_color01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigCrate_color01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigCrate_color01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallBarrel_color01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallBarrel_color01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate01_color01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate01_color01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate02_color01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate02_color01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/LightingData.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/LightingData.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/ReflectionProbe-0.exr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/ReflectionProbe-0.exr.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_A_color01.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_A_color01.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_M.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_M.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_N.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_N.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_O.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_O.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/manual.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/manual.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Post Processing/Main Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Post Processing/Main Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev2/NavMesh-Navigation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev2/NavMesh-Navigation.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
