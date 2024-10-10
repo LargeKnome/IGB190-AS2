@@ -31878,7 +31878,7 @@ MonoBehaviour:
   baseResourceRegen: 2
   basePoisonDamage: 25
   baseMaxPoisonStacks: 1
-  baseAttackRange: 3
+  baseAttackRange: 1.5
   appliedPoison: 0
   abilities:
   - {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}

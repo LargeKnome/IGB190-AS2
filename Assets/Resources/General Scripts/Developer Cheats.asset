@@ -88,20 +88,12 @@ MonoBehaviour:
       hasWait: 0
       eventNodes:
       - rid: 5554732880808902658
-      conditionNodes: []
+      conditionNodes:
+      - rid: 4861970277102780446
       actionNodes:
-      - rid: 5554732880808902675
-      - rid: 5554732880808902678
-      - rid: 5554732880808902681
-      - rid: 5554732880808902684
-      - rid: 5554732880808902687
-      - rid: 4861970275134603280
-      - rid: 5554732880808902663
-      - rid: 5554732880808902669
-      - rid: 4861970275134603283
-      - rid: 5554732880808902672
-      - rid: 5554732880808902666
-      - rid: 5554732880808902660
+      - rid: 4861970277102780437
+      - rid: 4861970277102780440
+      - rid: 4861970277102780443
   references:
     version: 2
     RefIds:
@@ -1147,17 +1139,17 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 4861970275134603280
+    - rid: 4861970277102780437
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
+        functionName: EnableAbility
+        functionDescription: Unit/Ability/Enable Ability on Unit
+        functionDynamicDescription: Enable $ on $
         functionEvaluators:
-        - rid: 4861970275134603281
-        - rid: 4861970275134603282
+        - rid: 4861970277102780438
+        - rid: 4861970277102780439
         presetName: 
         variableName: 
         stringSuffix: 
@@ -1166,7 +1158,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 4861970275134603281
+    - rid: 4861970277102780438
       type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -1181,10 +1173,10 @@ MonoBehaviour:
         indent: 0
         nodeIcon: 
         allowValue: 1
-        allowPreset: 1
+        allowPreset: 0
         allowFunction: 0
-        value: {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
-    - rid: 4861970275134603282
+        value: {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
+    - rid: 4861970277102780439
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -1202,17 +1194,17 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 4861970275134603283
+    - rid: 4861970277102780440
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
+        functionName: EnableAbility
+        functionDescription: Unit/Ability/Enable Ability on Unit
+        functionDynamicDescription: Enable $ on $
         functionEvaluators:
-        - rid: 4861970275134603284
-        - rid: 4861970275134603285
+        - rid: 4861970277102780441
+        - rid: 4861970277102780442
         presetName: 
         variableName: 
         stringSuffix: 
@@ -1221,7 +1213,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 4861970275134603284
+    - rid: 4861970277102780441
       type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -1236,10 +1228,10 @@ MonoBehaviour:
         indent: 0
         nodeIcon: 
         allowValue: 1
-        allowPreset: 1
+        allowPreset: 0
         allowFunction: 0
-        value: {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
-    - rid: 4861970275134603285
+        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
+    - rid: 4861970277102780442
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -1257,6 +1249,99 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
+    - rid: 4861970277102780443
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: EnableAbility
+        functionDescription: Unit/Ability/Enable Ability on Unit
+        functionDynamicDescription: Enable $ on $
+        functionEvaluators:
+        - rid: 4861970277102780444
+        - rid: 4861970277102780445
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970277102780444
+      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Ability
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
+    - rid: 4861970277102780445
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4861970277102780446
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: KeyIsHeld
+        functionDescription: Input/Key is Held
+        functionDynamicDescription: $ is Held
+        functionEvaluators:
+        - rid: 4861970277102780447
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Keyboard
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 4861970277102780447
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Key
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: LeftControl
+        options: []
     - rid: 5554732880808902658
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1295,556 +1380,6 @@ MonoBehaviour:
         allowFunction: 1
         value: A
         options: []
-    - rid: 5554732880808902660
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 5554732880808902661
-        - rid: 5554732880808902662
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902661
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
-    - rid: 5554732880808902662
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902663
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 5554732880808902664
-        - rid: 5554732880808902665
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902664
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
-    - rid: 5554732880808902665
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902666
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 5554732880808902667
-        - rid: 5554732880808902668
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902667
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
-    - rid: 5554732880808902668
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902669
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 5554732880808902670
-        - rid: 5554732880808902671
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902670
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
-    - rid: 5554732880808902671
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902672
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 5554732880808902673
-        - rid: 5554732880808902674
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902673
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
-    - rid: 5554732880808902674
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902675
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
-        functionEvaluators:
-        - rid: 5554732880808902676
-        - rid: 5554732880808902677
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902676
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
-    - rid: 5554732880808902677
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902678
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
-        functionEvaluators:
-        - rid: 5554732880808902679
-        - rid: 5554732880808902680
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902679
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 5ada5a48635818f4ca548703cf9e2e92, type: 2}
-    - rid: 5554732880808902680
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902681
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
-        functionEvaluators:
-        - rid: 5554732880808902682
-        - rid: 5554732880808902683
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902682
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
-    - rid: 5554732880808902683
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902684
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
-        functionEvaluators:
-        - rid: 5554732880808902685
-        - rid: 5554732880808902686
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902685
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 1223b9678598175449fa8ac3d78eb8ae, type: 2}
-    - rid: 5554732880808902686
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 5554732880808902687
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: RemoveAbilityFromUnit
-        functionDescription: Unit/Ability/Remove Ability
-        functionDynamicDescription: Remove $ from $
-        functionEvaluators:
-        - rid: 5554732880808902688
-        - rid: 5554732880808902689
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902688
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
-    - rid: 5554732880808902689
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
     - rid: 6666404427134402560
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1919,7 +1454,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 0
+        value: O
         options: []
     - rid: 8049626418391548307
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}

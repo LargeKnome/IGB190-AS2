@@ -137,7 +137,12 @@ public class Player : Unit
         // Armor variances
         if (armored)
         {
-            amount = amount * (1.0f / 1.0f + Mathf.Pow(instanceArmor / constant, scalingFactor));
+            Debug.Log("Damage Before Armour: "+amount);
+            
+            Debug.Log(Mathf.Pow((instanceArmor / constant)+1, scalingFactor));
+            
+            amount = amount * (1/Mathf.Pow((instanceArmor / constant)+1, scalingFactor));
+            Debug.Log("Damage After Armour: "+amount);
         }
 
         //Randomness

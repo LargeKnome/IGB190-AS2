@@ -23,7 +23,7 @@ MonoBehaviour:
       actionNodes:
       - rid: 4516049468624208248
       - rid: 4516049468624208184
-      - rid: 4516049468624208187
+      - rid: 4861970277102780428
       - rid: 4516049468624208190
       - rid: 4516049468624208177
     - scriptName: Go To Region
@@ -235,61 +235,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 5
-    - rid: 4516049468624208187
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 4516049468624208188
-        - rid: 4516049468624208189
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 4516049468624208188
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
-    - rid: 4516049468624208189
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
     - rid: 4516049468624208190
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -923,6 +868,61 @@ MonoBehaviour:
         allowFunction: 1
         value: Smoke Level
         options: []
+    - rid: 4861970277102780428
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: EnableAbility
+        functionDescription: Unit/Ability/Enable Ability on Unit
+        functionDynamicDescription: Enable $ on $
+        functionEvaluators:
+        - rid: 4861970277102780429
+        - rid: 4861970277102780430
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970277102780429
+      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Ability
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
+    - rid: 4861970277102780430
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 5554732861290709244
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
