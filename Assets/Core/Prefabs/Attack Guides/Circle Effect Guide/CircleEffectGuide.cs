@@ -38,7 +38,7 @@ public class CircleEffectGuide : MonoBehaviour
         guideRenderer.material.color = color;
         spawnedAt = Time.time;
         guideRenderer.enabled = false;
-        Destroy(gameObject, duration);
+        //Destroy(gameObject, duration);
     }
 
     private void Update()

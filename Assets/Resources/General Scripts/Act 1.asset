@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76ef298ccb713614cb4f11ef9d2c39cd, type: 3}
-  m_Name: Rogue Act 1
+  m_Name: Act 1
   m_EditorClassIdentifier: 
   engine:
     scripts:
@@ -18,11 +18,12 @@ MonoBehaviour:
       scriptUID: 53329975
       hasWait: 0
       eventNodes:
-      - rid: 8049626418391547932
+      - rid: 6405404228899831832
       conditionNodes: []
       actionNodes:
       - rid: 8049626418391547934
       - rid: 8049626418391547935
+      - rid: 6405404228899831834
     - scriptName: On Quest Complete
       scriptUID: 1664872641
       hasWait: 0
@@ -31,38 +32,151 @@ MonoBehaviour:
       conditionNodes: []
       actionNodes:
       - rid: 8049626418391547937
-      - rid: 8049626418391548366
     - scriptName: Quest Objective
       scriptUID: 136644285
       hasWait: 0
       eventNodes:
-      - rid: 8049626418391547940
+      - rid: 6405404228899831836
       conditionNodes:
       - rid: 8049626418391547941
+      - rid: 6405404228899831837
       actionNodes:
       - rid: 8049626418391547942
   references:
     version: 2
     RefIds:
-    - rid: 8049626418391547932
+    - rid: 6405404228899831832
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: OnQuestCompleted
-        functionDescription: Quests/On quest completed
-        functionDynamicDescription: When the quest named $ is completed
+        functionName: UnitEntersRegion
+        functionDescription: Region/Unit enters region
+        functionDynamicDescription: Unit enters region named $
         functionEvaluators:
-        - rid: 8049626418391547943
+        - rid: 6405404228899831833
         presetName: 
         variableName: 
         stringSuffix: 
         indent: 0
-        nodeIcon: QuestNew
+        nodeIcon: Region
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 6405404228899831833
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Quest 1
+        options: []
+    - rid: 6405404228899831834
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 6405404228899831835
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6405404228899831835
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Quest 1
+        options: []
+    - rid: 6405404228899831836
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnItemPickedUp
+        functionDescription: Player/Player picks up an item
+        functionDynamicDescription: 'When the player picks up an item (Presets: <color=yellow>Triggering
+          Item</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Pickup
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Triggering Item
+    - rid: 6405404228899831837
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayerHasItemInInventory
+        functionDescription: Player/Player Has Item In Inventory
+        functionDynamicDescription: Player has $ in their inventory
+        functionEvaluators:
+        - rid: 6405404228899831838
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 6405404228899831838
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: e5cfdaff6a6ca1a4e89c2b4069e044f6, type: 2}
     - rid: 8049626418391547934
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -138,29 +252,6 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 8049626418391547940
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: WhenUnitIsKilled
-        functionDescription: Unit/Unit is killed
-        functionDynamicDescription: 'When a unit is killed (Presets: <color=yellow>Killed
-          Unit</color>, <color=yellow>Killing Unit</color>, <color=yellow>Killing
-          Ability</color>)'
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Event
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets:
-        - Killed Unit
-        - Killing Unit
-        - Killing Ability
     - rid: 8049626418391547941
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
@@ -199,25 +290,6 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 8049626418391547943
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Rogue Tutorial
-        options: []
     - rid: 8049626418391547947
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -235,7 +307,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Rogue Act 1
+        value: Act 1
         options: []
     - rid: 8049626418391547948
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -254,7 +326,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Kill Enemies
+        value: Find the keys
         options: []
     - rid: 8049626418391547949
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -273,7 +345,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Rogue Act 1
+        value: Act 1
         options: []
     - rid: 8049626418391547950
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -292,7 +364,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 2
     - rid: 8049626418391547951
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -310,7 +382,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Rogue Act 1
+        value: Act 1
         options: []
     - rid: 8049626418391547952
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -347,7 +419,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Rogue Act 1
+        value: Act 1
         options: []
     - rid: 8049626418391547958
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -366,7 +438,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Rogue Act 1
+        value: Act 1
         options: []
     - rid: 8049626418391547959
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -386,58 +458,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 8049626418391548366
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddAbilityToUnit
-        functionDescription: Unit/Ability/Add Ability
-        functionDynamicDescription: Add $ to $
-        functionEvaluators:
-        - rid: 8049626418391548367
-        - rid: 8049626418391548368
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 8049626418391548367
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 0
-        value: {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
-    - rid: 8049626418391548368
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
