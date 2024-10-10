@@ -21,7 +21,7 @@ MonoBehaviour:
   abilityAnimation: One Hand Slash
   range: 8
   castTime: 2
-  abilityCooldown: 60
+  abilityCooldown: 30
   abilityCost: 0
   movementLock: 1
   animationActivationPosition: 0.5
@@ -39,6 +39,193 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1272989510213567965
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnEffectAtLocation
+        functionDescription: Feedback/Play Effect at Location
+        functionDynamicDescription: Play $ effect at $ for $ at $ scale
+        functionEvaluators:
+        - rid: 1272989510213567966
+        - rid: 1272989510213567967
+        - rid: 1272989510213567968
+        - rid: 1272989510213567969
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Effect
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1272989510213567966
+      type: {class: EffectNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Effect
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 801553607455946205, guid: 66019bf5298a9b6458a95a027055a760, type: 3}
+    - rid: 1272989510213567967
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: PositionOfUnit
+        functionDescription: Unit/Position of Unit
+        functionDynamicDescription: Position of $
+        functionEvaluators:
+        - rid: 1272989510213567985
+        presetName: Ability Target Location
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 1272989510213567968
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: s
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1272989510213567969
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: x
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1.5
+    - rid: 1272989510213567985
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 1272989510213567986
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayUnitAnimation
+        functionDescription: Unit/Play Animation
+        functionDynamicDescription: Play $ animation on $
+        functionEvaluators:
+        - rid: 1272989510213567987
+        - rid: 1272989510213567988
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1272989510213567987
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: Magic Area Attack
+        options:
+        - None
+        - One Hand Slash
+        - One Hand Stab
+        - Two Hand Slash
+        - Cheer
+        - Shout
+        - Pickup
+        - Magic Channel
+        - Magic Area Attack
+        - Punch
+        - Bow Shoot
+        - Jump
+        - Magic Front Attack
+        - Roll
+        - Custom1
+        - Custom2
+        - Custom3
+        - Custom4
+        - Custom5
+    - rid: 1272989510213567988
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 1338031111683441224
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -52,6 +239,8 @@ MonoBehaviour:
           conditionNodes: []
           actionNodes:
           - rid: 1338031111683441227
+          - rid: 1272989510213567965
+          - rid: 1272989510213567986
           - rid: 1338031111683441228
           - rid: 1338031111683441229
           - rid: 1338031111683441230

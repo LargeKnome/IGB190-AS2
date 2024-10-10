@@ -88,9 +88,14 @@ public class Monster : Unit
         UpdateOutline();
         CalculateMonsterTargeting();
 
+        if (engagementState == EngagementState.StandStill)
+        {
+            agentNavigation.SetDestination(this.transform.position);
+            return;
+        }          
         if (engagementState == EngagementState.MoveTowards)
             HandleMovement();
-        else
+        else if (engagementState == EngagementState.Flee)
             HandleFleeMovement();
     }
 

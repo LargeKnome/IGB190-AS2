@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498993261086472550}
+  - component: {fileID: 2780831380324950161}
   - component: {fileID: 6773343702762155168}
   - component: {fileID: 1404768138306344450}
-  - component: {fileID: 243147159722867909}
-  - component: {fileID: 2780831380324950161}
+  - component: {fileID: 1563656361941672146}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Untagged
@@ -29,13 +29,40 @@ Transform:
   m_GameObject: {fileID: 8637392150435583504}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3086634218803522121}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &2780831380324950161
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637392150435583504}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &6773343702762155168
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79,7 +106,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &243147159722867909
+--- !u!114 &1563656361941672146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -88,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8637392150435583504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a25dff70c664a840943179529e649fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 59d1a7d281818f94bb75829894fbcbac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 0}
@@ -97,12 +124,12 @@ MonoBehaviour:
   unitName: 'Zephyr The Eternal '
   health: 100
   resource: 0
-  baseDamage: 20
+  baseDamage: 25
   baseAttacksPerSecond: 2
   baseMaxHealth: 500
   baseMaxResource: 100
   baseMovementSpeed: 2
-  baseArmor: 0
+  baseArmor: 50
   baseCriticalStrikeChance: 0.2
   baseCriticalStrikeDamage: 2
   baseHealthRegen: 0
@@ -112,7 +139,7 @@ MonoBehaviour:
   baseAttackRange: 2
   appliedPoison: 0
   abilities:
-  - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+  - {fileID: 11400000, guid: 8259e744bf6ebbd4195eb93a1d63bb63, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1
@@ -130,40 +157,18 @@ MonoBehaviour:
   experienceModifier: 1
   corpseDuration: 60
   monsterLabel: Boss
-  isEmpowered: 1
-  healthBarType: 1
+  isEmpowered: 0
+  healthBarType: 2
   uiSize: 3.6
   uiHeight: 2
   spawnLevel: 1
   spawnLikelihood: 0
-  OutlineColor: {r: 0.5, g: 0, b: 0, a: 1}
---- !u!54 &2780831380324950161
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8637392150435583504}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  OutlineColor: {r: 0.5019608, g: 0, b: 0, a: 1}
+  _healthSecondStage_Min: 0.5
+  _healthSecondStage_Max: 0.25
+  _fleeFromTargetTriggerDistance: 3
+  _fleeFromTargetMaxDistance: 6
+  _isInSecondStage: 0
 --- !u!1001 &3269424259069644194
 PrefabInstance:
   m_ObjectHideFlags: 0
