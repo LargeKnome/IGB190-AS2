@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: Boss - Cleave - Stage2
+  m_Name: Boss - Cleave - Stage 3
   m_EditorClassIdentifier: 
   engine:
     rid: 1338031111683441097
-  abilityName: Boss - Cleave - Stage2
+  abilityName: Boss - Cleave - Stage 3
   abilityIcon: {fileID: 21300000, guid: 5c06d58fe97ebfb40ad16877f1488733, type: 3}
   targetMode: 3
   abilityDescription: Swing with a mighty attack, dealing 50% attack damage to all

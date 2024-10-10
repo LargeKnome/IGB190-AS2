@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 498993261086472550}
   - component: {fileID: 6773343702762155168}
   - component: {fileID: 1404768138306344450}
+  - component: {fileID: 4787076006508240896}
   - component: {fileID: 243147159722867909}
   - component: {fileID: 2780831380324950161}
   m_Layer: 7
-  m_Name: Boss
+  m_Name: Boss_V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +80,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &243147159722867909
+--- !u!114 &4787076006508240896
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,6 +88,68 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8637392150435583504}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59d1a7d281818f94bb75829894fbcbac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  colorFade: {r: 0, g: 0, b: 0, a: 0}
+  unitName: 'Zephyr The Eternal '
+  health: 100
+  resource: 0
+  baseDamage: 25
+  baseAttacksPerSecond: 2
+  baseMaxHealth: 500
+  baseMaxResource: 100
+  baseMovementSpeed: 2
+  baseArmor: 50
+  baseCriticalStrikeChance: 0.2
+  baseCriticalStrikeDamage: 2
+  baseHealthRegen: 0
+  baseResourceRegen: 0
+  basePoisonDamage: 10
+  baseMaxPoisonStacks: 1
+  baseAttackRange: 2
+  appliedPoison: 0
+  abilities:
+  - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+  lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
+  handPoint: {fileID: 8602773439654565985}
+  onDeathFeedback: {fileID: 11400000, guid: 0256ddc6b3a273d418c5861d14162aa9, type: 2}
+  onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
+  threatRating: 1
+  alliedFaction: 0
+  engagementState: 0
+  isDead: 0
+  spawnEffect: {fileID: -68291847361665647, guid: e4357c10759ce5742b540e7790443698, type: 3}
+  goldModifier: 50
+  experienceModifier: 1
+  corpseDuration: 60
+  monsterLabel: Boss
+  isEmpowered: 0
+  healthBarType: 2
+  uiSize: 3.6
+  uiHeight: 2
+  spawnLevel: 1
+  spawnLikelihood: 0
+  OutlineColor: {r: 0.5019608, g: 0, b: 0, a: 1}
+  _healthSecondStage_Min: 0.5
+  _healthSecondStage_Max: 0.25
+  _fleeFromTargetTriggerDistance: 4
+  _fleeFromTargetMaxDistance: 8
+--- !u!114 &243147159722867909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8637392150435583504}
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a25dff70c664a840943179529e649fc, type: 3}
   m_Name: 

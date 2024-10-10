@@ -244,8 +244,8 @@ MonoBehaviour:
         functionDescription: Random/Random Point Near Unit
         functionDynamicDescription: Random point within $ of $
         functionEvaluators:
-        - rid: 1338031111683441291
-        - rid: 1338031111683441292
+        - rid: 1338031111683441524
+        - rid: 1338031111683441525
         presetName: Ability Target Location
         variableName: 
         stringSuffix: 
@@ -339,7 +339,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
+        value: 1
     - rid: 1338031111683441284
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -357,7 +357,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: None
+        value: Invincibility
         options: []
     - rid: 1338031111683441285
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -471,7 +471,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 1338031111683441291
+    - rid: 1338031111683441524
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -488,8 +488,8 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 8
-    - rid: 1338031111683441292
+        value: 3
+    - rid: 1338031111683441525
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4

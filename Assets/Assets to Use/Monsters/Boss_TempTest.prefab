@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 243147159722867909}
   - component: {fileID: 2780831380324950161}
   m_Layer: 7
-  m_Name: Boss
+  m_Name: Boss_TempTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   outline: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
   colorFade: {r: 0, g: 0, b: 0, a: 0}
-  unitName: 'Zephyr The Eternal '
+  unitName: Boss
   health: 100
   resource: 0
   baseDamage: 20
@@ -112,7 +112,7 @@ MonoBehaviour:
   baseAttackRange: 2
   appliedPoison: 0
   abilities:
-  - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+  - {fileID: 11400000, guid: ed481426caca1ed4ea58da62a8cb01bc, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1

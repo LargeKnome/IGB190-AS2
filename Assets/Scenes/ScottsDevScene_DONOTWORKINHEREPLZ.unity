@@ -9233,6 +9233,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: baseDamage
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.2
@@ -9243,7 +9247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.54
+      value: 3.85
       objectReference: {fileID: 0}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9277,9 +9281,41 @@ PrefabInstance:
       propertyPath: m_AgentTypeID
       value: -1372625422
       objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: baseArmor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: alliedFaction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: baseMaxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: healthBarType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: abilities.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: abilities.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
+    - target: {fileID: 4787076006508240896, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: abilities.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
     - target: {fileID: 8637392150435583504, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637392150435583504, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -18209,6 +18245,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 308891659344390708, guid: e557981827fcf144ca57fae33a7a90b8, type: 3}
   m_PrefabInstance: {fileID: 1274158453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1286517381
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 498993261086472550, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637392150435583504, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_Name
+      value: Boss_TempTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8637392150435583504, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa78ea4e1b1b091469bbb2987a090516, type: 3}
 --- !u!1001 &1293348495
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37381,4 +37478,5 @@ SceneRoots:
   - {fileID: 767773187}
   - {fileID: 1032757884}
   - {fileID: 3027885256279628457}
+  - {fileID: 1286517381}
   - {fileID: 582695627}
