@@ -138,9 +138,7 @@ public class Unit : Interactable
         // Armor variances
         if (armored)
         {
-            Debug.Log("Damage Before Armour: "+amount);
-            amount = amount * Mathf.Pow(instanceArmor / constant, scalingFactor);
-            Debug.Log("Damage After Armour: "+amount);
+            amount = amount * (1.0f / 1.0f + Mathf.Pow((instanceArmor / constant)+1, scalingFactor));
         }
 
         //Randomness

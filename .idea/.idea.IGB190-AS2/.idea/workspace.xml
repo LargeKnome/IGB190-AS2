@@ -8,14 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Boss.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Boss.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Developer Cheats.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Act 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Rogue Tutorial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial 2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial 2.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/General Scripts/Tutorial.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HaileyDev Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HaileyDev Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev2/NavMesh-Navigation.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev2/NavMesh-Navigation.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +62,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\tom\UnityProjects\IGB190-AS2 -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tom\UnityProjects\IGB190-AS2" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -76,7 +70,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1-x86_64\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\tom\UnityProjects\IGB190-AS2 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tom\UnityProjects\IGB190-AS2" />
       <option name="PASS_PARENT_ENVS" value="1" />
