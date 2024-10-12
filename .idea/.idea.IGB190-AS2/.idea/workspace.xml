@@ -6,53 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials/Mat_CratesAndBarrelsVol1_01.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Materials/Mat_CratesAndBarrelsVol1_01.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigBarrel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigBarrel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigCrate.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_BigCrate.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallBarrel.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallBarrel.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Models/Mod_SmallCrate02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigBarrel_color01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigBarrel_color01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigCrate_color01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_BigCrate_color01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallBarrel_color01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallBarrel_color01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate01_color01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate01_color01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate02_color01.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Prefabs/Prefab_SmallCrate02_color01.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Scenes/CratesBarrelsVol1_demoScene/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_A_color01.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_A_color01.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_M.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_M.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_N.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_N.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_O.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/Textures/Tex_CratesAndBarrelsVol1_O.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/manual.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Crates And Barrels Pack Volume 1 - Free Version/manual.txt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Post Processing/Main Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Post Processing/Main Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TomDev2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicNodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicNodes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StoreAssets/L_FG_Assets_Pack_Lite/Demo/cameraMove.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StoreAssets/L_FG_Assets_Pack_Lite/Demo/cameraMove.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,9 +46,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\gumtr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\gumtr\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\gumtr\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\Tom\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Tom\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Tom\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -105,7 +62,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\tom\UnityProjects\IGB190-AS2 -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tom\UnityProjects\IGB190-AS2" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -113,7 +70,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1-x86_64\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.37f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\tom\UnityProjects\IGB190-AS2 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\tom\UnityProjects\IGB190-AS2" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -172,6 +129,8 @@
       <workItem from="1727917093008" duration="3442000" />
       <workItem from="1727927583578" duration="2324000" />
       <workItem from="1728178589220" duration="1075000" />
+      <workItem from="1728716580314" duration="1649000" />
+      <workItem from="1728736392441" duration="879000" />
     </task>
     <servers />
   </component>

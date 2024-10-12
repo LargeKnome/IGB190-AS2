@@ -162,7 +162,7 @@ public class GeneralNode
             {
                 return presets[functionName];
             }
-
+            
             MethodInfo methodInfo = (typeof(LogicScript)).GetMethod(functionName);
             if (methodInfo == null) Debug.Log($"No method named {functionName} found!");
             object[] resolvedArgs = new object[functionEvaluators.Length];

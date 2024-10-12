@@ -2550,6 +2550,11 @@ public class LogicScript
         return false;
     }
 
+    public bool PlayerHasItemInInventory(Item item)
+    {
+        return false;
+    }
+
     #endregion
 
     #region Ability Value Nodes
