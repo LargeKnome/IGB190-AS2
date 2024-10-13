@@ -125,7 +125,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Combat
+        value: Combat 2
         options: []
     - rid: 6405404228899832287
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
@@ -163,7 +163,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 0.69, y: -5.88, z: -0.48}
+        value: {x: 11.65, y: 0.14, z: 12.03}
     - rid: 6405404228899832289
       type: {class: ItemNode, ns: , asm: Assembly-CSharp}
       data:
@@ -802,7 +802,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Combat
+        value: Combat 2
         options: []
     - rid: 8049625992712945900
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -840,7 +840,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Combat
+        value: Combat 2
         options: []
     - rid: 8049625992712945902
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -877,7 +877,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Combat
+        value: Combat 2
         options: []
     - rid: 8049625992712945910
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -896,7 +896,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Combat
+        value: Combat 2
         options: []
     - rid: 8049625992712945911
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}

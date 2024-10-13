@@ -176,7 +176,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: e5cfdaff6a6ca1a4e89c2b4069e044f6, type: 2}
+        value: {fileID: 11400000, guid: 49e19ae3fde2e8345814c243155ff725, type: 2}
     - rid: 8049626418391547934
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -457,4 +457,4 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 2
