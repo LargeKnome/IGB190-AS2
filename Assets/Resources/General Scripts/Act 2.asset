@@ -22,6 +22,7 @@ MonoBehaviour:
       conditionNodes: []
       actionNodes:
       - rid: 8049625992712945887
+      - rid: 5554733040940089344
       - rid: 8049625992712945888
       - rid: 6405404228899832296
       - rid: 6405404228899832299
@@ -51,6 +52,43 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 5554733040940089344
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 5554733040940089345
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 5554733040940089345
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Combat 3
+        options: []
     - rid: 6405404228899832283
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
