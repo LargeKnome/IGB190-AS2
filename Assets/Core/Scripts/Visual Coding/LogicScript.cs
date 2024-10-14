@@ -2549,9 +2549,39 @@ public class LogicScript
     {
         return false;
     }
-
-    public bool PlayerHasItemInInventory(Item item)
+    public bool PlayerHasItemEquipped (Item item)
     {
+        if (item == null)
+        {
+            Error("The specified item is invalid.");
+            return false;
+        }
+        for (int i = 0; i < GameManager.player.equipment.GetSlots(); i++)
+        {
+            Item slotItem = GameManager.player.equipment.GetItemAtID(i);
+            if (slotItem != null && slotItem.itemName == item.itemName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool PlayerHasItemInInventory (Item item)
+    {
+        if (item == null)
+        {
+            Error("The specified item is invalid.");
+            return false;
+        }
+        for (int i = 0; i < GameManager.player.inventory.GetSlots(); i++)
+        {
+            Item slotItem = GameManager.player.inventory.GetItemAtID(i);
+            if (slotItem != null && slotItem.itemName == item.itemName)
+            {
+                return true;
+            }
+        }
         return false;
     }
 

@@ -568,7 +568,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 1421580895277686589, guid: 190bd6c53975fa346b2ecbeb6279a001, type: 3}
+        value: {fileID: 1178060811716069340, guid: 6e80d97d6fd0f2146bc8ee1fe96e15d6, type: 3}
     - rid: 4341925670055051910
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
