@@ -47,10 +47,66 @@ MonoBehaviour:
       conditionNodes: []
       actionNodes:
       - rid: 6405404228899832278
-      - rid: 6405404228899832281
+      - rid: 4801942535028080666
   references:
     version: 2
     RefIds:
+    - rid: 4801942535028080666
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OpenGates
+        functionDescription: Gate/Open Gate
+        functionDynamicDescription: Set gates named $ to &
+        functionEvaluators:
+        - rid: 4801942535028080667
+        - rid: 4801942535028080668
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4801942535028080667
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Gate Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Gate 5
+        options: []
+    - rid: 4801942535028080668
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Is Open
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
     - rid: 6405404228899831957
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -993,40 +1049,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 11400000, guid: e5cfdaff6a6ca1a4e89c2b4069e044f6, type: 2}
-    - rid: 6405404228899832281
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: DestroyRegions
-        functionDescription: Region/Destroy Region
-        functionDynamicDescription: Destroy regions named $
-        functionEvaluators:
-        - rid: 6405404228899832282
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Region
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 6405404228899832282
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Region Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Act 2
-        options: []
