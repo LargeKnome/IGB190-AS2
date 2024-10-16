@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50beb5e9-082f-4eb6-9749-00a108e8bf58" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IGB190-AS2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicNodes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicNodes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Visual Coding/LogicScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StoreAssets/L_FG_Assets_Pack_Lite/Demo/cameraMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StoreAssets/L_FG_Assets_Pack_Lite/Demo/cameraMove.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/DestroyAt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Core/Scripts/Utility/DestroyAt.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

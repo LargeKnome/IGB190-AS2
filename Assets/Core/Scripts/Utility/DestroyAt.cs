@@ -9,7 +9,6 @@ public class DestroyAt : MonoBehaviour
     {
         if (Time.time > time)
         {
-            iteration += 1;
             ObjectPooler.DestroyPooled(gameObject);
         }
     }
