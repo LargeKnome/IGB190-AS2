@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3332526}
   - component: {fileID: 2336974}
   m_Layer: 0
-  m_Name: candle2
+  m_Name: candleSpooky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,7 +127,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.51724136, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.16215563, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 6
   m_SpotAngle: 30
