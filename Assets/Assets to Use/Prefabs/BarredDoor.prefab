@@ -832,6 +832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3580443081087024000}
   - component: {fileID: 1114144230116841475}
+  - component: {fileID: 1557185761038075013}
   m_Layer: 9
   m_Name: Gate
   m_TagString: Untagged
@@ -872,6 +873,27 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 1.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!65 &1557185761038075013
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385454932321023669}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.56, y: 2.5, z: 1.5}
+  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!1 &7177398842858815692
 GameObject:
   m_ObjectHideFlags: 0
