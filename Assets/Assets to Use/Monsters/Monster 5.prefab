@@ -5007,15 +5007,23 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 2
   baseHealthRegen: 0
   baseResourceRegen: 0
+  basePoisonDamage: 10
+  baseMaxPoisonStacks: 1
   baseAttackRange: 2.2
+  appliedPoison: 0
   abilities:
   - {fileID: 11400000, guid: a754a6374a0c8674cbcc3b4c8912ec17, type: 2}
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 11400000, guid: 84adead40393a4e4582f15d95dba0ac6, type: 2}
   onHitFeedback: {fileID: 11400000, guid: 51eb79cf66c4e5447a2f14bf112f7d1b, type: 2}
   threatRating: 1
   alliedFaction: 1
+  engagementState: 0
   isDead: 0
   spawnEffect: {fileID: -68291847361665647, guid: c0ee2f05980c4c74f922864461f883d8, type: 3}
   goldModifier: 1
@@ -5027,7 +5035,7 @@ MonoBehaviour:
   uiSize: 1
   uiHeight: 1.7
   spawnLevel: 1
-  spawnLikelihood: 10
+  spawnLikelihood: 5
   OutlineColor: {r: 0.5, g: 0, b: 0, a: 1}
 --- !u!54 &5473502248093228870
 Rigidbody:
