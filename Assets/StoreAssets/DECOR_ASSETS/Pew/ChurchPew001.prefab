@@ -72,8 +72,150 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChurchPew001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1387764905818646233}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6585415591361219464}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1809631578039047580}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4110157721283367180}
   m_SourcePrefab: {fileID: 100100000, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+--- !u!1 &8104318288796709009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d6017bdd26e3cc4b9272ea040a2001e, type: 3}
+  m_PrefabInstance: {fileID: 8987279790912359872}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1387764905818646233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104318288796709009}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 33.567497, y: 102.44333, z: 47.71112}
+  m_Center: {x: 0.000008583069, y: -0.12946701, z: -0.0000076293945}
+--- !u!114 &-6585415591361219464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104318288796709009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a25dff70c664a840943179529e649fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 0}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  colorFade: {r: 0, g: 0, b: 0, a: 0}
+  unitName: Sir Box Cartington III
+  health: 100
+  resource: 0
+  baseDamage: 9999999
+  baseAttacksPerSecond: 0
+  baseMaxHealth: 1
+  baseMaxResource: 0
+  baseMovementSpeed: 0
+  baseArmor: 0
+  baseCriticalStrikeChance: 0
+  baseCriticalStrikeDamage: 0
+  baseHealthRegen: 0
+  baseResourceRegen: 0
+  basePoisonDamage: 0
+  baseMaxPoisonStacks: 0
+  baseAttackRange: 0
+  appliedPoison: 0
+  abilities: []
+  lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
+  handPoint: {fileID: 0}
+  onDeathFeedback: {fileID: 0}
+  onHitFeedback: {fileID: 0}
+  threatRating: 1
+  alliedFaction: 1
+  engagementState: 2
+  isDead: 0
+  spawnEffect: {fileID: 0}
+  goldModifier: 1
+  experienceModifier: 0
+  corpseDuration: 0
+  monsterLabel: 
+  isEmpowered: 0
+  healthBarType: 0
+  uiSize: 0
+  uiHeight: 0
+  spawnLevel: 1
+  spawnLikelihood: 5
+  OutlineColor: {r: 0, g: 0.8, b: 0, a: 1}
+--- !u!195 &1809631578039047580
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104318288796709009}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.4
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &4110157721283367180
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8104318288796709009}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
