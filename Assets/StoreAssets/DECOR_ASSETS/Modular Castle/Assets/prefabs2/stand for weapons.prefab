@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 440894}
   - component: {fileID: 3347850}
   - component: {fileID: 2361822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 447222}
   - component: {fileID: 3311002}
   - component: {fileID: 2338772}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: axe 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 459070}
   - component: {fileID: 3336402}
   - component: {fileID: 2395966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 447854}
   - component: {fileID: 3399066}
   - component: {fileID: 2332834}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 418960}
   - component: {fileID: 3306298}
   - component: {fileID: 2398070}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: sword 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 431942}
   - component: {fileID: 3372018}
   - component: {fileID: 2375938}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: stand for weapons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,8 +443,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 447854}
   - {fileID: 447222}
