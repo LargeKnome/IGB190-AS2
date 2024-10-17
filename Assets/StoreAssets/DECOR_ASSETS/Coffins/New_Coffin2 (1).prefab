@@ -48,9 +48,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1256712994857288275, guid: 337c5c027ea0d0f4ba6e1fc4e234d761, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 337c5c027ea0d0f4ba6e1fc4e234d761, type: 3}
       propertyPath: m_Name
       value: New_Coffin2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 337c5c027ea0d0f4ba6e1fc4e234d761, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
