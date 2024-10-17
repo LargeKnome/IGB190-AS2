@@ -563,6 +563,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster_Shaman
       objectReference: {fileID: 0}
+    - target: {fileID: 4156121889994217623, guid: c5caba1ed10f55e4284549c81dac6d81, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5233018978569172961, guid: c5caba1ed10f55e4284549c81dac6d81, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -9691,7 +9695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &623941939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10292,6 +10296,10 @@ PrefabInstance:
     - target: {fileID: 4156121889994217623, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
       propertyPath: m_Name
       value: Monster 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156121889994217623, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5233018978569172961, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12186,7 +12194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &840699974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14638,6 +14646,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5523019307560661939, guid: 1a31a156dd6e56c4882305330f6ae8e8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16671,7 +16683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.68
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 498993261086472550, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16715,7 +16727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637392150435583504, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17133,6 +17145,10 @@ PrefabInstance:
     - target: {fileID: 7089410253440013145, guid: 02102f2f786a49d418694911eea0f16f, type: 3}
       propertyPath: m_Name
       value: Monster 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7089410253440013145, guid: 02102f2f786a49d418694911eea0f16f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -25933,6 +25949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5662016874593143378, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6079015316810904102, guid: 95e79f8cd03667940b5af7531101d9f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.74
@@ -28935,6 +28955,10 @@ PrefabInstance:
     - target: {fileID: 330290348599631566, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
       propertyPath: m_Name
       value: Monster 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 330290348599631566, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8382991122956485601, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
       propertyPath: m_LocalPosition.x

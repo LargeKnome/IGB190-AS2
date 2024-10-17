@@ -1288,7 +1288,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 0, y: 0, z: 0}
+        value: {x: 51, y: 4, z: -68}
     - rid: 1338031111683441569
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
