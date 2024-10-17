@@ -3,8 +3,8 @@ using UnityEngine;
 public class Monster_Boss : Monster
 {
     [Header("Boss Varaibles")]
-    [SerializeField] private float _healthSecondStage_Min = 0.5f;
-    [SerializeField] private float _healthSecondStage_Max = 0.25f;
+    [SerializeField] private float _healthSecondStage_Min = 0.4f;
+    [SerializeField] private float _healthSecondStage_Max = 0.2f;
 
     [SerializeField] private float _fleeFromTargetTriggerDistance = 3f;
     [SerializeField] private float _fleeFromTargetMaxDistance = 6F;
