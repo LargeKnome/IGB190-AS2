@@ -39,107 +39,13 @@ MonoBehaviour:
       - rid: 6405404228899831836
       conditionNodes:
       - rid: 8049626418391547941
-      - rid: 5554733040940089358
+      - rid: 6405404386577613413
       actionNodes:
       - rid: 8049626418391547942
       - rid: 5554733040940089428
   references:
     version: 2
     RefIds:
-    - rid: 5554733040940089358
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: OrComparison
-        functionDescription: Comparisons/Or Comparison
-        functionDynamicDescription: $ or $
-        functionEvaluators:
-        - rid: 5554733040940089359
-        - rid: 5554733040940089360
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Condition
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 5554733040940089359
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Bool
-        functionName: PlayerHasItemInInventory
-        functionDescription: Player/Player Has Item In Inventory
-        functionDynamicDescription: Player has $ in their inventory
-        functionEvaluators:
-        - rid: 5554733040940089401
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 5554733040940089360
-      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Bool
-        functionName: PlayerHasItemEquipped
-        functionDescription: Player/Player Has Item Equipped
-        functionDynamicDescription: Player has $ equipped
-        functionEvaluators:
-        - rid: 5554733040940089427
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 5554733040940089401
-      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Item
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 11400000, guid: 49e19ae3fde2e8345814c243155ff725, type: 2}
-    - rid: 5554733040940089427
-      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Item
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 11400000, guid: e5cfdaff6a6ca1a4e89c2b4069e044f6, type: 2}
     - rid: 5554733040940089428
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -272,6 +178,43 @@ MonoBehaviour:
         allowFunction: 1
         presets:
         - Triggering Item
+    - rid: 6405404386577613413
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayerHasItemInInventory
+        functionDescription: Player/Player Has Item In Inventory
+        functionDynamicDescription: Player has $ in their inventory
+        functionEvaluators:
+        - rid: 6405404386577613414
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 6405404386577613414
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 49e19ae3fde2e8345814c243155ff725, type: 2}
     - rid: 8049626418391547934
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:

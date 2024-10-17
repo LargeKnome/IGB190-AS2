@@ -173,6 +173,7 @@ public class Monster : Unit
     {
         if (CanMove())
         {
+            //target = GameManager.player;
             if (target != null && !InRange(target.transform.position))
             {
                 agentNavigation.SetDestination(target.transform.position);

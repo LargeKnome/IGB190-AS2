@@ -53,10 +53,15 @@ namespace MyUtilities
             float closestDistance = maxDistance;
             Unit[] objs = GameObject.FindObjectsOfType<Unit>();
             foreach (Unit obj in objs)
-            {
+            {           
                 if (!obj.stats.HasStat(Stat.StealthRating))
-                { break; }
-                
+                { continue; }
+
+                if (obj.unitName == "Rogue")
+                {
+                    Debug.Log("found player");
+                }
+
                 float distance = Vector3.Distance(obj.transform.position, position) / (obj.stats[Stat.StealthRating].GetValue() + 0.001f);
                 if (distance < closestDistance && obj.IsEnemy(targetUnit))
                 {
@@ -64,6 +69,7 @@ namespace MyUtilities
                     closestDistance = distance;
                 }
             }
+
             return closest;
         }
 

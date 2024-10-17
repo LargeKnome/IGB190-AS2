@@ -58,6 +58,7 @@ public class Interactable : MonoBehaviour
     /// </summary>
     public virtual void SetOutline(Color color, float size = 2.0f, float fadeAlpha = 0.03f)
     {
+        return;
         if (outline == null)
         {
             outline = gameObject.AddComponent<Outline>();
