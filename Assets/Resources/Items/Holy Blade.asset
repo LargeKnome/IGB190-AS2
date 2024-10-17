@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Holy Blade
   itemDescription: 
   randomStatCount: 3
-  itemCost: 1000
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: 5ad9fb827823973498b6278fd53029ed, type: 3}
   itemType: 2
   itemRarity: 2

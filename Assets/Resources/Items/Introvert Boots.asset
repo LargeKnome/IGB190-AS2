@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Introvert Boots
   itemDescription: 
   randomStatCount: 2
-  itemCost: 700
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: 1dd5475aa69c19b4bbedf02adffe5e0b, type: 3}
   itemType: 4
   itemRarity: 2

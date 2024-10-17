@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Leather Armour
   itemDescription: 
   randomStatCount: 2
-  itemCost: 800
+  itemCost: 300
   itemIcon: {fileID: 21300000, guid: f525fc04d7de01647a20ff599129b2f1, type: 3}
   itemType: 3
   itemRarity: 1

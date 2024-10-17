@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Blood Ring
   itemDescription: While below 50% HP, deal +50% Damage
   randomStatCount: 2
-  itemCost: 700
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: 09447583938b3ae4fa2ee9e1e9a1aab1, type: 3}
   itemType: 0
   itemRarity: 2

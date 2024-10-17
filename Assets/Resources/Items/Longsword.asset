@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Longsword
   itemDescription: 
   randomStatCount: 2
-  itemCost: 1000
+  itemCost: 300
   itemIcon: {fileID: 21300000, guid: 09b62cca23038b9438555a6258a5c0ca, type: 3}
   itemType: 2
   itemRarity: 1

@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Curved Dagger
   itemDescription: 
   randomStatCount: 2
-  itemCost: 1000
+  itemCost: 300
   itemIcon: {fileID: 21300000, guid: a60d7214b3cad2e4b94d312daeda3185, type: 3}
   itemType: 2
   itemRarity: 1

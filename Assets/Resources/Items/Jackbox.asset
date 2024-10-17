@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Jackbox
   itemDescription: 
   randomStatCount: 4
-  itemCost: 700
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: 74147d83c76aa6945ae2be73712532e1, type: 3}
   itemType: 0
   itemRarity: 2

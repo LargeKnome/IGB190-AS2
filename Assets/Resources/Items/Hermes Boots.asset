@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Hermes Boots
   itemDescription: 
   randomStatCount: 1
-  itemCost: 500
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
   itemType: 4
   itemRarity: 2

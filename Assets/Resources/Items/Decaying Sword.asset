@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Decaying Sword
   itemDescription: Lose HP over time, but regain HP when you damage enemies.
   randomStatCount: 2
-  itemCost: 700
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: 26326872d54191a4cad83dadabef5ec8, type: 3}
   itemType: 2
   itemRarity: 2

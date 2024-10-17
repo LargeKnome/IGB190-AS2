@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Plate Armour
   itemDescription: 
   randomStatCount: 2
-  itemCost: 800
+  itemCost: 600
   itemIcon: {fileID: 21300000, guid: b457cb83eb884fe4782bcb9d3681fe90, type: 3}
   itemType: 3
   itemRarity: 2

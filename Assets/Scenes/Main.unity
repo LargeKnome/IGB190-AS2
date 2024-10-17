@@ -56501,7 +56501,7 @@ MonoBehaviour:
   _monsterValues:
     baseGoldDropAmountMinimum: 10
     baseGoldDropAmountMaximum: 20
-    goldDropChance: 0.2
+    goldDropChance: 0.4
     unempoweredMonsterCommonDropChance: 0.05
     unempoweredMonsterRareDropChance: 0.02
     unempoweredMonsterLegendaryDropChance: 0.01
