@@ -98,10 +98,6 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 10
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
   - stat: 11
     minimum: 0.06
     maximum: 0.08

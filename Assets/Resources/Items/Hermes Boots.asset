@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Hermes Boots
   itemDescription: 
-  randomStatCount: 1
+  randomStatCount: 3
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: a49193b555b34a046a80294f41fb8bf9, type: 3}
   itemType: 4
@@ -69,10 +69,6 @@ MonoBehaviour:
   - stat: 0
     minimum: 0.06
     maximum: 0.08
-    isPercent: 1
-  - stat: 6
-    minimum: 0.08
-    maximum: 0.12
     isPercent: 1
   - stat: 7
     minimum: 0.06

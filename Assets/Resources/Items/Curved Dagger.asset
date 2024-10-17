@@ -47,21 +47,17 @@ MonoBehaviour:
     maximum: 0.08
     isPercent: 1
   randomisableStats:
-  - stat: 0
-    minimum: 4
-    maximum: 6
-    isPercent: 0
   - stat: 1
     minimum: 6
     maximum: 8
     isPercent: 0
   - stat: 4
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 5
-    minimum: 40
-    maximum: 60
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -83,17 +79,13 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 3
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 1
-  - stat: 10
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
   - stat: 11
     minimum: 0.06
     maximum: 0.08
+    isPercent: 0
+  - stat: 0
+    minimum: 6
+    maximum: 8
     isPercent: 0
   references:
     version: 2

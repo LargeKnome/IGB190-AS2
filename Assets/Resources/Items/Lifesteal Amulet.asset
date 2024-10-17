@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet of Lifesteal
+  m_Name: Lifesteal Amulet
   m_EditorClassIdentifier: 
-  itemName: Amulet of Lifesteal
-  itemDescription: Regain 33% attack damage as HP when you hit an enemy.
-  randomStatCount: 2
+  itemName: Lifesteal Amulet
+  itemDescription: 
+  randomStatCount: 3
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
   itemType: 1
@@ -23,75 +23,91 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 701729019
+      scriptUID: 1515397604
       hasWait: 0
       eventNodes:
-      - rid: 6666404263564148736
+      - rid: 2105720194462646272
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1860032256
+      scriptUID: 2011458016
       hasWait: 0
       eventNodes:
-      - rid: 6666404263564148737
+      - rid: 2105720194462646273
       conditionNodes: []
       actionNodes: []
     - scriptName: On Unit Attack
-      scriptUID: 740231367
+      scriptUID: 1234192261
       hasWait: 0
       eventNodes:
-      - rid: 6666404263564148758
+      - rid: 2105720194462646274
       conditionNodes:
-      - rid: 6666404263564148929
+      - rid: 2105720194462646283
       actionNodes:
-      - rid: 6666404263564148755
+      - rid: 2105720194462646286
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 8
-    minimum: 0.2
-    maximum: 0.2
-    isPercent: 1
+  - stat: 4
+    minimum: 20
+    maximum: 25
+    isPercent: 0
   randomisableStats:
   - stat: 0
-    minimum: 5
+    minimum: 3
     maximum: 5
     isPercent: 0
-  - stat: 0
-    minimum: 0.1
-    maximum: 0.1
-    isPercent: 1
-  - stat: 3
-    minimum: 0.15
-    maximum: 0.15
-    isPercent: 1
-  - stat: 11
-    minimum: 0.3
-    maximum: 0.3
+  - stat: 1
+    minimum: 6
+    maximum: 8
     isPercent: 0
-  - stat: 9
-    minimum: 0.2
-    maximum: 0.2
+  - stat: 5
+    minimum: 20
+    maximum: 25
+    isPercent: 0
+  - stat: 0
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 6
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 7
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 8
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 1
+  - stat: 1
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
   - stat: 4
-    minimum: 50
-    maximum: 50
-    isPercent: 0
-  - stat: 1
-    minimum: 100
-    maximum: 100
-    isPercent: 0
-  - stat: 6
-    minimum: 0.15
-    maximum: 0.15
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 5
+    minimum: 0.08
+    maximum: 0.12
+    isPercent: 1
+  - stat: 3
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
   - stat: 10
-    minimum: 0.1
-    maximum: 0.1
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 0
+  - stat: 11
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 0
   references:
     version: 2
     RefIds:
-    - rid: 6666404263564148736
+    - rid: 2105720194462646272
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -109,7 +125,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6666404263564148737
+    - rid: 2105720194462646273
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -127,64 +143,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 6666404263564148755
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: AddHealth
-        functionDescription: Unit/Add Health
-        functionDynamicDescription: Add $ health to $
-        functionEvaluators:
-        - rid: 6666404263564148756
-        - rid: 6666404263564148757
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 6666404263564148756
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Division
-        functionDescription: Math/Division
-        functionDynamicDescription: $ / $
-        functionEvaluators:
-        - rid: 6666404263564148927
-        - rid: 6666404263564148928
-        presetName: Damage Dealt
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 100
-    - rid: 6666404263564148757
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 6666404263564148758
+    - rid: 2105720194462646274
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -209,43 +168,7 @@ MonoBehaviour:
         - Damaging Ability
         - Damage Dealt
         - Is Critical
-    - rid: 6666404263564148927
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Damage Dealt
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 0
-    - rid: 6666404263564148928
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 2
-    - rid: 6666404263564148929
+    - rid: 2105720194462646283
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -254,8 +177,8 @@ MonoBehaviour:
         functionDescription: Unit/Unit Matches Template
         functionDynamicDescription: $ type matches $
         functionEvaluators:
-        - rid: 6666404263564148930
-        - rid: 6666404263564148931
+        - rid: 2105720194462646284
+        - rid: 2105720194462646285
         presetName: 
         variableName: 
         stringSuffix: 
@@ -265,7 +188,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 0
-    - rid: 6666404263564148930
+    - rid: 2105720194462646284
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -283,7 +206,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
-    - rid: 6666404263564148931
+    - rid: 2105720194462646285
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -292,7 +215,7 @@ MonoBehaviour:
         functionDescription: 
         functionDynamicDescription: 
         functionEvaluators: []
-        presetName: Player
+        presetName: Item Owner
         variableName: 
         stringSuffix: 
         indent: 0
@@ -301,3 +224,96 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+    - rid: 2105720194462646286
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddHealth
+        functionDescription: Unit/Add Health
+        functionDynamicDescription: Add $ health to $
+        functionEvaluators:
+        - rid: 2105720194462646287
+        - rid: 2105720194462646288
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2105720194462646287
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Division
+        functionDescription: Math/Division
+        functionDynamicDescription: $ / $
+        functionEvaluators:
+        - rid: 2105720194462646301
+        - rid: 2105720194462646302
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 100
+    - rid: 2105720194462646288
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Item Owner
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 2105720194462646301
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Number
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Damage Dealt
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 2105720194462646302
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 2

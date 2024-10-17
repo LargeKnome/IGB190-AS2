@@ -19,7 +19,7 @@ MonoBehaviour:
   itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
   itemType: 1
   itemRarity: 1
-  itemClass: 1
+  itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
@@ -50,10 +50,6 @@ MonoBehaviour:
     maximum: 5
     isPercent: 0
   randomisableStats:
-  - stat: 0
-    minimum: 3
-    maximum: 5
-    isPercent: 0
   - stat: 1
     minimum: 6
     maximum: 8
