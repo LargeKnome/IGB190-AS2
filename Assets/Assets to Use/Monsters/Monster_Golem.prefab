@@ -72,7 +72,7 @@ MonoBehaviour:
   appliedPoison: 0
   abilities:
   - {fileID: 11400000, guid: 78a26e0a386159c468fb4ad26178fd34, type: 2}
-  - {fileID: 11400000, guid: 1eac3cf8664cb2949b7a5a4842fc8f00, type: 2}
+  - {fileID: 11400000, guid: 93d5317c501346740948e443f17938e9, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1
