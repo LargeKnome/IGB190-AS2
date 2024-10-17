@@ -118,7 +118,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 30
+        value: 20
     - rid: 4341925668057251947
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -598,12 +598,13 @@ MonoBehaviour:
     - rid: 4861970119172030611
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 0
+        returnType: 2
         tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
+        functionName: UnitPoisonDamage
+        functionDescription: Unit/Unit Poison Damage
+        functionDynamicDescription: $ Poison Damage
+        functionEvaluators:
+        - rid: 4861970435413377039
         presetName: 
         variableName: 
         stringSuffix: 
@@ -630,7 +631,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 2.5
     - rid: 4861970119172030613
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -785,7 +786,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 2.5
     - rid: 4861970119172030633
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -823,6 +824,24 @@ MonoBehaviour:
         allowFunction: 0
         value: Unit
         options: []
+    - rid: 4861970435413377039
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
     - rid: 6666404531591708839
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -898,7 +917,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 7
+        value: 4.5
     - rid: 6666404531591708843
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:

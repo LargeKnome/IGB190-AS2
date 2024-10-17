@@ -287,7 +287,7 @@ MonoBehaviour:
   resource: 0
   baseDamage: 0
   baseAttacksPerSecond: 0
-  baseMaxHealth: 100
+  baseMaxHealth: 300
   baseMaxResource: 100
   baseMovementSpeed: 0
   baseArmor: 100
@@ -295,14 +295,22 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 0
   baseHealthRegen: 0
   baseResourceRegen: 0
+  basePoisonDamage: 10
+  baseMaxPoisonStacks: 1
   baseAttackRange: 0
+  appliedPoison: 25
   abilities: []
   lastAbilityCast: {fileID: 0}
+  constant: 100
+  scalingFactor: 1
+  helpModifier: 0.6
+  maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
   onHitFeedback: {fileID: 0}
   threatRating: 3
   alliedFaction: 0
+  engagementState: 0
   isDead: 0
   spawnEffect: {fileID: 0}
   goldModifier: 0

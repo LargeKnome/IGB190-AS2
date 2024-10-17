@@ -22,7 +22,7 @@ MonoBehaviour:
   abilityAnimation: Roll
   range: 8
   castTime: 0
-  abilityCooldown: 10
+  abilityCooldown: 7
   abilityCost: 0
   movementLock: 0.5
   animationActivationPosition: 0.5
@@ -52,6 +52,7 @@ MonoBehaviour:
           conditionNodes: []
           actionNodes:
           - rid: 4341925670055051908
+          - rid: 4861970435413377040
           - rid: 4341925668057251842
           - rid: 4341925668057251844
           - rid: 4341925668057251845
@@ -492,7 +493,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 4
+        value: 3
     - rid: 4341925668057251870
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -642,6 +643,80 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
+    - rid: 4861970435413377040
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: SpawnUnit
+        functionDescription: Unit/Spawn Monster
+        functionDynamicDescription: Spawn $ at $
+        functionEvaluators:
+        - rid: 4861970435413377041
+        - rid: 4861970435413377042
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4861970435413377041
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 4656472077488542690, guid: 8dadc00dde1c083468fe556fc8603cf8, type: 3}
+    - rid: 4861970435413377042
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Location
+        functionName: PositionOfUnit
+        functionDescription: Unit/Position of Unit
+        functionDynamicDescription: Position of $
+        functionEvaluators:
+        - rid: 4861970435413377050
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
+    - rid: 4861970435413377050
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Casting Unit
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 6666404398805286912
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -739,7 +814,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 4
+        value: 3
     - rid: 6666404398805286917
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:

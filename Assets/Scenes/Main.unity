@@ -1204,7 +1204,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dcf06f73b05311c469df4ff76bc88947, type: 2}
   - {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
   - {fileID: 11400000, guid: bc16405d74a0ea0459e28b8ea9bf0af4, type: 2}
-  - {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1
@@ -56503,9 +56502,9 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 10
     baseGoldDropAmountMaximum: 20
     goldDropChance: 0.2
-    unempoweredMonsterCommonDropChance: 0
-    unempoweredMonsterRareDropChance: 0
-    unempoweredMonsterLegendaryDropChance: 0
+    unempoweredMonsterCommonDropChance: 0.05
+    unempoweredMonsterRareDropChance: 0.02
+    unempoweredMonsterLegendaryDropChance: 0.01
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 2
     empoweredMonsterDamageModifier: 2
@@ -56513,8 +56512,8 @@ MonoBehaviour:
     empoweredMonsterXPModifier: 5
     empoweredMonsterGoldModifier: 3
     empoweredMonsterCommonDropChance: 1
-    empoweredMonsterRareDropChance: 0.2
-    empoweredMonsterLegendaryDropChance: 0
+    empoweredMonsterRareDropChance: 0.3
+    empoweredMonsterLegendaryDropChance: 0.1
   _playerExperienceValues:
     baseMonsterXP: 10
     startingXPPerLevel: 500
