@@ -405,7 +405,7 @@ MonoBehaviour:
         functionDescription: Unit with Label
         functionDynamicDescription: Unit labeled $
         functionEvaluators:
-        - rid: 790164306828722199
+        - rid: 6405404388695474204
         presetName: Player
         variableName: 
         stringSuffix: 
@@ -415,25 +415,6 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
-    - rid: 790164306828722199
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Boss
-        options: []
     - rid: 790164306828722200
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1379,6 +1360,25 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: A
+        options: []
+    - rid: 6405404388695474204
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Text
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 
         options: []
     - rid: 6666404427134402560
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
