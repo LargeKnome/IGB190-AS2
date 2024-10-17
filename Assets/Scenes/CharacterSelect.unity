@@ -235,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &23320429
 Animator:
   serializedVersion: 5
@@ -5565,7 +5565,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &67185923
 Animator:
   serializedVersion: 5
@@ -6058,7 +6058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &157146432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6388,7 +6388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &187388927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6497,7 +6497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &204539657
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6607,7 +6607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &208628721
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7652,7 +7652,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &395949231
 Animator:
   serializedVersion: 5
@@ -7885,10 +7885,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'PLACEHOLDER BODY TEXT
+  m_text: 'Stabby stab
+
+    More stabbing
 
 
-    ADD THIS LATER'
+    Choose me
+
+
+    You have no other
+    choice'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f89f04c889cca434ba50da983fbb775d, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c48f4d07f2cf1274c834f19cc02ae78d, type: 2}
@@ -8674,7 +8680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &505712180
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16995,7 +17001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1019541819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17481,7 +17487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1099467007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18278,7 +18284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191252227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19275,7 +19281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1364961774
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19881,7 +19887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1410814083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25924,7 +25930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1708559495
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26252,7 +26258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -44.999084, y: 200}
+  m_AnchoredPosition: {x: -44.999023, y: 200}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1737801533
@@ -27273,7 +27279,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Echoes of Valor
+  m_text: Lich's Labyrinth
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a25f6ce1fe07f44985ab8f3ee0b99b0, type: 2}
   m_sharedMaterial: {fileID: 8071695384262653234, guid: 2a25f6ce1fe07f44985ab8f3ee0b99b0, type: 2}
@@ -28143,7 +28149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2062581695
 RectTransform:
   m_ObjectHideFlags: 0
