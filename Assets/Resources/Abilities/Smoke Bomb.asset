@@ -17,8 +17,11 @@ MonoBehaviour:
   abilityName: Smoke Bomb
   abilityIcon: {fileID: 21300000, guid: 7e5b9a5dea307ab4d9aad2a277180fb3, type: 3}
   targetMode: 4
-  abilityDescription: Quickly roll towards the targeted location and increase your
-    attack speed by 30% for 3 seconds.
+  abilityDescription: 'Press W to quickly roll to the targeted location. A decoy
+    will be left in your place.
+
+
+    Hint: excellent opportunity to backstab enemies.'
   abilityAnimation: Roll
   range: 8
   castTime: 0

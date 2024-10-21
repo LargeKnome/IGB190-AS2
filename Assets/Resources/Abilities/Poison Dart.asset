@@ -17,7 +17,7 @@ MonoBehaviour:
   abilityName: Poison Dart
   abilityIcon: {fileID: 21300000, guid: ae6406583fba9884dbf45279c267107d, type: 3}
   targetMode: 4
-  abilityDescription: Shoot a poison dart which deals a small amount of damage and
+  abilityDescription: Use right click to shoot a poison dart at distant enemies and
     inflicts poison for 5 seconds.
   abilityAnimation: One Hand Slash
   range: 8

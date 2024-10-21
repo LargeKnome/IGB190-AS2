@@ -2371,7 +2371,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Boss
+        value: Defeat the Lich
         options: []
     - rid: 8049626418391548006
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
@@ -2503,7 +2503,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Kill Boss
+        value: Kill the Lich
         options: []
     - rid: 8049626418391548147
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
@@ -2522,7 +2522,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Boss
+        value: Defeat the Lich
         options: []
     - rid: 8049626418391548148
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -2658,7 +2658,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Boss
+        value: Defeat the Lich
         options: []
     - rid: 8049626418391548155
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
@@ -2696,7 +2696,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Boss
+        value: Defeat the Lich
         options: []
     - rid: 8049626418391548157
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}

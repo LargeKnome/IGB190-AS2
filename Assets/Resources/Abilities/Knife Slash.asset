@@ -17,8 +17,8 @@ MonoBehaviour:
   abilityName: Knife Slash
   abilityIcon: {fileID: 21300000, guid: 8486a42015ddfdc4086ae45ed3865de2, type: 3}
   targetMode: 3
-  abilityDescription: Attack towards nearby enemies, dealing 50% attack damage. Automatically
-    critical hits enemies when attacking from behind.
+  abilityDescription: Use left click to attack nearby enemies. Automatically critical
+    hit enemies when attacking from behind.
   abilityAnimation: One Hand Slash
   range: 0
   castTime: 0.5

@@ -22,8 +22,8 @@ MonoBehaviour:
       conditionNodes: []
       actionNodes:
       - rid: 4516049468624208251
-      - rid: 4516049468624208252
-      - rid: 4516049468624208254
+      - rid: 4801942689958068227
+      - rid: 4801942689958068230
       - rid: 4516049468624208255
       - rid: 4801942535028080661
       - rid: 4801942535028080663
@@ -40,19 +40,6 @@ MonoBehaviour:
       - rid: 5554732861290709249
       - rid: 5554732861290709250
       - rid: 5554732861290709251
-    - scriptName: Smoke and Decoy
-      scriptUID: 541406468
-      hasWait: 0
-      eventNodes:
-      - rid: 5554732861290709269
-      conditionNodes: []
-      actionNodes:
-      - rid: 5554732880808902656
-      - rid: 5554732861290709277
-      - rid: 5554732861290709280
-      - rid: 5554732861290709282
-      - rid: 4861970277102780431
-      - rid: 4861970277102780434
   references:
     version: 2
     RefIds:
@@ -90,43 +77,6 @@ MonoBehaviour:
         stringSuffix: 
         indent: 0
         nodeIcon: Region
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 4516049468624208252
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ShowTutorialMessage
-        functionDescription: UI/Show Tutorial Message
-        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
-        functionEvaluators:
-        - rid: 4516049468624208268
-        - rid: 4516049468624208269
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: UI
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 4516049468624208254
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Wait
-        functionDescription: Flow/Wait
-        functionDynamicDescription: Wait for $ seconds
-        functionEvaluators:
-        - rid: 4516049468624208272
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Timer
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
@@ -243,61 +193,6 @@ MonoBehaviour:
         allowFunction: 1
         value: Backstab Level
         options: []
-    - rid: 4516049468624208268
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Shhhh, I don't think they can see you!
-        options: []
-    - rid: 4516049468624208269
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 2
-    - rid: 4516049468624208272
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 2
     - rid: 4516049468624208273
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -315,8 +210,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Slowly approach the back of the enemy. When the enemy is close enough,
-          left click to perform a back stab. This ability does extra damage!
+        value: Use the smoke bomb then walk up behind the enemy and backstab them
         options: []
     - rid: 4516049468624208274
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
@@ -446,7 +340,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 5
+        value: 10
     - rid: 4801942535028080663
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -503,7 +397,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
-    - rid: 4861970277102780431
+    - rid: 4801942689958068227
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -512,8 +406,8 @@ MonoBehaviour:
         functionDescription: Unit/Ability/Enable Ability on Unit
         functionDynamicDescription: Enable $ on $
         functionEvaluators:
-        - rid: 4861970277102780432
-        - rid: 4861970277102780433
+        - rid: 4801942689958068228
+        - rid: 4801942689958068229
         presetName: 
         variableName: 
         stringSuffix: 
@@ -522,62 +416,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 4861970277102780432
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 0
-        allowFunction: 0
-        value: {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
-    - rid: 4861970277102780433
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 4
-        tempName: Unit
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 4861970277102780434
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: EnableAbility
-        functionDescription: Unit/Ability/Enable Ability on Unit
-        functionDynamicDescription: Enable $ on $
-        functionEvaluators:
-        - rid: 4861970277102780435
-        - rid: 4861970277102780436
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Unit
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 4861970277102780435
+    - rid: 4801942689958068228
       type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -595,7 +434,62 @@ MonoBehaviour:
         allowPreset: 0
         allowFunction: 0
         value: {fileID: 11400000, guid: e13ab61e66502e34fb728bd1e7d1920d, type: 2}
-    - rid: 4861970277102780436
+    - rid: 4801942689958068229
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4801942689958068230
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: EnableAbility
+        functionDescription: Unit/Ability/Enable Ability on Unit
+        functionDynamicDescription: Enable $ on $
+        functionEvaluators:
+        - rid: 4801942689958068231
+        - rid: 4801942689958068232
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4801942689958068231
+      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Ability
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 0
+        allowFunction: 0
+        value: {fileID: 11400000, guid: 5f4afd534963d9544b59940acdd54eb6, type: 2}
+    - rid: 4801942689958068232
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -1008,228 +902,4 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 
-        options: []
-    - rid: 5554732861290709269
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: UnitEntersRegion
-        functionDescription: Region/Unit enters region
-        functionDynamicDescription: Unit enters region named $
-        functionEvaluators:
-        - rid: 5554732861290709270
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Region
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets: []
-    - rid: 5554732861290709270
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Region Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Decoy
-        options: []
-    - rid: 5554732861290709277
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ShowTutorialMessage
-        functionDescription: UI/Show Tutorial Message
-        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
-        functionEvaluators:
-        - rid: 5554732861290709278
-        - rid: 5554732861290709279
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: UI
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732861290709278
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Quickly! Here you go! Use the smoke bomb to disappear from swamming
-          enemies
-        options: []
-    - rid: 5554732861290709279
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 5
-    - rid: 5554732861290709280
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: Wait
-        functionDescription: Flow/Wait
-        functionDynamicDescription: Wait for $ seconds
-        functionEvaluators:
-        - rid: 5554732861290709281
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Timer
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732861290709281
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Number
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 5
-    - rid: 5554732861290709282
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: ShowTutorialMessage
-        functionDescription: UI/Show Tutorial Message
-        functionDynamicDescription: Show a tutorial message printing $ for $ seconds
-        functionEvaluators:
-        - rid: 5554732861290709283
-        - rid: 5554732861290709284
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: UI
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732861290709283
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Use the decoy while hidden to distract enemies!
-        options: []
-    - rid: 5554732861290709284
-      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: 
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: 5
-    - rid: 5554732880808902656
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: DestroyRegions
-        functionDescription: Region/Destroy Region
-        functionDynamicDescription: Destroy regions named $
-        functionEvaluators:
-        - rid: 5554732880808902657
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Region
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 5554732880808902657
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Region Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Decoy
         options: []

@@ -17,7 +17,7 @@ MonoBehaviour:
   abilityName: Poison Cloud
   abilityIcon: {fileID: 21300000, guid: c10ffcf5634b3cc4e92878dce426936f, type: 3}
   targetMode: 0
-  abilityDescription: Slash towards the target unit, dealing 100% attack damage.
+  abilityDescription: Press E to create a cloud of AOE poison damage centred on you.
   abilityAnimation: One Hand Slash
   range: 0
   castTime: 0.5
