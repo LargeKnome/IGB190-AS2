@@ -40,6 +40,42 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 1272989799338476457
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Range
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 1272989799338476458
+      type: {class: VectorNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Location
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: Ability Target Location
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {x: 0, y: 0, z: 0}
     - rid: 1338031270705233920
       type: {class: LogicEngine, ns: , asm: Assembly-CSharp}
       data:
@@ -351,7 +387,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 1.5
     - rid: 1338031270705233936
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
@@ -375,12 +411,14 @@ MonoBehaviour:
     - rid: 1338031270705233937
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 4
+        returnType: 2
         tempName: Location
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
+        functionName: RandomPointNearPoint
+        functionDescription: Random/Random Point Near Point
+        functionDynamicDescription: Random point within $ of $
+        functionEvaluators:
+        - rid: 1272989799338476457
+        - rid: 1272989799338476458
         presetName: Ability Target Location
         variableName: 
         stringSuffix: 
@@ -537,7 +575,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 150
+        value: 200
     - rid: 1338031270705233946
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
