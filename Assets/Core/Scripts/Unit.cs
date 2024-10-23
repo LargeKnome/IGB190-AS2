@@ -138,6 +138,7 @@ public class Unit : Interactable
         // Armor variances
         if (armored)
         {
+            //Scaled Percentage-Damage Reduction
             amount = amount * (1.0f / 1.0f + Mathf.Pow((instanceArmor / constant)+1, scalingFactor));
         }
 

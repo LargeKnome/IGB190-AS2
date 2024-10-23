@@ -1358,7 +1358,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
@@ -1366,7 +1366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4310,7 +4310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5908,6 +5908,10 @@ PrefabInstance:
       propertyPath: empoweredMonsters
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: maximumSpawnLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6861,7 +6865,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
@@ -11887,11 +11891,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: empoweredMonsters
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19464,11 +19472,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
-      value: 0
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: maximumSpawnLevel
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26465,11 +26477,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: empoweredMonsters
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31893,7 +31909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32844,9 +32860,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205749755}
     m_Modifications:
+    - target: {fileID: 1966993836499429081, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: m_Size.x
+      value: 9.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966993836499429081, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: m_Size.y
+      value: 2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966993836499429081, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: m_Size.z
+      value: 10.86
+      objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 5
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
@@ -32895,6 +32923,10 @@ PrefabInstance:
     - target: {fileID: 5901828712068441794, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_Name
       value: Spawn Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 5901828712068441794, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -43135,11 +43167,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
-      value: 0
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: maximumSpawnLevel
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53166,7 +53202,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 3
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
@@ -57643,7 +57679,7 @@ Transform:
   m_GameObject: {fileID: 1329294884}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 18.42, y: -1.18, z: 132.22}
+  m_LocalPosition: {x: 18.99, y: -1.18, z: 132.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60878,15 +60914,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73780,11 +73816,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: empoweredMonsters
-      value: 0
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: maximumSpawnLevel
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75589,7 +75629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e60ad280c52f718498d63b5829ae6a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDensity: 1
+  spawnDensity: 30
   monstersToSpawn:
   - {fileID: 5560953499317727810, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
   - {fileID: 1649265759049038220, guid: 02102f2f786a49d418694911eea0f16f, type: 3}
@@ -75597,6 +75637,8 @@ MonoBehaviour:
   - {fileID: 4045445931512764774, guid: 1a31a156dd6e56c4882305330f6ae8e8, type: 3}
   - {fileID: 8381518871340125523, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
   - {fileID: 118113344650218589, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
+  - {fileID: 5917806249111370564, guid: c5caba1ed10f55e4284549c81dac6d81, type: 3}
+  - {fileID: 9123773134834919402, guid: b8cea395734c69349ae010ffa65967fd, type: 3}
 --- !u!114 &1705121105
 MonoBehaviour:
   m_ObjectHideFlags: 0
