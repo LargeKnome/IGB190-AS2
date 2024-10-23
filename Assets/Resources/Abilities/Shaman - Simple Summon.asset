@@ -19,9 +19,9 @@ MonoBehaviour:
   targetMode: 4
   abilityDescription: Summons a Spectral Archer near the casting unit.
   abilityAnimation: None
-  range: 8
+  range: 10
   castTime: 0
-  abilityCooldown: 12
+  abilityCooldown: 10
   abilityCost: 0
   movementLock: 1
   animationActivationPosition: 0.5
@@ -49,7 +49,7 @@ MonoBehaviour:
           eventNodes:
           - rid: 1272989638737526853
           conditionNodes:
-          - rid: 1272989638737526944
+          - rid: 1272989796849156112
           actionNodes:
           - rid: 1272989638737526864
           - rid: 1272989638737526933
@@ -116,7 +116,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 0
         allowFunction: 0
-        value: {fileID: 5560953499317727810, guid: 3af91c814aab5ea4ca125fde32872b0a, type: 3}
+        value: {fileID: 8381518871340125523, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
     - rid: 1272989638737526856
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
@@ -666,17 +666,17 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1.25
-    - rid: 1272989638737526944
+    - rid: 1272989796849156112
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: UnitAbilityIsOnCooldown
-        functionDescription: Unit/Unit Ability Is On Cooldown
-        functionDynamicDescription: $ is on cooldown for $
+        functionName: UnitHasBuff
+        functionDescription: Unit/Unit Has Buff
+        functionDynamicDescription: $ has buff labelled $
         functionEvaluators:
-        - rid: 1272989638737526945
-        - rid: 1272989638737526946
+        - rid: 1272989796849156113
+        - rid: 1272989796849156114
         presetName: 
         variableName: 
         stringSuffix: 
@@ -686,25 +686,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 0
-    - rid: 1272989638737526945
-      type: {class: AbilityNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Ability
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 11400000, guid: d51f50f66d4adc146bc800d95cde0b81, type: 2}
-    - rid: 1272989638737526946
+    - rid: 1272989796849156113
       type: {class: UnitNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 4
@@ -722,3 +704,22 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: {fileID: 0}
+    - rid: 1272989796849156114
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Label
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: CanSummon
+        options: []

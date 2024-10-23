@@ -2108,6 +2108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7733886841995457002, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
+      propertyPath: characterWindow
+      value: 
+      objectReference: {fileID: 1038091166}
     - target: {fileID: 975488370916280935, guid: 836f3eba4792c804ca13e36a66989df6, type: 3}
       propertyPath: m_Name
       value: MiniMap_Canvas

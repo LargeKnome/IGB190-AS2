@@ -78,7 +78,7 @@ public class Player : Unit
             HandleMovement();
             HandleRotation();
         }
-        Debug.Log(stats.GetValue(Stat.StealthRating));
+        //Debug.Log(stats.GetValue(Stat.StealthRating));
     }
 
     /// <summary>

@@ -39,7 +39,7 @@ public class Monster_Shaman : Monster
         }
         else if(disToPlayer > _fleeFromTargetMaxDistance)
         {
-            engagementState = EngagementState.StandStill;
+            engagementState = EngagementState.MoveTowards;
         }        
     }
 

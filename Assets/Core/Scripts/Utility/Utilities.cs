@@ -57,10 +57,10 @@ namespace MyUtilities
                 if (!obj.stats.HasStat(Stat.StealthRating))
                 { continue; }
 
-                if (obj.unitName == "Rogue")
-                {
-                    Debug.Log("found player");
-                }
+                //if (obj.unitName == "Rogue")
+                //{
+                //    Debug.Log("found player");
+                //}
 
                 float distance = Vector3.Distance(obj.transform.position, position) / (obj.stats[Stat.StealthRating].GetValue() + 0.001f);
                 if (distance < closestDistance && obj.IsEnemy(targetUnit))

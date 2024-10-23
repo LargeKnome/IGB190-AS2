@@ -224,7 +224,7 @@ MonoBehaviour:
   resource: 0
   baseDamage: 10
   baseAttacksPerSecond: 1
-  baseMaxHealth: 100
+  baseMaxHealth: 150
   baseMaxResource: 100
   baseMovementSpeed: 3
   baseArmor: 100
@@ -237,8 +237,8 @@ MonoBehaviour:
   baseAttackRange: 2
   appliedPoison: 0
   abilities:
-  - {fileID: 11400000, guid: d51f50f66d4adc146bc800d95cde0b81, type: 2}
   - {fileID: 11400000, guid: 076bac9510f7b944d98a801caa395941, type: 2}
+  - {fileID: 11400000, guid: d51f50f66d4adc146bc800d95cde0b81, type: 2}
   lastAbilityCast: {fileID: 0}
   constant: 100
   scalingFactor: 1
