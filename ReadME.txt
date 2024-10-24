@@ -59,3 +59,6 @@ https://sketchfab.com/3d-models/broken-coffin-715fd5c8503b4a0e8106168535c186ff
 
 -Rustic Wooden Coffin by Clockwork Creations
 https://sketchfab.com/3d-models/rustic-wooden-coffin-bbc4f969d00143d8ac0b1248cf94d13b
+
+-Dusty Old Bookshelf (FREE) by Brandon Westlake
+https://sketchfab.com/3d-models/dusty-old-bookshelf-free-6c5ac2547db34c3c81b2e4808b000386
