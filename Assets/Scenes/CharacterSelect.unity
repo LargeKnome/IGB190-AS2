@@ -5825,7 +5825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4392157, g: 0.7176471, b: 1, a: 0.8}
+  m_Color: {r: 0.43326497, g: 0.6603774, b: 0.3519936, a: 0.8}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -27832,8 +27832,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294948720
-  m_fontColor: {r: 0.43921566, g: 0.7185922, b: 1, a: 1}
+    rgba: 4278967040
+  m_fontColor: {r: 0, g: 0.8588236, b: 0.043137256, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -30258,7 +30258,7 @@ Animator:
   m_GameObject: {fileID: 919132148008915581}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 897b94e01e606f443b19ad3e71f6bd3f, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5107248012b9f04f91fcfce518467f3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
