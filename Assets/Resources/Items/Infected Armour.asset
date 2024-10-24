@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Infected Armour
   itemDescription: 
-  randomStatCount: 2
+  randomStatCount: 3
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 3
@@ -52,6 +52,10 @@ MonoBehaviour:
   - stat: 13
     minimum: 2
     maximum: 2
+    isPercent: 0
+  - stat: 1
+    minimum: 6
+    maximum: 8
     isPercent: 0
   randomisableStats:
   - stat: 0
@@ -98,18 +102,6 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 10
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 1
-    minimum: 8
-    maximum: 12
-    isPercent: 0
   references:
     version: 2
     RefIds:

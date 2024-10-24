@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Extrovert Armour
   itemDescription: +60% Armour when near 3 or more Enemies
-  randomStatCount: 1
+  randomStatCount: 2
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: 875ee4e44e1620e4a97d68b427ca5e1d, type: 3}
   itemType: 3

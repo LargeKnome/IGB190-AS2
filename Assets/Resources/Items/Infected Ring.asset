@@ -10,42 +10,42 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Plate Armour
+  m_Name: Infected Ring
   m_EditorClassIdentifier: 
-  itemName: Plate Armour
+  itemName: Infected Ring
   itemDescription: 
-  randomStatCount: 2
-  itemCost: 600
-  itemIcon: {fileID: 21300000, guid: b457cb83eb884fe4782bcb9d3681fe90, type: 3}
-  itemType: 3
-  itemRarity: 2
+  randomStatCount: 1
+  itemCost: 300
+  itemIcon: {fileID: 21300000, guid: 868c7767c75364f408d3ccad1813a095, type: 3}
+  itemType: 0
+  itemRarity: 1
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 4265656
+      scriptUID: 679607149
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480670
+      - rid: 4341925671386480684
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1409187330
+      scriptUID: 1160946605
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480671
+      - rid: 4341925671386480685
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 1
-    minimum: 32
-    maximum: 48
+  - stat: 12
+    minimum: 8
+    maximum: 12
     isPercent: 0
-  - stat: 6
-    minimum: -0.06
-    maximum: -0.08
-    isPercent: 1
+  - stat: 13
+    minimum: 1
+    maximum: 1
+    isPercent: 0
   randomisableStats:
   - stat: 0
     minimum: 3
@@ -102,7 +102,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4341925671386480670
+    - rid: 4341925671386480684
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -120,7 +120,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925671386480671
+    - rid: 4341925671386480685
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

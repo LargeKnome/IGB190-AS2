@@ -10,61 +10,54 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet of Magic
+  m_Name: Shadow Shortsword
   m_EditorClassIdentifier: 
-  itemName: Amulet of Magic
+  itemName: Shadow Shortsword
   itemDescription: 
-  randomStatCount: 1
+  randomStatCount: 2
   itemCost: 300
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
-  itemType: 1
+  itemIcon: {fileID: 21300000, guid: 09b62cca23038b9438555a6258a5c0ca, type: 3}
+  itemType: 2
   itemRarity: 1
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 454398117
+      scriptUID: 269928494
       hasWait: 0
       eventNodes:
-      - rid: 4341925673911190220
+      - rid: 4341925671386480658
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1686081517
+      scriptUID: 1441129544
       hasWait: 0
       eventNodes:
-      - rid: 4341925673911190221
-      conditionNodes: []
-      actionNodes: []
-    - scriptName: On Unit Attack
-      scriptUID: 1358432569
-      hasWait: 0
-      eventNodes:
-      - rid: 4341925673911190222
+      - rid: 4341925671386480659
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 8
-    minimum: 0.16
-    maximum: 0.24
+  - stat: 3
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 1
-  randomisableStats:
   - stat: 0
-    minimum: 3
-    maximum: 5
+    minimum: 4
+    maximum: 6
     isPercent: 0
+  randomisableStats:
   - stat: 1
     minimum: 6
     maximum: 8
     isPercent: 0
   - stat: 4
-    minimum: 20
-    maximum: 25
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 5
-    minimum: 20
-    maximum: 25
+    minimum: 15
+    maximum: 20
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -78,19 +71,11 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 1
+  - stat: 8
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 4
-    minimum: 0.08
-    maximum: 0.12
-    isPercent: 1
-  - stat: 5
-    minimum: 0.08
-    maximum: 0.12
-    isPercent: 1
-  - stat: 3
+  - stat: 1
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
@@ -105,7 +90,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4341925673911190220
+    - rid: 4341925671386480658
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -123,7 +108,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925673911190221
+    - rid: 4341925671386480659
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -141,28 +126,3 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925673911190222
-      type: {class: EventNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: 
-        functionName: OnUnitDamaged
-        functionDescription: Unit/Unit is damaged
-        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
-          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
-          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: Event
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        presets:
-        - Damaged Unit
-        - Damaging Unit
-        - Damaging Ability
-        - Damage Dealt
-        - Is Critical

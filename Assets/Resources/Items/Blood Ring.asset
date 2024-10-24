@@ -48,7 +48,11 @@ MonoBehaviour:
       - rid: 4341925673191866447
       - rid: 4341925673191866505
   template: {fileID: 0}
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 4
+    minimum: 20
+    maximum: 25
+    isPercent: 0
   randomisableStats:
   - stat: 0
     minimum: 3

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Jackbox
   itemDescription: 
-  randomStatCount: 4
+  randomStatCount: 5
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: 74147d83c76aa6945ae2be73712532e1, type: 3}
   itemType: 0
@@ -40,8 +40,8 @@ MonoBehaviour:
   guaranteedStats: []
   randomisableStats:
   - stat: 0
-    minimum: 3
-    maximum: 5
+    minimum: 4
+    maximum: 6
     isPercent: 0
   - stat: 1
     minimum: 6

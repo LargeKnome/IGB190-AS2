@@ -38,14 +38,14 @@ MonoBehaviour:
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 10
+  - stat: 0
+    minimum: 6
+    maximum: 8
+    isPercent: 0
+  - stat: 11
     minimum: 0.06
     maximum: 0.08
     isPercent: 0
-  - stat: 3
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 1
   randomisableStats:
   - stat: 1
     minimum: 6

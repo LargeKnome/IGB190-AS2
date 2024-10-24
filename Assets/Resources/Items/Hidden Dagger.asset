@@ -10,37 +10,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Magic Staff
+  m_Name: Hidden Dagger
   m_EditorClassIdentifier: 
-  itemName: Magic Staff
+  itemName: Hidden Dagger
   itemDescription: 
   randomStatCount: 1
   itemCost: 100
-  itemIcon: {fileID: 21300000, guid: 33ebab032307d64478a8023413e8a718, type: 3}
+  itemIcon: {fileID: 21300000, guid: 63bbf1e1658caa346b0e6300b0209f45, type: 3}
   itemType: 2
   itemRarity: 0
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 5720611
+      scriptUID: 13024605
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480654
+      - rid: 4341925671386480652
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1861580910
+      scriptUID: 360483174
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480655
+      - rid: 4341925671386480653
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 5
-    minimum: 12
-    maximum: 16
+  - stat: 11
+    minimum: 0.06
+    maximum: 0.08
+    isPercent: 0
+  - stat: 10
+    minimum: 0.06
+    maximum: 0.08
     isPercent: 0
   randomisableStats:
   - stat: 1
@@ -48,6 +52,10 @@ MonoBehaviour:
     maximum: 8
     isPercent: 0
   - stat: 4
+    minimum: 15
+    maximum: 20
+    isPercent: 0
+  - stat: 5
     minimum: 15
     maximum: 20
     isPercent: 0
@@ -71,26 +79,18 @@ MonoBehaviour:
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
+  - stat: 0
+    minimum: 4
+    maximum: 6
+    isPercent: 0
   - stat: 3
     minimum: 0.06
     maximum: 0.08
     isPercent: 1
-  - stat: 10
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
-    isPercent: 0
-  - stat: 0
-    minimum: 6
-    maximum: 8
-    isPercent: 0
   references:
     version: 2
     RefIds:
-    - rid: 4341925671386480654
+    - rid: 4341925671386480652
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -108,7 +108,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925671386480655
+    - rid: 4341925671386480653
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

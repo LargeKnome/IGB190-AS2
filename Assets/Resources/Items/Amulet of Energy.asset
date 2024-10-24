@@ -10,50 +10,57 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Armoured Ring
+  m_Name: Amulet of Energy
   m_EditorClassIdentifier: 
-  itemName: Armoured Ring
+  itemName: Amulet of Energy
   itemDescription: 
   randomStatCount: 1
-  itemCost: 300
-  itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
-  itemType: 0
-  itemRarity: 1
+  itemCost: 700
+  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemType: 1
+  itemRarity: 0
   itemClass: 0
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 679607149
+      scriptUID: 869025230
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480684
+      - rid: 4861970596821467136
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1160946605
+      scriptUID: 2120860996
       hasWait: 0
       eventNodes:
-      - rid: 4341925671386480685
+      - rid: 4861970596821467137
+      conditionNodes: []
+      actionNodes: []
+    - scriptName: On Unit Attack
+      scriptUID: 1187976367
+      hasWait: 0
+      eventNodes:
+      - rid: 4861970596821467138
       conditionNodes: []
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 1
-    minimum: 6
-    maximum: 8
+  - stat: 5
+    minimum: 20
+    maximum: 25
     isPercent: 0
   randomisableStats:
   - stat: 0
     minimum: 3
     maximum: 5
     isPercent: 0
-  - stat: 4
-    minimum: 15
-    maximum: 20
+  - stat: 1
+    minimum: 6
+    maximum: 8
     isPercent: 0
-  - stat: 5
-    minimum: 15
-    maximum: 20
+  - stat: 4
+    minimum: 20
+    maximum: 25
     isPercent: 0
   - stat: 0
     minimum: 0.06
@@ -98,7 +105,7 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4341925671386480684
+    - rid: 4861970596821467136
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -116,7 +123,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4341925671386480685
+    - rid: 4861970596821467137
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -134,3 +141,28 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 4861970596821467138
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnUnitDamaged
+        functionDescription: Unit/Unit is damaged
+        functionDynamicDescription: 'When a unit is damaged (Presets: <color=yellow>Damaged
+          Unit</color>, <color=yellow>Damaging Unit</color>, <color=yellow>Damaging
+          Ability</color>, <color=yellow>Damage Dealt</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Damaged Unit
+        - Damaging Unit
+        - Damaging Ability
+        - Damage Dealt
+        - Is Critical
