@@ -32874,11 +32874,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: spawnDensity
-      value: 9
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
+      propertyPath: empoweredMonsters
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2975617031475779086, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: maximumSpawnLevel
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3326738764695970640, guid: 91c2a5094b037d546bdbcc744ebca9f4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -75638,7 +75642,6 @@ MonoBehaviour:
   - {fileID: 8381518871340125523, guid: 7aa0e3cc8a6eeef4d87717adf7b0e58d, type: 3}
   - {fileID: 118113344650218589, guid: 7c4ed4a0b1f48f24e98317b6758cc7bf, type: 3}
   - {fileID: 5917806249111370564, guid: c5caba1ed10f55e4284549c81dac6d81, type: 3}
-  - {fileID: 9123773134834919402, guid: b8cea395734c69349ae010ffa65967fd, type: 3}
 --- !u!114 &1705121105
 MonoBehaviour:
   m_ObjectHideFlags: 0
