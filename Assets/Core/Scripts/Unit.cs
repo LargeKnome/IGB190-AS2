@@ -342,7 +342,10 @@ public class Unit : Interactable
 
     private void ApplyPoisonDamage(float duration)
     {
-        if (stats.GetValue(Stat.AppliedPoison) != 0) RemoveHealth(stats.GetValue(Stat.AppliedPoison) * duration);
+        if (stats.GetValue(Stat.AppliedPoison) != 0) {
+            TakeDamage(stats.GetValue(Stat.AppliedPoison) * duration, false, null, null);
+            //RemoveHealth(stats.GetValue(Stat.AppliedPoison) * duration);
+        } 
     }
 
     /// <summary>
@@ -534,7 +537,8 @@ public class Unit : Interactable
         RemoveHealth(amount, damagingUnit, damageSource, isCritical);
 
         // Apply the "on hit" feedback for this unit.
-        onHitFeedback?.ActivateFeedback(gameObject, null, transform.position);
+        if (amount > 5) 
+            onHitFeedback?.ActivateFeedback(gameObject, null, transform.position);
 
         // Trigger OnUnitDamaged event.
         GameManager.events.OnUnitDamaged.Invoke(new GameEvents.OnUnitDamagedInfo(this, amount, damagingUnit, damageSource, isCritical));

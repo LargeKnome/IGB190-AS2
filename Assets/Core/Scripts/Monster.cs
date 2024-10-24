@@ -313,7 +313,8 @@ public class Monster : Unit
             Vector3 spawnPos = transform.position + Vector3.up + Random.insideUnitSphere * DamageNumberSpawnVariance;
             Color color = isCritical ? CritDamageTextColor : HitDamageTextColor;
             float scale = isCritical ? CriticalDamageNumberScaleMod : 1.0f;
-            StatusMessageUI.Spawn(spawnPos, Mathf.Max(0, Mathf.Round(amount)).ToString(), color, scale);
+            if(amount>5)
+                StatusMessageUI.Spawn(spawnPos, Mathf.Max(0, Mathf.Round(amount)).ToString(), color, scale);
         }
     }
 
