@@ -1868,7 +1868,7 @@ MonoBehaviour:
   baseCriticalStrikeDamage: 1.5
   baseHealthRegen: 20
   baseResourceRegen: 2
-  basePoisonDamage: 25
+  basePoisonDamage: 13
   baseMaxPoisonStacks: 1
   baseAttackRange: 1.5
   appliedPoison: 0

@@ -22,13 +22,13 @@ MonoBehaviour:
   abilityAnimation: One Hand Slash
   range: 8
   castTime: 0.5
-  abilityCooldown: 0.5
+  abilityCooldown: 2
   abilityCost: 15
   movementLock: 1
   animationActivationPosition: 0.5
   canMoveWhileCasting: 1
   hasSpecificCastTime: 1
-  cooldownIsAtackSpeed: 1
+  cooldownIsAtackSpeed: 0
   abilityGeneratesResource: 0
   requiresLineOfSight: 1
   canUpdateTargetWhileCasting: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2.5
+        value: 2
     - rid: 4861970116940660741
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -706,7 +706,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2.5
+        value: 2
     - rid: 6666404483034513413
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:

@@ -21,7 +21,7 @@ MonoBehaviour:
   abilityAnimation: One Hand Slash
   range: 0
   castTime: 0.5
-  abilityCooldown: 10
+  abilityCooldown: 13
   abilityCost: 50
   movementLock: 1
   animationActivationPosition: 0.5
@@ -631,7 +631,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2.5
+        value: 2
     - rid: 4861970119172030613
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -786,7 +786,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2.5
+        value: 2
     - rid: 4861970119172030633
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
