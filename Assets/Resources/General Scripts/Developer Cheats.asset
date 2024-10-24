@@ -64,7 +64,7 @@ MonoBehaviour:
       conditionNodes: []
       actionNodes:
       - rid: 790164306828722215
-    - scriptName: Give Gear
+    - scriptName: Give Custom Gear
       scriptUID: 408989734
       hasWait: 0
       eventNodes:
@@ -75,6 +75,21 @@ MonoBehaviour:
       - rid: 790164306828722220
       - rid: 790164306828722221
       - rid: 790164306828722222
+      - rid: 6311200587637850396
+      - rid: 6311200587637850398
+      - rid: 6311200587637850400
+      - rid: 6311200587637850402
+      - rid: 6311200587637850404
+      - rid: 6311200587637850406
+      - rid: 6311200587637850408
+      - rid: 6311200587637850410
+      - rid: 6311200587637850412
+      - rid: 6311200587637850414
+      - rid: 6311200587637850416
+      - rid: 6311200587637850418
+      - rid: 6311200587637850420
+      - rid: 6311200587637850422
+      - rid: 6311200587637850424
     - scriptName: Give Level
       scriptUID: 2092591065
       hasWait: 0
@@ -344,13 +359,13 @@ MonoBehaviour:
     - rid: 790164306828722195
       type: {class: VectorNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 2
+        returnType: 0
         tempName: Location
         functionName: PositionOfUnit
         functionDescription: Unit/Position of Unit
         functionDynamicDescription: Position of $
         functionEvaluators:
-        - rid: 790164306828722198
+        - rid: 6311200587637850441
         presetName: 
         variableName: 
         stringSuffix: 
@@ -359,7 +374,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 0, y: 0, z: 0}
+        value: {x: 50, y: 3.64, z: -68.68}
     - rid: 790164306828722196
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
@@ -387,25 +402,6 @@ MonoBehaviour:
         functionDescription: 
         functionDynamicDescription: 
         functionEvaluators: []
-        presetName: Player
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 0
-        allowPreset: 1
-        allowFunction: 1
-        value: {fileID: 0}
-    - rid: 790164306828722198
-      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 2
-        tempName: Unit
-        functionName: GetUnitWithLabel
-        functionDescription: Unit with Label
-        functionDynamicDescription: Unit labeled $
-        functionEvaluators:
-        - rid: 1272989799338476213
         presetName: Player
         variableName: 
         stringSuffix: 
@@ -840,7 +836,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: 1e04afa02f01d0442bd1e9226bbcb679, type: 2}
+        value: {fileID: 11400000, guid: 80f40a2adc212dc49aa89d05a0ab6f96, type: 2}
     - rid: 790164306828722225
       type: {class: ItemNode, ns: , asm: Assembly-CSharp}
       data:
@@ -858,7 +854,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: 8b11c08a800fb5a47bc46ec1118519b0, type: 2}
+        value: {fileID: 11400000, guid: 6f82475872f7e874eabc08c0bf3e9398, type: 2}
     - rid: 790164306828722226
       type: {class: ItemNode, ns: , asm: Assembly-CSharp}
       data:
@@ -876,7 +872,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: 1ce64991493975a4e9cda7fa287d1f7a, type: 2}
+        value: {fileID: 11400000, guid: 8c896ccd7ee740748bc6e7c6cf497429, type: 2}
     - rid: 790164306828722227
       type: {class: ItemNode, ns: , asm: Assembly-CSharp}
       data:
@@ -894,7 +890,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {fileID: 11400000, guid: 610bd2c2aa316a84fa638aa581d7cb1a, type: 2}
+        value: {fileID: 11400000, guid: df1c7ec134f01164caf443c21f6efcc0, type: 2}
     - rid: 790164306828722228
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
@@ -917,25 +913,6 @@ MonoBehaviour:
         - Common
         - Rare
         - Legendary
-    - rid: 1272989799338476213
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Text
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        indent: 0
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Boss
-        options: []
     - rid: 4341925671386480640
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
@@ -1380,6 +1357,564 @@ MonoBehaviour:
         allowFunction: 1
         value: A
         options: []
+    - rid: 6311200587637850396
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850397
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850397
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 96d606f8e4d982943b3f9293d521c9dd, type: 2}
+    - rid: 6311200587637850398
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850399
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850399
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: d34307a0e74384247ad4f91ccc51ca3a, type: 2}
+    - rid: 6311200587637850400
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850401
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850401
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 1dbc795297b73c94eb9b200001cfef7f, type: 2}
+    - rid: 6311200587637850402
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850403
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850403
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 7375a3dc5c946d84380b9bbb4f87faf3, type: 2}
+    - rid: 6311200587637850404
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850405
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850405
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: ba6616146f3c3694d93b79e00bdf0270, type: 2}
+    - rid: 6311200587637850406
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850407
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850407
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 8e6cfeb8db15f4345ae50cc179c4b812, type: 2}
+    - rid: 6311200587637850408
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850409
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850409
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 46ebc7c5a9f81984c8d69114de18ee10, type: 2}
+    - rid: 6311200587637850410
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850411
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850411
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: a46ebe584cd18d9449a8b57938e3d6bc, type: 2}
+    - rid: 6311200587637850412
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850413
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850413
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 13bf6e5f0bb57f241a2d20ae1364fd6d, type: 2}
+    - rid: 6311200587637850414
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850415
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850415
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 2a7e2b0b2596a0f4ba27ce113c4571fd, type: 2}
+    - rid: 6311200587637850416
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850417
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850417
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 4d0a8dba133a1a14b94e5aa1de12ed60, type: 2}
+    - rid: 6311200587637850418
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850419
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850419
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: b2a37d27011659640bfa85a1759fd110, type: 2}
+    - rid: 6311200587637850420
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850421
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850421
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 1e314cf44e402c741b4ca0d08047ff89, type: 2}
+    - rid: 6311200587637850422
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850423
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850423
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 7bfba1d65894f2846b39844e6f575762, type: 2}
+    - rid: 6311200587637850424
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddItem
+        functionDescription: Player/Add Item
+        functionDynamicDescription: Add $ to the player
+        functionEvaluators:
+        - rid: 6311200587637850425
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 6311200587637850425
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 82fa9e87f16972148b6a467d2fe8a56f, type: 2}
+    - rid: 6311200587637850441
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 3
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
     - rid: 6666404427134402560
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:

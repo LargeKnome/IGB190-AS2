@@ -286,11 +286,14 @@ public class Item : ScriptableObject, IEngineHandler
         // Add them to the item dictionary based on their rarity.
         foreach (Item item in items)
         {
-            if (!itemLootTable.ContainsKey(item.itemRarity))
+            if(item.itemName != "Labyrinth Key")
             {
-                itemLootTable.Add(item.itemRarity, new List<Item>());
-            }
-            itemLootTable[item.itemRarity].Add(item);
+                if (!itemLootTable.ContainsKey(item.itemRarity))
+                {
+                    itemLootTable.Add(item.itemRarity, new List<Item>());
+                }
+                itemLootTable[item.itemRarity].Add(item);
+            }            
         }
     }
 
