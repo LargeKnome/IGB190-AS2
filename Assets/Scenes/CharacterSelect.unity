@@ -7885,16 +7885,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Stabby stab
-
-    More stabbing
-
-
-    Choose me
+  m_text: 'A trickster who wields their cunningness like a blade, delivering sweet
+    poison to those foolish enough to get close.
 
 
-    You have no other
-    choice'
+    With thier dexerity and various
+    tools, their daggers will pierce through enemies before they realise their doom.
+
+
+    <color=#88FF88>Strength</color>:
+    Critical hits, poison damage, and crowd control.
+
+
+    <color=#FF8888>Weakness</color>:
+    Low armor and health.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f89f04c889cca434ba50da983fbb775d, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c48f4d07f2cf1274c834f19cc02ae78d, type: 2}
