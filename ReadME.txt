@@ -23,6 +23,7 @@ ASSET LIST:
 From Unity Asset Store
 From Sketchfab
 From Mixamo
+From Pixabay
 
 -Make Your Fantasy Game - Lite by xiaolianhuastudio
 https://assetstore.unity.com/packages/3d/environments/fantasy/make-your-fantasy-game-lite-8312
@@ -62,3 +63,6 @@ https://sketchfab.com/3d-models/rustic-wooden-coffin-bbc4f969d00143d8ac0b1248cf9
 
 -Dusty Old Bookshelf (FREE) by Brandon Westlake
 https://sketchfab.com/3d-models/dusty-old-bookshelf-free-6c5ac2547db34c3c81b2e4808b000386
+
+-Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=36468">Pixabay</a>
+Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=97263">Pixabay</a>

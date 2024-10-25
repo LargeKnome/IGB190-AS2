@@ -10,18 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8483287b24a2074fa2a9b3ef3856053, type: 3}
-  m_Name: Unit Hit
+  m_Name: BreakableItems 1
   m_EditorClassIdentifier: 
   feedbackItems:
-  - rid: 248813149619749217
-  - rid: 248813149619749218
-  - rid: 6728881780876902428
-  - rid: 3549175725447970816
+  - rid: 4796091828011794470
+  - rid: 4796091828011794471
   references:
     version: 2
     RefIds:
-    - rid: 248813149619749217
-      type: {class: SetAnimatorTrigger, ns: FastFeedback, asm: Assembly-CSharp}
+    - rid: 4796091828011794470
+      type: {class: CreateGameObject, ns: FastFeedback, asm: Assembly-CSharp}
       data:
         isEnabled: 1
         effectTag: 
@@ -37,31 +35,19 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         isExpanded: 1
-        trigger: Hit
-    - rid: 248813149619749218
-      type: {class: FlashColor, ns: FastFeedback, asm: Assembly-CSharp}
-      data:
-        isEnabled: 1
-        effectTag: 
-        hasError: 0
-        targetGameObjectSettings: 0
-        targetGameObject: {fileID: 0}
-        targetGameObjectTag: 
-        animationCurveSettings: 0
-        customCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        isExpanded: 1
-        flashColor: {r: 0.73179, g: 0.74509805, b: 0.5294118, a: 0.50980395}
-        flashTime: 0.5
-        flashUsingEmission: 0
-        flashDuration: 0
-        effectDuration: 0.1
-        numberOfFlashes: 1
-    - rid: 3549175725447970816
+        objectToSpawn: {fileID: 1954822656792304841, guid: 2f4c8f2ff0682174197d492ad0309801, type: 3}
+        positionMode: 1
+        targetPosition: {x: 0, y: 0, z: 0}
+        targetPositionObject: {fileID: 0}
+        rotationMode: 1
+        targetEulerRotation: {x: 0, y: 0, z: 0}
+        targetRotationObject: {fileID: 0}
+        refreshExisting: 0
+        destroyAfterEnabled: 1
+        destroyAfter: 5
+        offset: {x: 0, y: 0, z: 0}
+        scaleModifier: 1
+    - rid: 4796091828011794471
       type: {class: PlaySound, ns: FastFeedback, asm: Assembly-CSharp}
       data:
         isEnabled: 1
@@ -78,8 +64,8 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         isExpanded: 1
-        soundToPlay: {fileID: 8300000, guid: a31d3d19acf252a4989e16e695393b1e, type: 3}
-        volume: 0.08
+        soundToPlay: {fileID: 8300000, guid: a08410fca0a46ae4f83496e620687f07, type: 3}
+        volume: 0.209
         playConditions: 0
         timesToPlay: 0
         durationToPlayFor: 0
@@ -142,32 +128,3 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         randomisedSoundCount: 2
-    - rid: 6728881780876902428
-      type: {class: CreateGameObject, ns: FastFeedback, asm: Assembly-CSharp}
-      data:
-        isEnabled: 1
-        effectTag: 
-        hasError: 0
-        targetGameObjectSettings: 0
-        targetGameObject: {fileID: 0}
-        targetGameObjectTag: 
-        animationCurveSettings: 0
-        customCurve:
-          serializedVersion: 2
-          m_Curve: []
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-          m_RotationOrder: 4
-        isExpanded: 1
-        objectToSpawn: {fileID: 6785760098195727640, guid: 540dfcad903d30c40914f63280b599d9, type: 3}
-        positionMode: 0
-        targetPosition: {x: 0, y: 0, z: 0}
-        targetPositionObject: {fileID: 0}
-        rotationMode: 1
-        targetEulerRotation: {x: 0, y: 0, z: 0}
-        targetRotationObject: {fileID: 0}
-        refreshExisting: 0
-        destroyAfterEnabled: 1
-        destroyAfter: 1
-        offset: {x: 0, y: 1, z: 0}
-        scaleModifier: 1

@@ -97,7 +97,7 @@ MonoBehaviour:
   maxDamageReduction: 0.8
   handPoint: {fileID: 0}
   onDeathFeedback: {fileID: 0}
-  onHitFeedback: {fileID: 0}
+  onHitFeedback: {fileID: 11400000, guid: 9ee880c2f73f88d43975b02c3004ecd7, type: 2}
   threatRating: 1
   alliedFaction: 1
   engagementState: 2
