@@ -35,7 +35,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         isExpanded: 1
-        objectToSpawn: {fileID: 1954822656792304841, guid: 2f4c8f2ff0682174197d492ad0309801, type: 3}
+        objectToSpawn: {fileID: 1785246201711463945, guid: 4bacaaaccbc92864da491c340c4d2232, type: 3}
         positionMode: 1
         targetPosition: {x: 0, y: 0, z: 0}
         targetPositionObject: {fileID: 0}

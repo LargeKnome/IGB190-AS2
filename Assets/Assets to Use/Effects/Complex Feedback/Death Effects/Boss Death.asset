@@ -45,6 +45,8 @@ MonoBehaviour:
         refreshExisting: 0
         destroyAfterEnabled: 1
         destroyAfter: 5
+        offset: {x: 0, y: 0, z: 0}
+        scaleModifier: 1
     - rid: 4090945655986978818
       type: {class: PlaySound, ns: FastFeedback, asm: Assembly-CSharp}
       data:
