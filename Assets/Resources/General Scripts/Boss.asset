@@ -32,6 +32,7 @@ MonoBehaviour:
       - rid: 8049626418391548159
       conditionNodes: []
       actionNodes:
+      - rid: 5554733315216375808
       - rid: 8049626418391548004
       - rid: 8049626418391548006
       - rid: 8049626418391548145
@@ -2336,6 +2337,43 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
+    - rid: 5554733315216375808
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 5554733315216375809
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 5554733315216375809
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        indent: 0
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Boss Room
+        options: []
     - rid: 8049626418391548004
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:

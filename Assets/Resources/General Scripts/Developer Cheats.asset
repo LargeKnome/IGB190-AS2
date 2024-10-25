@@ -374,7 +374,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: {x: 50, y: 3.64, z: -68.68}
+        value: {x: 51.13, y: 3.69, z: -56.51}
     - rid: 790164306828722196
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
