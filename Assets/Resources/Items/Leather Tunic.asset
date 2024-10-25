@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Chain Mail
+  m_Name: Leather Tunic
   m_EditorClassIdentifier: 
-  itemName: Chain Mail
+  itemName: Leather Tunic
   itemDescription: 
   randomStatCount: 1
   itemCost: 100
