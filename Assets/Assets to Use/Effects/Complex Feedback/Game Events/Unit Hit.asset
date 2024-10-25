@@ -16,6 +16,7 @@ MonoBehaviour:
   - rid: 248813149619749217
   - rid: 248813149619749218
   - rid: 6728881780876902428
+  - rid: 3549175725447970816
   references:
     version: 2
     RefIds:
@@ -60,6 +61,87 @@ MonoBehaviour:
         flashDuration: 0
         effectDuration: 0.1
         numberOfFlashes: 1
+    - rid: 3549175725447970816
+      type: {class: PlaySound, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        soundToPlay: {fileID: 8300000, guid: a31d3d19acf252a4989e16e695393b1e, type: 3}
+        volume: 0.029
+        playConditions: 0
+        timesToPlay: 0
+        durationToPlayFor: 0
+        soundSettings: 0
+        soundTarget: {fileID: 0}
+        targetTag: 
+        minPitchChange: 1
+        maxPitchChange: 1
+        soundTargetSettings: 0
+        soundChoiceSettings: 0
+        randomisedSounds:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        randomisedSoundCount: 2
     - rid: 6728881780876902428
       type: {class: CreateGameObject, ns: FastFeedback, asm: Assembly-CSharp}
       data:
