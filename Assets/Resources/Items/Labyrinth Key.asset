@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: Unlocks doors
   randomStatCount: 1
   itemCost: 700
-  itemIcon: {fileID: 21300000, guid: f980c962f3ef43b468cd2475f0d9b8b9, type: 3}
+  itemIcon: {fileID: 21300000, guid: d453757951e5e33459bc928323145432, type: 3}
   itemType: 5
   itemRarity: 2
   itemClass: 0
