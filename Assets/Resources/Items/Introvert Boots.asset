@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Introvert Boots
   m_EditorClassIdentifier: 
   itemName: Introvert Boots
-  itemDescription: 
+  itemDescription: +40% Movement Speed when not near any enemies
   randomStatCount: 2
   itemCost: 600
   itemIcon: {fileID: 21300000, guid: 1dd5475aa69c19b4bbedf02adffe5e0b, type: 3}
@@ -51,7 +51,7 @@ MonoBehaviour:
   guaranteedStats:
   - stat: 3
     minimum: 0.08
-    maximum: 0.1
+    maximum: 0.12
     isPercent: 1
   randomisableStats:
   - stat: 0

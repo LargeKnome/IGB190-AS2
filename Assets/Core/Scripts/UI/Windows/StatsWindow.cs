@@ -27,6 +27,8 @@ public class StatsWindow : UIWindow
     {
         AddStat(Stat.Damage, "N0");
         AddStat(Stat.AttacksPerSecond, "N1");
+        AddStat(Stat.PoisonDamage, "N0");
+        AddStat(Stat.MaxPoison, "N0");
         AddStat(Stat.Armor, "N0");
         AddStat(Stat.MaxHealth, "N0");
         AddStat(Stat.MaxResource, "N0");

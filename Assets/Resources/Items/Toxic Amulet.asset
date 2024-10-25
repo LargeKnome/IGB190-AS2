@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Amulet of Shadows
+  m_Name: Toxic Amulet
   m_EditorClassIdentifier: 
-  itemName: Amulet of Shadows
+  itemName: Toxic Amulet
   itemDescription: 
-  randomStatCount: 1
+  randomStatCount: 2
   itemCost: 300
   itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
   itemType: 1
@@ -45,9 +45,9 @@ MonoBehaviour:
       actionNodes: []
   template: {fileID: 0}
   guaranteedStats:
-  - stat: 11
-    minimum: 0.06
-    maximum: 0.08
+  - stat: 12
+    minimum: 12
+    maximum: 16
     isPercent: 0
   randomisableStats:
   - stat: 0

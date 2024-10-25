@@ -49,8 +49,8 @@ MonoBehaviour:
     maximum: 1
     isPercent: 0
   - stat: 12
-    minimum: 4
-    maximum: 6
+    minimum: 8
+    maximum: 12
     isPercent: 0
   randomisableStats:
   - stat: 0
