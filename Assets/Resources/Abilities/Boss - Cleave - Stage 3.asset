@@ -228,7 +228,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 120
+        value: 200
     - rid: 1338031111683441107
       type: {class: UnitGroupNode, ns: , asm: Assembly-CSharp}
       data:
