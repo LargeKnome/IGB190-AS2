@@ -52,6 +52,9 @@ https://assetstore.unity.com/packages/vfx/particles/spells/magic-effects-free-24
 -LowPoly Fantasy Monsters Pack Ver1.0_DEMO by TS WORK
 https://assetstore.unity.com/packages/3d/characters/creatures/lowpoly-fantasy-monsters-pack-ver1-0-demo-98393
 
+-Melee Weapons Icons by Kodiak Graphics
+https://assetstore.unity.com/packages/2d/gui/icons/melee-weapons-icons-57368
+
 -Church Pew by CommonSpence
 https://sketchfab.com/3d-models/church-pew-8db64b8b87db4e2281e28c02aa9ee2dc
 
@@ -64,5 +67,5 @@ https://sketchfab.com/3d-models/rustic-wooden-coffin-bbc4f969d00143d8ac0b1248cf9
 -Dusty Old Bookshelf (FREE) by Brandon Westlake
 https://sketchfab.com/3d-models/dusty-old-bookshelf-free-6c5ac2547db34c3c81b2e4808b000386
 
--Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=36468">Pixabay</a>
--Sound Effect from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=97263">Pixabay</a>
+-Breaking Crate from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=36468">Pixabay</a>
+-Brearking Plate from <a href="https://pixabay.com/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=97263">Pixabay</a>
